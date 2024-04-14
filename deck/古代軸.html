@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VL60NG4DN1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VL60NG4DN1');
+</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポケカデッキ分析 古代軸</title>
+</head>
+<body>
+<a href="index.html">戻る</a>
+
+        <style type="text/css">
+        h1, h2 {
+            text-align: center;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse:  collapse; /* セルの線を重ねる */
+        }
+
+        tr:nth-child(odd) {
+            background-color:  #EEE;    /* 背景色指定 */
+        }
+
+        th,td {
+            padding: 5px 10px;          /* 余白指定 */
+        }
+        </style>
+        <h1>デッキ採用率</h1><h2>古代軸<h2><h3>デッキ定義</h3><ul><li>トドロクツキが3枚以上入っている</li><li>ダークパッチが3枚以上入っている</li><li>オーリム博士が2枚以上入っている</li></ul><h3>集計サマリ</h3><ul><li>集計期間: 2024/04/01 00:00～2024-04-14 18:17</li><li>全デッキ数: 1352件</li><li>採用デッキ数: 38件</li></ul><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>タイプ</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>最高順位</th>
+      <th>購入(アフィリエイト)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="../card/ブーストエナジー 古代.html">ブーストエナジー 古代</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>3.4</td>
+      <td>97.4</td>
+      <td>37</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ブーストエナジー 古代&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="../card/緊急ボード.html">緊急ボード</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.3</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=緊急ボード&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="../card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ワザマシン デヴォリューション&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="../card/げんきのハチマキ.html">げんきのハチマキ</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=げんきのハチマキ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="../card/森の封印石.html">森の封印石</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=森の封印石&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="../card/マキシマムベルト(ACE SPEC).html">マキシマムベルト(ACE SPEC)</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=マキシマムベルト(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="../card/かがやくゲッコウガ.html">かがやくゲッコウガ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=かがやくゲッコウガ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="../card/トドロクツキ.html">トドロクツキ</a></td>
+      <td>ポケモン</td>
+      <td>3.5</td>
+      <td>97.4</td>
+      <td>37</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=トドロクツキ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="../card/トドロクツキex.html">トドロクツキex</a></td>
+      <td>ポケモン</td>
+      <td>2.6</td>
+      <td>97.4</td>
+      <td>37</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=トドロクツキex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="../card/ハバタクカミ.html">ハバタクカミ</a></td>
+      <td>ポケモン</td>
+      <td>2.3</td>
+      <td>47.4</td>
+      <td>18</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ハバタクカミ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="../card/イキリンコex.html">イキリンコex</a></td>
+      <td>ポケモン</td>
+      <td>1.3</td>
+      <td>28.9</td>
+      <td>11</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=イキリンコex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="../card/イダイナキバ.html">イダイナキバ</a></td>
+      <td>ポケモン</td>
+      <td>1.3</td>
+      <td>26.3</td>
+      <td>10</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=イダイナキバ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="../card/ミュウex.html">ミュウex</a></td>
+      <td>ポケモン</td>
+      <td>1.2</td>
+      <td>21.1</td>
+      <td>8</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ミュウex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="../card/ノコッチ(SV5K 056_071).html">ノコッチ(SV5K 056/071)</a></td>
+      <td>ポケモン</td>
+      <td>2.7</td>
+      <td>18.4</td>
+      <td>7</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ノコッチ(SV5K 056/071)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="../card/ノココッチ(SV5K 057_071).html">ノココッチ(SV5K 057/071)</a></td>
+      <td>ポケモン</td>
+      <td>2.6</td>
+      <td>18.4</td>
+      <td>7</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ノココッチ(SV5K 057/071)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="../card/ネオラントV.html">ネオラントV</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>18.4</td>
+      <td>7</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネオラントV&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="../card/ダークライV.html">ダークライV</a></td>
+      <td>ポケモン</td>
+      <td>1.2</td>
+      <td>13.2</td>
+      <td>5</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ダークライV&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="../card/ダークライVSTAR.html">ダークライVSTAR</a></td>
+      <td>ポケモン</td>
+      <td>1.4</td>
+      <td>13.2</td>
+      <td>5</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ダークライVSTAR&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="../card/アラブルタケ(もうどくふんじん).html">アラブルタケ(もうどくふんじん)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>10.5</td>
+      <td>4</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=アラブルタケ(もうどくふんじん)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="../card/テツノツツミ.html">テツノツツミ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=テツノツツミ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href="../card/チヲハウハネ.html">チヲハウハネ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=チヲハウハネ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="../card/ガチグマ アカツキex.html">ガチグマ アカツキex</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ガチグマ アカツキex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="../card/コライドン.html">コライドン</a></td>
+      <td>ポケモン</td>
+      <td>3.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=コライドン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td><a href="../card/メテノ.html">メテノ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=メテノ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td><a href="../card/リククラゲ.html">リククラゲ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=リククラゲ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href="../card/モトトカゲ(SV1V 068_078).html">モトトカゲ(SV1V 068/078)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=モトトカゲ(SV1V 068/078)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td><a href="../card/チョロネコ(S12a 088_172).html">チョロネコ(S12a 088/172)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=チョロネコ(S12a 088/172)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href="../card/レパルダス(SI 272_414).html">レパルダス(SI 272/414)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=レパルダス(SI 272/414)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td><a href="../card/フーパex.html">フーパex</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=フーパex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href="../card/ビッパ(へっちゃらがお).html">ビッパ(へっちゃらがお)</a></td>
+      <td>ポケモン</td>
+      <td>2.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ビッパ(へっちゃらがお)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td><a href="../card/ノノクラゲ.html">ノノクラゲ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ノノクラゲ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href="../card/ビーダル(はたらくまえば).html">ビーダル(はたらくまえば)</a></td>
+      <td>ポケモン</td>
+      <td>2.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ビーダル(はたらくまえば)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td><a href="../card/ポケストップ.html">ポケストップ</a></td>
+      <td>スタジアム</td>
+      <td>2.9</td>
+      <td>76.3</td>
+      <td>29</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポケストップ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td><a href="../card/ボウルタウン.html">ボウルタウン</a></td>
+      <td>スタジアム</td>
+      <td>2.2</td>
+      <td>26.3</td>
+      <td>10</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ボウルタウン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href="../card/シンオウ神殿.html">シンオウ神殿</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>23.7</td>
+      <td>9</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=シンオウ神殿&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href="../card/崩れたスタジアム.html">崩れたスタジアム</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=崩れたスタジアム&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td><a href="../card/ビーチコート.html">ビーチコート</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ビーチコート&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td><a href="../card/オーリム博士の気迫.html">オーリム博士の気迫</a></td>
+      <td>サポート</td>
+      <td>4.0</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=オーリム博士の気迫&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td><a href="../card/ボスの指令.html">ボスの指令</a></td>
+      <td>サポート</td>
+      <td>1.3</td>
+      <td>94.7</td>
+      <td>36</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ボスの指令&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td><a href="../card/探検家の先導.html">探検家の先導</a></td>
+      <td>サポート</td>
+      <td>3.8</td>
+      <td>73.7</td>
+      <td>28</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=探検家の先導&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td><a href="../card/ツツジ.html">ツツジ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>36.8</td>
+      <td>14</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ツツジ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td><a href="../card/ボタン.html">ボタン</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>21.1</td>
+      <td>8</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ボタン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href="../card/ナンジャモ.html">ナンジャモ</a></td>
+      <td>サポート</td>
+      <td>1.1</td>
+      <td>18.4</td>
+      <td>7</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ナンジャモ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td><a href="../card/博士の研究.html">博士の研究</a></td>
+      <td>サポート</td>
+      <td>1.7</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=博士の研究&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td><a href="../card/ネジキ.html">ネジキ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネジキ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td><a href="../card/ビワ.html">ビワ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ビワ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td><a href="../card/ジャッジマン.html">ジャッジマン</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ジャッジマン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td><a href="../card/シマボシ.html">シマボシ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=シマボシ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td><a href="../card/ダークパッチ.html">ダークパッチ</a></td>
+      <td>グッズ</td>
+      <td>3.8</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ダークパッチ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td><a href="../card/ネストボール.html">ネストボール</a></td>
+      <td>グッズ</td>
+      <td>3.8</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネストボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td><a href="../card/ハイパーボール.html">ハイパーボール</a></td>
+      <td>グッズ</td>
+      <td>2.5</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ハイパーボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td><a href="../card/大地の器.html">大地の器</a></td>
+      <td>グッズ</td>
+      <td>3.8</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=大地の器&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td><a href="../card/すごいつりざお.html">すごいつりざお</a></td>
+      <td>グッズ</td>
+      <td>1.5</td>
+      <td>92.1</td>
+      <td>35</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=すごいつりざお&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td><a href="../card/ポケギア3.0.html">ポケギア3.0</a></td>
+      <td>グッズ</td>
+      <td>2.9</td>
+      <td>81.6</td>
+      <td>31</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポケギア3.0&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td><a href="../card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>81.6</td>
+      <td>31</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=プライムキャッチャー(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td><a href="../card/ともだちてちょう.html">ともだちてちょう</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>73.7</td>
+      <td>28</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ともだちてちょう&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td><a href="../card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
+      <td>グッズ</td>
+      <td>1.4</td>
+      <td>73.7</td>
+      <td>28</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=カウンターキャッチャー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td><a href="../card/いれかえカート.html">いれかえカート</a></td>
+      <td>グッズ</td>
+      <td>1.8</td>
+      <td>65.8</td>
+      <td>25</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=いれかえカート&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td><a href="../card/ヒスイのヘビーボール.html">ヒスイのヘビーボール</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>34.2</td>
+      <td>13</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ヒスイのヘビーボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td><a href="../card/改造ハンマー.html">改造ハンマー</a></td>
+      <td>グッズ</td>
+      <td>1.1</td>
+      <td>23.7</td>
+      <td>9</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=改造ハンマー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td><a href="../card/エネルギーつけかえ.html">エネルギーつけかえ</a></td>
+      <td>グッズ</td>
+      <td>2.1</td>
+      <td>21.1</td>
+      <td>8</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=エネルギーつけかえ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td><a href="../card/ロストスイーパー.html">ロストスイーパー</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>18.4</td>
+      <td>7</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ロストスイーパー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td><a href="../card/トレッキングシューズ.html">トレッキングシューズ</a></td>
+      <td>グッズ</td>
+      <td>2.5</td>
+      <td>15.8</td>
+      <td>6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=トレッキングシューズ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td><a href="../card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>13.2</td>
+      <td>5</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=アンフェアスタンプ(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td><a href="../card/ポケモンいれかえ.html">ポケモンいれかえ</a></td>
+      <td>グッズ</td>
+      <td>2.0</td>
+      <td>13.2</td>
+      <td>5</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポケモンいれかえ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td><a href="../card/スーパーエネルギー回収.html">スーパーエネルギー回収</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>5.3</td>
+      <td>2</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=スーパーエネルギー回収&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td><a href="../card/クラッシュハンマー.html">クラッシュハンマー</a></td>
+      <td>グッズ</td>
+      <td>2.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=クラッシュハンマー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td><a href="../card/エネルギー回収.html">エネルギー回収</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=エネルギー回収&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td><a href="../card/キャンセルコロン.html">キャンセルコロン</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=キャンセルコロン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td><a href="../card/覚醒のドラム(ACE SPEC).html">覚醒のドラム(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=覚醒のドラム(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td><a href="../card/基本悪エネルギー.html">基本悪エネルギー</a></td>
+      <td>エネルギー</td>
+      <td>8.6</td>
+      <td>100.0</td>
+      <td>38</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=基本悪エネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td><a href="../card/基本闘エネルギー.html">基本闘エネルギー</a></td>
+      <td>エネルギー</td>
+      <td>3.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=基本闘エネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td><a href="../card/ジェットエネルギー.html">ジェットエネルギー</a></td>
+      <td>エネルギー</td>
+      <td>1.3</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ジェットエネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td><a href="../card/基本水エネルギー.html">基本水エネルギー</a></td>
+      <td>エネルギー</td>
+      <td>3.0</td>
+      <td>7.9</td>
+      <td>3</td>
+      <td>9</td>
+      <td><a href="https://www.amazon.co.jp/s?k=基本水エネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+  </tbody>
+</table>
+        <style type="text/css">
+        h1, h2 {
+            text-align: center;
+        }
+        
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            border-collapse:  collapse; /* セルの線を重ねる */
+        }
+
+        tr:nth-child(odd) {
+            background-color:  #EEE;    /* 背景色指定 */
+        }
+
+        th,td {
+            padding: 5px 10px;          /* 余白指定 */
+        }
+        </style>
+        <h1>分析対象のデッキ類似度</h1><h2>平均値とのコサイン類似度<h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>デッキID</th>
+      <th>類似度</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=ngL9nN-mhpNAE-QnnNHn" target="_blank">デッキリスト ngL9nN-mhpNAE-QnnNHn</td>
+      <td>0.849</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=gnHggg-lJrH8z-HgPPgn" target="_blank">デッキリスト gnHggg-lJrH8z-HgPPgn</td>
+      <td>0.848</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=c84Y8c-D1qY1h-Y8x4cD" target="_blank">デッキリスト c84Y8c-D1qY1h-Y8x4cD</td>
+      <td>0.839</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=NgnnHQ-STfPQ2-QnHggg" target="_blank">デッキリスト NgnnHQ-STfPQ2-QnHggg</td>
+      <td>0.838</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=22pSp2-Ank3vX-SyyyMS" target="_blank">デッキリスト 22pSp2-Ank3vX-SyyyMS</td>
+      <td>0.837</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=nHHgNn-YADTSd-LgHP6n" target="_blank">デッキリスト nHHgNn-YADTSd-LgHP6n</td>
+      <td>0.836</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=8cJ8Gc-PRReYq-44ccJ8" target="_blank">デッキリスト 8cJ8Gc-PRReYq-44ccJ8</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=5Fvbk5-d0HoXU-5kFkV5" target="_blank">デッキリスト 5Fvbk5-d0HoXU-5kFkV5</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=kF5fkf-e56HpB-kk5dFF" target="_blank">デッキリスト kF5fkf-e56HpB-kk5dFF</td>
+      <td>0.833</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=8cD848-zwHpqm-DxaYc4" target="_blank">デッキリスト 8cD848-zwHpqm-DxaYc4</td>
+      <td>0.830</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=HngQgg-S5iZdm-LNHgng" target="_blank">デッキリスト HngQgg-S5iZdm-LNHgng</td>
+      <td>0.829</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=nQgngL-8R0mT6-nHgPHH" target="_blank">デッキリスト nQgngL-8R0mT6-nHgPHH</td>
+      <td>0.829</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=y3E2Rp-cJTMU0-pXpM2X" target="_blank">デッキリスト y3E2Rp-cJTMU0-pXpM2X</td>
+      <td>0.828</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=Gc8a4x-HBE7E2-8cc4cD" target="_blank">デッキリスト Gc8a4x-HBE7E2-8cc4cD</td>
+      <td>0.827</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=XEy2UR-Z9SWty-pyypM2" target="_blank">デッキリスト XEy2UR-Z9SWty-pyypM2</td>
+      <td>0.827</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=vk5kkV-YmgxDA-5vFFfv" target="_blank">デッキリスト vk5kkV-YmgxDA-5vFFfv</td>
+      <td>0.826</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=HL6gHn-k2CgKg-Ngnngg" target="_blank">デッキリスト HL6gHn-k2CgKg-Ngnngg</td>
+      <td>0.826</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=n6NNgn-qjYmeU-HPHgLN" target="_blank">デッキリスト n6NNgn-qjYmeU-HPHgLN</td>
+      <td>0.823</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=gLHggi-z3hC1x-HH6ngg" target="_blank">デッキリスト gLHggi-z3hC1x-HH6ngg</td>
+      <td>0.822</td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=23E2MU-bmWp7U-2p3ppy" target="_blank">デッキリスト 23E2MU-bmWp7U-2p3ppy</td>
+      <td>0.822</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=5FFFvk-uhaR4G-fwdv5k" target="_blank">デッキリスト 5FFFvk-uhaR4G-fwdv5k</td>
+      <td>0.821</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=5FVkv5-Jl53m2-fFkkvF" target="_blank">デッキリスト 5FVkv5-Jl53m2-fFkkvF</td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=844cxK-DofXVc-cDxc8D" target="_blank">デッキリスト 844cxK-DofXVc-cDxc8D</td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=NLggHg-IUre80-ngLHHQ" target="_blank">デッキリスト NLggHg-IUre80-ngLHHQ</td>
+      <td>0.820</td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=HQHQNn-cuzKAZ-ggnnLH" target="_blank">デッキリスト HQHQNn-cuzKAZ-ggnnLH</td>
+      <td>0.817</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=nPgHHg-Tmriyx-HNLNLg" target="_blank">デッキリスト nPgHHg-Tmriyx-HNLNLg</td>
+      <td>0.812</td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=2ppUS2-C65y1X-ppp2yy" target="_blank">デッキリスト 2ppUS2-C65y1X-ppp2yy</td>
+      <td>0.809</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=4aJcca-K9btRa-844cxc" target="_blank">デッキリスト 4aJcca-K9btRa-844cxc</td>
+      <td>0.808</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=k5dffF-7TbWjm-fwffVF" target="_blank">デッキリスト k5dffF-7TbWjm-fwffVF</td>
+      <td>0.804</td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=SSMpUX-qdVP11-2ySXp2" target="_blank">デッキリスト SSMpUX-qdVP11-2ySXp2</td>
+      <td>0.803</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=k5FkvF-qniup4-fkF555" target="_blank">デッキリスト k5FkvF-qniup4-fkF555</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=pySSp2-dyyx8z-pMM2py" target="_blank">デッキリスト pySSp2-dyyx8z-pMM2py</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=84Y8c8-kfOzGM-44xcD4" target="_blank">デッキリスト 84Y8c8-kfOzGM-44xcD4</td>
+      <td>0.798</td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=55FkFk-P65Zq3-F55F1V" target="_blank">デッキリスト 55FkFk-P65Zq3-F55F1V</td>
+      <td>0.791</td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=gnngHn-h8y8n5-HnQgQQ" target="_blank">デッキリスト gnngHn-h8y8n5-HnQgQQ</td>
+      <td>0.769</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=HgPNig-5klz4G-ggnHHg" target="_blank">デッキリスト HgPNig-5klz4G-ggnHHg</td>
+      <td>0.768</td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=k5VkwF-VTDLDX-1FkF5b" target="_blank">デッキリスト k5VkwF-VTDLDX-1FkF5b</td>
+      <td>0.762</td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td><a href="https://www.pokemon-card.com/deck/deck.html?deckID=fVF5fk-YHoSad-FF55f5" target="_blank">デッキリスト fVF5fk-YHoSad-FF55f5</td>
+      <td>0.743</td>
+    </tr>
+  </tbody>
+</table></body>
+</html>
