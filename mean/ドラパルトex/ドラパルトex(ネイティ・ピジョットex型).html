@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VL60NG4DN1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VL60NG4DN1');
+</script>
+
+    <style type="text/css">
+    h1, h2 {
+        text-align: center;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse:  collapse; /* セルの線を重ねる */
+    }
+
+    tr:nth-child(odd) {
+        background-color:  #EEE;    /* 背景色指定 */
+    }
+
+    th,td {
+        padding: 5px 10px;          /* 余白指定 */
+    }
+    </style>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポケカデッキ分析 ドラパルトex(ネイティ・ピジョットex型)</title>
+</head>
+<body>
+<a href="https://iwata-n.github.io/pokeca_deck">ホームへ</a>
+<h1>ドラパルトex(ネイティ・ピジョットex型) デッキ採用率</h1>
+<h3>デッキ定義</h3><ul><li>ドラパルトexが2枚以上入っている</li><li>ピジョットexが1枚以上入っている</li><li>ネイティオが1枚以上入っている</li><li>レジドラゴが入っていない</li></ul><h3>集計サマリ</h3><ul><li>集計期間: 20240401～20240501</li><li>全デッキ数: 4312件</li><li>採用デッキ数: 39件</li></ul><h1>採用カード平均化</h1><h2></h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>タイプ</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入(アフィリエイト)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ドロンチ(SV6 080_101).html">ドロンチ(SV6 080/101)</a></td>
+      <td>ポケモン</td>
+      <td>3.4</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ドロンチ(SV6 080/101)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネイティ.html">ネイティ</a></td>
+      <td>ポケモン</td>
+      <td>1.1</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネイティ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネイティオ.html">ネイティオ</a></td>
+      <td>ポケモン</td>
+      <td>1.1</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネイティオ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ドラメシヤ(SV6 079_101).html">ドラメシヤ(SV6 079/101)</a></td>
+      <td>ポケモン</td>
+      <td>4.0</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ドラメシヤ(SV6 079/101)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ドラパルトex(SV6 081_101).html">ドラパルトex(SV6 081/101)</a></td>
+      <td>ポケモン</td>
+      <td>3.0</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ドラパルトex(SV6 081/101)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョットex.html">ピジョットex</a></td>
+      <td>ポケモン</td>
+      <td>1.9</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ピジョットex&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(なかまをよぶ).html">ポッポ(なかまをよぶ)</a></td>
+      <td>ポケモン</td>
+      <td>1.9</td>
+      <td>97.4</td>
+      <td>38</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポッポ(なかまをよぶ)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/マナフィ.html">マナフィ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>97.4</td>
+      <td>38</td>
+      <td><a href="https://www.amazon.co.jp/s?k=マナフィ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロトムV.html">ロトムV</a></td>
+      <td>ポケモン</td>
+      <td>1.1</td>
+      <td>76.9</td>
+      <td>30</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ロトムV&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネオラントV.html">ネオラントV</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>46.2</td>
+      <td>18</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネオラントV&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/かがやくフーディン(S11a 031_068).html">かがやくフーディン(S11a 031/068)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>25.6</td>
+      <td>10</td>
+      <td><a href="https://www.amazon.co.jp/s?k=かがやくフーディン(S11a 031/068)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シャリタツ(SV6 082_101).html">シャリタツ(SV6 082/101)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>25.6</td>
+      <td>10</td>
+      <td><a href="https://www.amazon.co.jp/s?k=シャリタツ(SV6 082/101)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピィ.html">ピィ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>25.6</td>
+      <td>10</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ピィ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピィ(にぎにぎドロー).html">ピィ(にぎにぎドロー)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>7.7</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ピィ(にぎにぎドロー)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ルチャブル(フライングエントリー).html">ルチャブル(フライングエントリー)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>5.1</td>
+      <td>2</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ルチャブル(フライングエントリー)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ドラメシヤ(S11 052_100).html">ドラメシヤ(S11 052/100)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ドラメシヤ(S11 052/100)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/かがやくリザードン.html">かがやくリザードン</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=かがやくリザードン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョン(SV4a 138_190).html">ピジョン(SV4a 138/190)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ピジョン(SV4a 138/190)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/テツノツツミ.html">テツノツツミ</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=テツノツツミ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シガロコ(SV5M 014_071).html">シガロコ(SV5M 014/071)</a></td>
+      <td>ポケモン</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=シガロコ(SV5M 014/071)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(かぜおこし).html">ポッポ(かぜおこし)</a></td>
+      <td>ポケモン</td>
+      <td>2.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポッポ(かぜおこし)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ベラカス(SV5M 015_071).html">ベラカス(SV5M 015/071)</a></td>
+      <td>ポケモン</td>
+      <td>2.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ベラカス(SV5M 015/071)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/大地の器.html">大地の器</a></td>
+      <td>グッズ</td>
+      <td>1.7</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=大地の器&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/なかよしポフィン.html">なかよしポフィン</a></td>
+      <td>グッズ</td>
+      <td>3.9</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=なかよしポフィン&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
+      <td>グッズ</td>
+      <td>1.7</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネストボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ふしぎなアメ.html">ふしぎなアメ</a></td>
+      <td>グッズ</td>
+      <td>3.7</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ふしぎなアメ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハイパーボール.html">ハイパーボール</a></td>
+      <td>グッズ</td>
+      <td>3.4</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ハイパーボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/すごいつりざお.html">すごいつりざお</a></td>
+      <td>グッズ</td>
+      <td>1.1</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=すごいつりざお&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
+      <td>グッズ</td>
+      <td>1.3</td>
+      <td>97.4</td>
+      <td>38</td>
+      <td><a href="https://www.amazon.co.jp/s?k=カウンターキャッチャー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/改造ハンマー.html">改造ハンマー</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>46.2</td>
+      <td>18</td>
+      <td><a href="https://www.amazon.co.jp/s?k=改造ハンマー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロストスイーパー.html">ロストスイーパー</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>17.9</td>
+      <td>7</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ロストスイーパー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒスイのヘビーボール.html">ヒスイのヘビーボール</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>17.9</td>
+      <td>7</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ヒスイのヘビーボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>12.8</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=アンフェアスタンプ(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ともだちてちょう.html">ともだちてちょう</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>12.8</td>
+      <td>5</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ともだちてちょう&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモン回収サイクロン(ACE SPEC).html">ポケモン回収サイクロン(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>10.3</td>
+      <td>4</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポケモン回収サイクロン(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンいれかえ.html">ポケモンいれかえ</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>7.7</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ポケモンいれかえ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/エネルギー転送.html">エネルギー転送</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>5.1</td>
+      <td>2</td>
+      <td><a href="https://www.amazon.co.jp/s?k=エネルギー転送&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/はげましのてがみ.html">はげましのてがみ</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=はげましのてがみ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/フェザーボール.html">フェザーボール</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=フェザーボール&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>40</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ペパー.html">ペパー</a></td>
+      <td>サポート</td>
+      <td>3.3</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ペパー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ナンジャモ.html">ナンジャモ</a></td>
+      <td>サポート</td>
+      <td>2.9</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ナンジャモ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボスの指令.html">ボスの指令</a></td>
+      <td>サポート</td>
+      <td>2.1</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ボスの指令&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/フトゥー博士のシナリオ.html">フトゥー博士のシナリオ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>41.0</td>
+      <td>16</td>
+      <td><a href="https://www.amazon.co.jp/s?k=フトゥー博士のシナリオ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/メロコ.html">メロコ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>33.3</td>
+      <td>13</td>
+      <td><a href="https://www.amazon.co.jp/s?k=メロコ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワタル.html">ワタル</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>15.4</td>
+      <td>6</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ワタル&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/スグリ.html">スグリ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>15.4</td>
+      <td>6</td>
+      <td><a href="https://www.amazon.co.jp/s?k=スグリ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ツツジ.html">ツツジ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>15.4</td>
+      <td>6</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ツツジ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピーニャ.html">ピーニャ</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>10.3</td>
+      <td>4</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ピーニャ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/スイレンのお世話.html">スイレンのお世話</a></td>
+      <td>サポート</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=スイレンのお世話&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>92.3</td>
+      <td>36</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ワザマシン デヴォリューション&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>51</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/緊急ボード.html">緊急ボード</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>92.3</td>
+      <td>36</td>
+      <td><a href="https://www.amazon.co.jp/s?k=緊急ボード&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/森の封印石.html">森の封印石</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>79.5</td>
+      <td>31</td>
+      <td><a href="https://www.amazon.co.jp/s?k=森の封印石&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン エヴォリューション.html">ワザマシン エヴォリューション</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.2</td>
+      <td>28.2</td>
+      <td>11</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ワザマシン エヴォリューション&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/まけんきハチマキ.html">まけんきハチマキ</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>7.7</td>
+      <td>3</td>
+      <td><a href="https://www.amazon.co.jp/s?k=まけんきハチマキ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/こだわりベルト.html">こだわりベルト</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>5.1</td>
+      <td>2</td>
+      <td><a href="https://www.amazon.co.jp/s?k=こだわりベルト&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/げんきのハチマキ.html">げんきのハチマキ</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=げんきのハチマキ&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハンディサーキュレーター.html">ハンディサーキュレーター</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ハンディサーキュレーター&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/マキシマムベルト(ACE SPEC).html">マキシマムベルト(ACE SPEC)</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=マキシマムベルト(ACE SPEC)&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シンオウ神殿.html">シンオウ神殿</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>82.1</td>
+      <td>32</td>
+      <td><a href="https://www.amazon.co.jp/s?k=シンオウ神殿&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/崩れたスタジアム.html">崩れたスタジアム</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>56.4</td>
+      <td>22</td>
+      <td><a href="https://www.amazon.co.jp/s?k=崩れたスタジアム&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ジャミングタワー.html">ジャミングタワー</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>2.6</td>
+      <td>1</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ジャミングタワー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本超エネルギー.html">基本超エネルギー</a></td>
+      <td>エネルギー</td>
+      <td>4.0</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=基本超エネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本炎エネルギー.html">基本炎エネルギー</a></td>
+      <td>エネルギー</td>
+      <td>3.2</td>
+      <td>100.0</td>
+      <td>39</td>
+      <td><a href="https://www.amazon.co.jp/s?k=基本炎エネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネオアッパーエネルギー.html">ネオアッパーエネルギー</a></td>
+      <td>エネルギー</td>
+      <td>1.0</td>
+      <td>74.4</td>
+      <td>29</td>
+      <td><a href="https://www.amazon.co.jp/s?k=ネオアッパーエネルギー&tag=iwatan-22" target="_blank">amazon</a></td>
+    </tr>
+  </tbody>
+</table><h1>分析対象のデッキ類似度</h1><h2>平均値とのコサイン類似度</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>デッキID</th>
+      <th>類似度</th>
+      <th>成績</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/84cYcx-gRO4CM-c488K4.html">84cYcx-gRO4CM-c488K4</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354299/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ggLgnH-QdFQz7-nHigiQ.html">ggLgnH-QdFQz7-nHigiQ</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354288/result">3位</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HNLnPn-pfwyX4-HgNHNn.html">HNLnPn-pfwyX4-HgNHNn</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354208/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2MMpyy-9992eB-M2ypEE.html">2MMpyy-9992eB-M2ypEE</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354139/result">2位</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/UpyMMp-NgYIFM-X22pyy.html">UpyMMp-NgYIFM-X22pyy</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354209/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cc8YJ4-ZHSxxq-8Gc4c8.html">cc8YJ4-ZHSxxq-8Gc4c8</a></td>
+      <td>0.960775</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354366/result">3位</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y2yp2y-1raWb1-pS3SSM.html">y2yp2y-1raWb1-pS3SSM</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354144/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5F5dk-Uk9StT-FwFFkk.html">k5F5dk-Uk9StT-FwFFkk</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354138/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HgHPgL-JfSxv4-nnnLnH.html">HgHPgL-JfSxv4-nnnLnH</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354338/result">3位</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MyySyS-VmTqLQ-R2E22p.html">MyySyS-VmTqLQ-R2E22p</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354287/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ypM3pp-oN0aZd-2MEy2X.html">ypM3pp-oN0aZd-2MEy2X</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354413/result">2位</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kVkkFk-rbg9hh-5Vd5Vk.html">kVkkFk-rbg9hh-5Vd5Vk</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354285/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MRUpyy-DwYRei-M222pE.html">MRUpyy-DwYRei-M222pE</a></td>
+      <td>0.959707</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354280/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HnQnHn-TdQ8HD-gNgHgL.html">HnQnHn-TdQ8HD-gNgHgL</a></td>
+      <td>0.954446</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354459/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HPHggP-IykFFj-HggnHn.html">HPHggP-IykFFj-HggnHn</a></td>
+      <td>0.951167</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354204/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2yp2Up-drxnxF-3EXy2p.html">2yp2Up-drxnxF-3EXy2p</a></td>
+      <td>0.951167</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354297/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HPgnnN-489Xfr-NnnHiH.html">HPgnnN-489Xfr-NnnHiH</a></td>
+      <td>0.951167</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354291/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NgngHn-IEiO6P-HNHQHi.html">NgngHn-IEiO6P-HNHQHi</a></td>
+      <td>0.951167</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354140/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yp322y-2iG8VH-2yM2pp.html">yp322y-2iG8VH-2yM2pp</a></td>
+      <td>0.950104</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354217/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nLQnin-RUOtVc-NgHgHg.html">nLQnin-RUOtVc-NgHgHg</a></td>
+      <td>0.950104</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354140/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/22pUUy-aQ55BU-yyRpMM.html">22pUUy-aQ55BU-yyRpMM</a></td>
+      <td>0.949190</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354288/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/H6ggn6-NQBNAB-g6QnHH.html">H6ggn6-NQBNAB-g6QnHH</a></td>
+      <td>0.948259</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354414/result">3位</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y223MU-QW0T3n-y2yRp2.html">y223MU-QW0T3n-y2yRp2</a></td>
+      <td>0.944806</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354212/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/JK44D8-YZT2Bb-c48xcx.html">JK44D8-YZT2Bb-c48xcx</a></td>
+      <td>0.944515</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354298/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>25</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/QniHgg-PqrPkQ-iHHign.html">QniHgg-PqrPkQ-iHHign</a></td>
+      <td>0.941462</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354407/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8cc44x-622r81-8aa8cc.html">8cc44x-622r81-8aa8cc</a></td>
+      <td>0.940403</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354407/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>27</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/XEy2yy-y2qmmJ-ypyMp2.html">XEy2yy-y2qmmJ-ypyMp2</a></td>
+      <td>0.940403</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354409/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HgnnHn-pnpR1z-ininNi.html">HgnnHn-pnpR1z-ininNi</a></td>
+      <td>0.939599</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354143/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/d1bVv5-Gjt1Jm-kF5Ffk.html">d1bVv5-Gjt1Jm-kF5Ffk</a></td>
+      <td>0.939463</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354324/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>30</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8cGc84-uK8rKR-J84J8x.html">8cGc84-uK8rKR-J84J8x</a></td>
+      <td>0.939463</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354398/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/iHHQQH-HxbwF2-6ngngg.html">iHHQQH-HxbwF2-6ngngg</a></td>
+      <td>0.939463</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354324/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ggHH9n-T1lmhh-nn6Qn9.html">ggHH9n-T1lmhh-nn6Qn9</a></td>
+      <td>0.936679</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354216/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>33</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nPgn9H-Q4S5nE-NHnPnn.html">nPgn9H-Q4S5nE-NHnPnn</a></td>
+      <td>0.926393</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354463/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>34</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xY44Y8-DcqdrQ-8JcK8x.html">xY44Y8-DcqdrQ-8JcK8x</a></td>
+      <td>0.926393</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354463/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>35</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/EypXXy-EadG7Q-2Xy2pU.html">EypXXy-EadG7Q-2Xy2pU</a></td>
+      <td>0.920600</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354409/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/D4x888-gfbHaK-xa4cca.html">D4x888-gfbHaK-xa4cca</a></td>
+      <td>0.919610</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354097/result">3位</a></td>
+    </tr>
+    <tr>
+      <th>37</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HHgnnH-uedH2I-PngNgg.html">HHgnnH-uedH2I-PngNgg</a></td>
+      <td>0.911855</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354203/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>38</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5kF5fk-SZMk6U-F5fFf1.html">5kF5fk-SZMk6U-F5fFf1</a></td>
+      <td>0.861737</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354407/result">5位</a></td>
+    </tr>
+    <tr>
+      <th>39</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/84cax8-TS3pUq-Ycx8c4.html">84cax8-TS3pUq-Ycx8c4</a></td>
+      <td>0.859895</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/354454/result">9位</a></td>
+    </tr>
+  </tbody>
+</table></body>
+</html>
