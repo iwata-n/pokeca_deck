@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-VL60NG4DN1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VL60NG4DN1');
+</script>
+
+    <style type="text/css">
+    h1, h2 {
+        text-align: center;
+    }
+    
+    table {
+        margin-left: auto;
+        margin-right: auto;
+        border-collapse:  collapse; /* セルの線を重ねる */
+    }
+
+    tr:nth-child(odd) {
+        background-color:  #EEE;    /* 背景色指定 */
+    }
+
+    td {
+        padding: 5px 10px;          /* 余白指定 */
+    }
+
+    th {
+      position: sticky;
+      padding: 5px 10px;          /* 余白指定 */
+      top: 0;
+      background-color: white; /* 背景色を指定して、スクロール時に見えるように */
+      z-index: 1; /* テーブルの他の要素の上に表示 */
+    }
+    </style>
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ポケカデッキ分析 リザードンex</title>
+</head>
+<body>
+<a href="https://iwata-n.github.io/pokeca_deck">ホームへ</a>
+<a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="ポケカデッキ分析" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><h1>リザードンex デッキ採用率</h1>
+<h3>デッキ定義</h3><ul><li>リザードンexが2枚以上入っている</li><li>ドラパルトexが入っていない</li><li>ゲッコウガexが入っていない</li></ul><h3>集計サマリ</h3><ul><li>集計期間: 20240924～20240925</li><li>全デッキ数: 64件</li><li>採用デッキ数: 9件</li><li>トータルCSP: 315</li></ul><h1>型別</h1><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>型</th>
+      <th>件数</th>
+      <th>型別シェア率<br>_20240923_20240929</th>
+      <th>全体シェア率<br>_20240923_20240929</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/mean/リザードンex/リザードンex(ボム型)_20240923_20240929.html">リザードンex(ボム型)</a></td>
+      <td>9</td>
+      <td>100.0%</td>
+      <td>14.06%</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/mean/リザードンex/リザードンex(ピジョット型)_20240923_20240929.html">リザードンex(ピジョット型)</a></td>
+      <td>7</td>
+      <td>77.78%</td>
+      <td>10.94%</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/mean/リザードンex/リザードンex(ビーダルピジョット型)_20240923_20240929.html">リザードンex(ビーダルピジョット型)</a></td>
+      <td>2</td>
+      <td>22.22%</td>
+      <td>3.12%</td>
+    </tr>
+  </tbody>
+</table><h1>ACE SPEC採用カード</h1><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>タイプ</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>55.6</td>
+      <td>5</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒーローマント(ACE SPEC).html">ヒーローマント(ACE SPEC)</a></td>
+      <td>ポケモンのどうぐ</td>
+      <td>1.0</td>
+      <td>22.2</td>
+      <td>2</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒーローマント(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
+      <td>グッズ</td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/偉大な大樹(ACE SPEC).html">偉大な大樹(ACE SPEC)</a></td>
+      <td>スタジアム</td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=偉大な大樹(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h1>採用カード平均化</h1><ul><li><a href=#ポケモン>ポケモン</a></li><li><a href=#グッズ>グッズ</a></li><li><a href=#サポート>サポート</a></li><li><a href=#ポケモンのどうぐ>ポケモンのどうぐ</a></li><li><a href=#スタジアム>スタジアム</a></li><li><a href=#エネルギー>エネルギー</a></li></ul><h2 id=ポケモン>ポケモン</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロトムV.html">ロトムV</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ロトムV" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/サマヨール(カースドボム).html">サマヨール(カースドボム)</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=サマヨール(カースドボム)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(まるやけ).html">ヒトカゲ(まるやけ)</a></td>
+      <td>2.9</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(まるやけ)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/かがやくリザードン.html">かがやくリザードン</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=かがやくリザードン" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/キチキギスex.html">キチキギスex</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キチキギスex" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨノワール(カースドボム).html">ヨノワール(カースドボム)</a></td>
+      <td>1.1</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨノワール(カースドボム)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョットex.html">ピジョットex</a></td>
+      <td>2.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョットex" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザードンex(れんごくしはい).html">リザードンex(れんごくしはい)</a></td>
+      <td>2.4</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザードンex(れんごくしはい)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザード(フレアベール).html">リザード(フレアベール)</a></td>
+      <td>1.0</td>
+      <td>88.9</td>
+      <td>8</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザード(フレアベール)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネオラントV.html">ネオラントV</a></td>
+      <td>1.0</td>
+      <td>77.8</td>
+      <td>7</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネオラントV" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨマワル(むかえにいく).html">ヨマワル(むかえにいく)</a></td>
+      <td>2.0</td>
+      <td>55.6</td>
+      <td>5</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨマワル(むかえにいく)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(かぜおこし).html">ポッポ(かぜおこし)</a></td>
+      <td>2.0</td>
+      <td>55.6</td>
+      <td>5</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポッポ(かぜおこし)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨマワル(まどわす).html">ヨマワル(まどわす)</a></td>
+      <td>2.0</td>
+      <td>44.4</td>
+      <td>4</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨマワル(まどわす)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(なかまをよぶ).html">ポッポ(なかまをよぶ)</a></td>
+      <td>2.0</td>
+      <td>44.4</td>
+      <td>4</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポッポ(なかまをよぶ)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビーダル(はたらくまえば).html">ビーダル(はたらくまえば)</a></td>
+      <td>1.0</td>
+      <td>22.2</td>
+      <td>2</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビーダル(はたらくまえば)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/マナフィ(なみのヴェール).html">マナフィ(なみのヴェール)</a></td>
+      <td>1.0</td>
+      <td>22.2</td>
+      <td>2</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マナフィ(なみのヴェール)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビッパ(へっちゃらがお).html">ビッパ(へっちゃらがお)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビッパ(へっちゃらがお)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビッパ(ころがる).html">ビッパ(ころがる)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビッパ(ころがる)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(ひのこ).html">ヒトカゲ(ひのこ)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(ひのこ)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョン(はばたく).html">ピジョン(はばたく)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョン(はばたく)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピィ(にぎにぎドロー).html">ピィ(にぎにぎドロー)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピィ(にぎにぎドロー)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/モモワロウex.html">モモワロウex</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=モモワロウex" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザード(かえん).html">リザード(かえん)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザード(かえん)" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=グッズ>グッズ</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
+      <td>2.8</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネストボール" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ふしぎなアメ.html">ふしぎなアメ</a></td>
+      <td>4.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ふしぎなアメ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/なかよしポフィン.html">なかよしポフィン</a></td>
+      <td>3.9</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=なかよしポフィン" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
+      <td>2.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カウンターキャッチャー" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハイパーボール.html">ハイパーボール</a></td>
+      <td>3.7</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ハイパーボール" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/すごいつりざお.html">すごいつりざお</a></td>
+      <td>1.9</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=すごいつりざお" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロストスイーパー.html">ロストスイーパー</a></td>
+      <td>1.0</td>
+      <td>66.7</td>
+      <td>6</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ロストスイーパー" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/夜のタンカ.html">夜のタンカ</a></td>
+      <td>1.0</td>
+      <td>55.6</td>
+      <td>5</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=夜のタンカ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
+      <td>1.0</td>
+      <td>55.6</td>
+      <td>5</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒスイのヘビーボール.html">ヒスイのヘビーボール</a></td>
+      <td>1.0</td>
+      <td>33.3</td>
+      <td>3</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒスイのヘビーボール" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ともだちてちょう.html">ともだちてちょう</a></td>
+      <td>1.0</td>
+      <td>22.2</td>
+      <td>2</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ともだちてちょう" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=サポート>サポート</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ナンジャモ.html">ナンジャモ</a></td>
+      <td>2.4</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ナンジャモ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボスの指令.html">ボスの指令</a></td>
+      <td>1.8</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボスの指令" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネジキ.html">ネジキ</a></td>
+      <td>1.1</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネジキ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ペパー.html">ペパー</a></td>
+      <td>3.9</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ペパー" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ブライア.html">ブライア</a></td>
+      <td>1.0</td>
+      <td>77.8</td>
+      <td>7</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ブライア" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/フトゥー博士のシナリオ.html">フトゥー博士のシナリオ</a></td>
+      <td>1.0</td>
+      <td>66.7</td>
+      <td>6</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=フトゥー博士のシナリオ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ツツジ.html">ツツジ</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ツツジ" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=ポケモンのどうぐ>ポケモンのどうぐ</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/まけんきハチマキ.html">まけんきハチマキ</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=まけんきハチマキ" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/森の封印石.html">森の封印石</a></td>
+      <td>1.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=森の封印石" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒーローマント(ACE SPEC).html">ヒーローマント(ACE SPEC)</a></td>
+      <td>1.0</td>
+      <td>22.2</td>
+      <td>2</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒーローマント(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン エヴォリューション.html">ワザマシン エヴォリューション</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン エヴォリューション" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン デヴォリューション" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=スタジアム>スタジアム</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/崩れたスタジアム.html">崩れたスタジアム</a></td>
+      <td>1.0</td>
+      <td>33.3</td>
+      <td>3</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=崩れたスタジアム" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/偉大な大樹(ACE SPEC).html">偉大な大樹(ACE SPEC)</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=偉大な大樹(ACE SPEC)" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シンオウ神殿.html">シンオウ神殿</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シンオウ神殿" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンリーグ本部.html">ポケモンリーグ本部</a></td>
+      <td>1.0</td>
+      <td>11.1</td>
+      <td>1</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンリーグ本部" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=エネルギー>エネルギー</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>カード名</th>
+      <th>採用枚数</th>
+      <th>採用率</th>
+      <th>採用件数</th>
+      <th>購入</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本炎エネルギー.html">基本炎エネルギー</a></td>
+      <td>5.0</td>
+      <td>100.0</td>
+      <td>9</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=基本炎エネルギー" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミストエネルギー.html">ミストエネルギー</a></td>
+      <td>1.0</td>
+      <td>77.8</td>
+      <td>7</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミストエネルギー" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダブルターボエネルギー.html">ダブルターボエネルギー</a></td>
+      <td>1.0</td>
+      <td>33.3</td>
+      <td>3</td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダブルターボエネルギー" target="_blank">メルカリ</a></td>
+    </tr>
+  </tbody>
+</table><h2 id=デッキのエネルギーの枚数>デッキのエネルギーの枚数</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>デッキのエネルギーの平均枚数</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td>6.1</td>
+    </tr>
+  </tbody>
+</table><h1>分析対象のデッキ類似度</h1><h2>平均値とのコサイン類似度</h2><table border="1" class="dataframe my-table">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>デッキID</th>
+      <th>類似度</th>
+      <th>成績</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>1</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x4cD88-iczeLG-8488DK.html">x4cD88-iczeLG-8488DK</a></td>
+      <td>0.886678</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480775/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/acx8c8-X8MJZ2-K44c8a.html">acx8c8-X8MJZ2-K44c8a</a></td>
+      <td>0.874979</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480909/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/n6nn6H-6Xj8nZ-gHggQ9.html">n6nn6H-6Xj8nZ-gHggQ9</a></td>
+      <td>0.874979</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FfbfkF-UvbSzh-vwF5Fk.html">FfbfkF-UvbSzh-vwF5Fk</a></td>
+      <td>0.873620</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480909/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/K88DDc-HfQFqx-8848c4.html">K88DDc-HfQFqx-8848c4</a></td>
+      <td>0.873620</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">1位</a></td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/D8488c-dCnqTm-4GKYc8.html">D8488c-dCnqTm-4GKYc8</a></td>
+      <td>0.861620</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480909/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3SpM3y-yaFScx-ypX2y2.html">3SpM3y-yaFScx-ypX2y2</a></td>
+      <td>0.852774</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480909/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/48D8GK-4I0Kfa-8848Kc.html">48D8GK-4I0Kfa-8848Kc</a></td>
+      <td>0.825348</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480909/result">9位</a></td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yS3M2p-UBuT3T-Sy23pM.html">yS3M2p-UBuT3T-Sy23pM</a></td>
+      <td>0.823287</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">5位</a></td>
+    </tr>
+  </tbody>
+</table></body>
+</html>
