@@ -39,8 +39,17 @@
       z-index: 1; /* テーブルの他の要素の上に表示 */
     }
 
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
     .image-container {
         text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -50,15 +59,13 @@
 <body>
 <a href="https://iwata-n.github.io/pokeca_deck">ホームへ</a>
 <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-hashtags="ポケカデッキ分析" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><h1>トドロクツキ デッキ採用率</h1>
-<h3>デッキ定義</h3><ul><li>トドロクツキが3枚以上入っている</li><li>コライドンが入っていない</li></ul><h3>集計サマリ</h3><ul><li>集計期間: 20240907～20241004</li><li>全デッキ数: 2894件</li><li>採用デッキ数: 208件</li><li>トータルCSP: 6760</li></ul><h1>ACE SPEC採用カード</h1><table border="1" class="dataframe my-table">
+<h3>デッキ定義</h3><ul><li>トドロクツキが3枚以上入っている</li><li>コライドンが入っていない</li></ul><h3>集計サマリ</h3><ul><li>集計期間: 20240907～20241005</li><li>全デッキ数: 3206件</li><li>採用デッキ数: 225件</li><li>トータルCSP: 7315</li></ul><h1>ACE SPEC採用カード</h1><table border="1" class="dataframe my-table">
   <thead>
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
       <th>タイプ</th>
-      <th>採用枚数</th>
       <th>採用率</th>
-      <th>採用件数</th>
       <th>購入</th>
     </tr>
   </thead>
@@ -67,45 +74,35 @@
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
       <td>40.4</td>
-      <td>84</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プライムキャッチャー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/シークレットボックス(ACE SPEC).html">シークレットボックス(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
-      <td>29.8</td>
-      <td>62</td>
+      <td>30.2</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シークレットボックス(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
-      <td>24.0</td>
-      <td>50</td>
+      <td>23.6</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/パーフェクトミキサー(ACE SPEC).html">パーフェクトミキサー(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
       <td>5.3</td>
-      <td>11</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=パーフェクトミキサー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>0.4</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -114,9 +111,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -124,210 +119,158 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/かがやくゲッコウガ.html">かがやくゲッコウガ</a></td>
-      <td>1.0</td>
-      <td>98.6</td>
-      <td>205</td>
+      <td>1.0枚<br><div class="small">98.7%/222件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=かがやくゲッコウガ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/トドロクツキ(あだうちやばね).html">トドロクツキ(あだうちやばね)</a></td>
-      <td>2.6</td>
-      <td>98.1</td>
-      <td>204</td>
+      <td>2.6枚<br><div class="small">98.2%/221件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=トドロクツキ(あだうちやばね)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/モモワロウex.html">モモワロウex</a></td>
-      <td>1.5</td>
-      <td>81.7</td>
-      <td>170</td>
+      <td>1.5枚<br><div class="small">81.8%/184件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=モモワロウex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/トドロクツキex.html">トドロクツキex</a></td>
-      <td>2.9</td>
-      <td>71.6</td>
-      <td>149</td>
+      <td>2.9枚<br><div class="small">71.1%/160件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=トドロクツキex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/キチキギスex.html">キチキギスex</a></td>
-      <td>1.0</td>
-      <td>66.8</td>
-      <td>139</td>
+      <td>1.0枚<br><div class="small">65.8%/148件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キチキギスex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/イキリンコex.html">イキリンコex</a></td>
-      <td>1.4</td>
-      <td>63.9</td>
-      <td>133</td>
+      <td>1.4枚<br><div class="small">63.1%/142件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=イキリンコex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハバタクカミ(あんやのはばたき).html">ハバタクカミ(あんやのはばたき)</a></td>
-      <td>3.7</td>
-      <td>38.9</td>
-      <td>81</td>
+      <td>3.7枚<br><div class="small">39.6%/89件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ハバタクカミ(あんやのはばたき)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/イダイナキバ(じばんほうかい).html">イダイナキバ(じばんほうかい)</a></td>
-      <td>2.1</td>
-      <td>30.8</td>
-      <td>64</td>
+      <td>2.2枚<br><div class="small">31.6%/71件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=イダイナキバ(じばんほうかい)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ウネルミナモ(SV5a 026_066).html">ウネルミナモ(SV5a 026/066)</a></td>
-      <td>3.1</td>
-      <td>20.2</td>
-      <td>42</td>
+      <td>3.1枚<br><div class="small">20.0%/45件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ウネルミナモ(SV5a 026/066)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/シャリタツ(きゃくよせ).html">シャリタツ(きゃくよせ)</a></td>
-      <td>1.0</td>
-      <td>9.1</td>
-      <td>19</td>
+      <td>1.0枚<br><div class="small">8.9%/20件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シャリタツ(きゃくよせ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/マシマシラ(アドレナブレイン).html">マシマシラ(アドレナブレイン)</a></td>
-      <td>1.0</td>
-      <td>7.2</td>
-      <td>15</td>
+      <td>1.0枚<br><div class="small">7.1%/16件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マシマシラ(アドレナブレイン)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>12</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/テツノツツミ(ハイパーブロアー).html">テツノツツミ(ハイパーブロアー)</a></td>
-      <td>1.0</td>
-      <td>5.8</td>
-      <td>12</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=テツノツツミ(ハイパーブロアー)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミュウex.html">ミュウex</a></td>
+      <td>1.0枚<br><div class="small">6.2%/14件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミュウex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>13</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミュウex.html">ミュウex</a></td>
-      <td>1.0</td>
-      <td>5.8</td>
-      <td>12</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミュウex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/テツノツツミ(ハイパーブロアー).html">テツノツツミ(ハイパーブロアー)</a></td>
+      <td>1.0枚<br><div class="small">5.8%/13件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=テツノツツミ(ハイパーブロアー)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ラティアスex(SV7a 019_064).html">ラティアスex(SV7a 019/064)</a></td>
-      <td>1.0</td>
-      <td>4.3</td>
-      <td>9</td>
+      <td>1.0枚<br><div class="small">4.0%/9件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ラティアスex(SV7a 019/064)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>15</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネオラントV.html">ネオラントV</a></td>
-      <td>1.0</td>
-      <td>3.4</td>
-      <td>7</td>
+      <td>1.0枚<br><div class="small">3.1%/7件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネオラントV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>16</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダークライV.html">ダークライV</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>5</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダークライV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>17</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダークライVSTAR.html">ダークライVSTAR</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>5</td>
+      <td>1.0枚<br><div class="small">2.2%/5件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダークライVSTAR&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
-      <th>18</th>
+      <th>17</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/モルペコ(はらへりダッシュ).html">モルペコ(はらへりダッシュ)</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>5</td>
+      <td>1.0枚<br><div class="small">2.2%/5件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=モルペコ(はらへりダッシュ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダークライV.html">ダークライV</a></td>
+      <td>1.0枚<br><div class="small">2.2%/5件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダークライV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>19</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/サケブシッポ(うたいはげます).html">サケブシッポ(うたいはげます)</a></td>
-      <td>1.7</td>
-      <td>1.4</td>
-      <td>3</td>
+      <td>1.7枚<br><div class="small">1.3%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=サケブシッポ(うたいはげます)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>20</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オリジンパルキアV.html">オリジンパルキアV</a></td>
-      <td>2.0</td>
-      <td>1.4</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オリジンパルキアV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>21</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/オリジンパルキアVSTAR.html">オリジンパルキアVSTAR</a></td>
-      <td>2.0</td>
-      <td>1.4</td>
-      <td>3</td>
+      <td>2.0枚<br><div class="small">1.3%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オリジンパルキアVSTAR&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
-      <th>22</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゲンガー(ならくのうらもん).html">ゲンガー(ならくのうらもん)</a></td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゲンガー(ならくのうらもん)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>23</th>
+      <th>21</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/コバルオン(S12 068_098).html">コバルオン(S12 068/098)</a></td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">1.3%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=コバルオン(S12 068/098)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
+      <th>22</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オリジンパルキアV.html">オリジンパルキアV</a></td>
+      <td>2.0枚<br><div class="small">1.3%/3件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オリジンパルキアV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>23</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゲンガー(ならくのうらもん).html">ゲンガー(ならくのうらもん)</a></td>
+      <td>1.0枚<br><div class="small">0.9%/2件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゲンガー(ならくのうらもん)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
       <th>24</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オーガポン みどりのめんex.html">オーガポン みどりのめんex</a></td>
-      <td>2.0</td>
-      <td>0.5</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オーガポン みどりのめんex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/メテノ.html">メテノ</a></td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=メテノ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>25</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミカルゲ(しっこくのわざわい).html">ミカルゲ(しっこくのわざわい)</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミカルゲ(しっこくのわざわい)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>26</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/メテノ.html">メテノ</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=メテノ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オーガポン みどりのめんex.html">オーガポン みどりのめんex</a></td>
+      <td>2.0枚<br><div class="small">0.4%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オーガポン みどりのめんex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=グッズ>グッズ</h2><table border="1" class="dataframe my-table">
@@ -335,235 +278,177 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th>1</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/大地の器.html">大地の器</a></td>
-      <td>4.0</td>
-      <td>100.0</td>
-      <td>208</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=大地の器&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
+      <td>3.8枚<br><div class="small">100.0%/225件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネストボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
-      <td>3.7</td>
-      <td>100.0</td>
-      <td>208</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネストボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/大地の器.html">大地の器</a></td>
+      <td>4.0枚<br><div class="small">100.0%/225件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=大地の器&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハイパーボール.html">ハイパーボール</a></td>
-      <td>3.1</td>
-      <td>100.0</td>
-      <td>208</td>
+      <td>3.1枚<br><div class="small">100.0%/225件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ハイパーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ともだちてちょう.html">ともだちてちょう</a></td>
-      <td>1.1</td>
-      <td>97.6</td>
-      <td>203</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ともだちてちょう&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/夜のタンカ.html">夜のタンカ</a></td>
+      <td>2.0枚<br><div class="small">97.3%/219件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=夜のタンカ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/夜のタンカ.html">夜のタンカ</a></td>
-      <td>2.0</td>
-      <td>97.1</td>
-      <td>202</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=夜のタンカ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ともだちてちょう.html">ともだちてちょう</a></td>
+      <td>1.1枚<br><div class="small">97.3%/219件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ともだちてちょう&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケギア3.0.html">ポケギア3.0</a></td>
-      <td>2.6</td>
-      <td>88.0</td>
-      <td>183</td>
+      <td>2.6枚<br><div class="small">88.4%/199件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケギア3.0&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダークパッチ.html">ダークパッチ</a></td>
-      <td>3.6</td>
-      <td>79.3</td>
-      <td>165</td>
+      <td>3.6枚<br><div class="small">78.7%/177件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダークパッチ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/トレッキングシューズ.html">トレッキングシューズ</a></td>
-      <td>2.9</td>
-      <td>60.1</td>
-      <td>125</td>
+      <td>2.9枚<br><div class="small">59.6%/134件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=トレッキングシューズ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンキャッチャー.html">ポケモンキャッチャー</a></td>
-      <td>3.6</td>
-      <td>58.7</td>
-      <td>122</td>
+      <td>3.6枚<br><div class="small">57.8%/130件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンキャッチャー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>40.4</td>
-      <td>84</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プライムキャッチャー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/すごいつりざお.html">すごいつりざお</a></td>
+      <td>1.3枚<br><div class="small">40.9%/92件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=すごいつりざお&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/すごいつりざお.html">すごいつりざお</a></td>
-      <td>1.3</td>
-      <td>39.9</td>
-      <td>83</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=すごいつりざお&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
+      <td>1.0枚<br><div class="small">40.4%/91件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プライムキャッチャー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>12</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
-      <td>2.0</td>
-      <td>36.1</td>
-      <td>75</td>
+      <td>1.9枚<br><div class="small">36.9%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カウンターキャッチャー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>13</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒスイのヘビーボール.html">ヒスイのヘビーボール</a></td>
-      <td>1.0</td>
-      <td>33.2</td>
-      <td>69</td>
+      <td>1.0枚<br><div class="small">32.4%/73件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒスイのヘビーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/スーパーエネルギー回収.html">スーパーエネルギー回収</a></td>
-      <td>1.1</td>
-      <td>31.7</td>
-      <td>66</td>
+      <td>1.1枚<br><div class="small">32.4%/73件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=スーパーエネルギー回収&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>15</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/シークレットボックス(ACE SPEC).html">シークレットボックス(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>29.8</td>
-      <td>62</td>
+      <td>1.0枚<br><div class="small">30.2%/68件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シークレットボックス(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>16</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>24.0</td>
-      <td>50</td>
+      <td>1.0枚<br><div class="small">23.6%/53件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>17</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/エネルギーつけかえ.html">エネルギーつけかえ</a></td>
-      <td>2.7</td>
-      <td>13.9</td>
-      <td>29</td>
+      <td>2.7枚<br><div class="small">13.3%/30件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=エネルギーつけかえ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>18</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/改造ハンマー.html">改造ハンマー</a></td>
-      <td>1.0</td>
-      <td>7.2</td>
-      <td>15</td>
+      <td>1.0枚<br><div class="small">8.0%/18件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=改造ハンマー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>19</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/いれかえカート.html">いれかえカート</a></td>
-      <td>1.1</td>
-      <td>5.3</td>
-      <td>11</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=いれかえカート&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/パーフェクトミキサー(ACE SPEC).html">パーフェクトミキサー(ACE SPEC)</a></td>
+      <td>1.0枚<br><div class="small">5.3%/12件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=パーフェクトミキサー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>20</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/パーフェクトミキサー(ACE SPEC).html">パーフェクトミキサー(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>5.3</td>
-      <td>11</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=パーフェクトミキサー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/いれかえカート.html">いれかえカート</a></td>
+      <td>1.1枚<br><div class="small">4.9%/11件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=いれかえカート&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>21</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/おたすけベル.html">おたすけベル</a></td>
-      <td>1.9</td>
-      <td>3.4</td>
-      <td>7</td>
+      <td>1.9枚<br><div class="small">3.6%/8件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=おたすけベル&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>22</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/キャンセルコロン.html">キャンセルコロン</a></td>
-      <td>1.0</td>
-      <td>3.4</td>
-      <td>7</td>
+      <td>1.0枚<br><div class="small">3.1%/7件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キャンセルコロン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>23</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロストスイーパー.html">ロストスイーパー</a></td>
-      <td>1.0</td>
-      <td>1.9</td>
-      <td>4</td>
+      <td>1.0枚<br><div class="small">2.2%/5件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ロストスイーパー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>24</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピクニックバスケット.html">ピクニックバスケット</a></td>
-      <td>1.0</td>
-      <td>1.4</td>
-      <td>3</td>
+      <td>1.0枚<br><div class="small">1.3%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピクニックバスケット&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>25</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/エネルギーシール.html">エネルギーシール</a></td>
-      <td>2.0</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>2.0枚<br><div class="small">0.9%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=エネルギーシール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>26</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンいれかえ.html">ポケモンいれかえ</a></td>
-      <td>1.5</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>1.5枚<br><div class="small">0.9%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンいれかえ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>27</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/エネルギー回収.html">エネルギー回収</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=エネルギー回収&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>28</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -572,9 +457,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -582,114 +465,86 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/オーリム博士の気迫.html">オーリム博士の気迫</a></td>
-      <td>4.0</td>
-      <td>100.0</td>
-      <td>208</td>
+      <td>4.0枚<br><div class="small">100.0%/225件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オーリム博士の気迫&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボスの指令.html">ボスの指令</a></td>
-      <td>1.1</td>
-      <td>99.0</td>
-      <td>206</td>
+      <td>1.1枚<br><div class="small">98.7%/222件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボスの指令&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ジャッジマン.html">ジャッジマン</a></td>
-      <td>1.9</td>
-      <td>55.3</td>
-      <td>115</td>
+      <td>1.9枚<br><div class="small">54.2%/122件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ジャッジマン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/探検家の先導.html">探検家の先導</a></td>
-      <td>4.0</td>
-      <td>36.1</td>
-      <td>75</td>
+      <td>4.0枚<br><div class="small">36.9%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=探検家の先導&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/スグリ.html">スグリ</a></td>
-      <td>1.0</td>
-      <td>8.2</td>
-      <td>17</td>
+      <td>1.0枚<br><div class="small">8.0%/18件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=スグリ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ナンジャモ.html">ナンジャモ</a></td>
-      <td>1.1</td>
-      <td>4.8</td>
-      <td>10</td>
+      <td>1.2枚<br><div class="small">5.8%/13件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ナンジャモ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ツツジ.html">ツツジ</a></td>
-      <td>1.0</td>
-      <td>3.4</td>
-      <td>7</td>
+      <td>1.0枚<br><div class="small">3.6%/8件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ツツジ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネジキ.html">ネジキ</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>5</td>
+      <td>1.0枚<br><div class="small">2.7%/6件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネジキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/アカマツ.html">アカマツ</a></td>
-      <td>1.0</td>
-      <td>1.9</td>
-      <td>4</td>
+      <td>1.0枚<br><div class="small">1.8%/4件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アカマツ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボタン.html">ボタン</a></td>
-      <td>1.0</td>
-      <td>1.9</td>
-      <td>4</td>
+      <td>1.0枚<br><div class="small">1.8%/4件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボタン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/博士の研究.html">博士の研究</a></td>
-      <td>2.5</td>
-      <td>1.0</td>
-      <td>2</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=博士の研究&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>12</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゴヨウ.html">ゴヨウ</a></td>
-      <td>2.5</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>2.5枚<br><div class="small">0.9%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゴヨウ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/博士の研究.html">博士の研究</a></td>
+      <td>2.5枚<br><div class="small">0.9%/2件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=博士の研究&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
       <th>13</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/タロ.html">タロ</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=タロ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/暗号マニアの解読.html">暗号マニアの解読</a></td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=暗号マニアの解読&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/暗号マニアの解読.html">暗号マニアの解読</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=暗号マニアの解読&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/タロ.html">タロ</a></td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=タロ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=ポケモンのどうぐ>ポケモンのどうぐ</h2><table border="1" class="dataframe my-table">
@@ -697,9 +552,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -707,73 +560,55 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ブーストエナジー 古代.html">ブーストエナジー 古代</a></td>
-      <td>2.8</td>
-      <td>75.5</td>
-      <td>157</td>
+      <td>2.8枚<br><div class="small">76.0%/171件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ブーストエナジー 古代&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/くさりもち.html">くさりもち</a></td>
-      <td>1.0</td>
-      <td>18.8</td>
-      <td>39</td>
+      <td>1.0枚<br><div class="small">19.6%/44件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=くさりもち&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
-      <td>1.3</td>
-      <td>1.9</td>
-      <td>4</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン デヴォリューション&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/まけんきハチマキ.html">まけんきハチマキ</a></td>
+      <td>1.0枚<br><div class="small">2.2%/5件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=まけんきハチマキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/勇気のおまもり.html">勇気のおまもり</a></td>
-      <td>1.0</td>
-      <td>1.4</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=勇気のおまもり&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
+      <td>1.3枚<br><div class="small">1.8%/4件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン デヴォリューション&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/まけんきハチマキ.html">まけんきハチマキ</a></td>
-      <td>1.0</td>
-      <td>1.4</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=まけんきハチマキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/勇気のおまもり.html">勇気のおまもり</a></td>
+      <td>1.0枚<br><div class="small">1.3%/3件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=勇気のおまもり&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/森の封印石.html">森の封印石</a></td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">0.9%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=森の封印石&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/きんきゅうゼリー.html">きんきゅうゼリー</a></td>
-      <td>2.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>2.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=きんきゅうゼリー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/学習装置.html">学習装置</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=学習装置&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/緊急ボード.html">緊急ボード</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=緊急ボード&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -782,9 +617,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -792,33 +625,25 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケストップ.html">ポケストップ</a></td>
-      <td>3.4</td>
-      <td>99.5</td>
-      <td>207</td>
+      <td>3.4枚<br><div class="small">99.6%/224件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケストップ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/シンオウ神殿.html">シンオウ神殿</a></td>
-      <td>1.0</td>
-      <td>7.2</td>
-      <td>15</td>
+      <td>1.0枚<br><div class="small">7.1%/16件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シンオウ神殿&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/崩れたスタジアム.html">崩れたスタジアム</a></td>
-      <td>1.0</td>
-      <td>1.0</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">0.9%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=崩れたスタジアム&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボウルタウン.html">ボウルタウン</a></td>
-      <td>2.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>2.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボウルタウン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -827,9 +652,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -837,41 +660,31 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本悪エネルギー.html">基本悪エネルギー</a></td>
-      <td>7.8</td>
-      <td>100.0</td>
-      <td>208</td>
+      <td>7.8枚<br><div class="small">100.0%/225件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=基本悪エネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本水エネルギー.html">基本水エネルギー</a></td>
-      <td>2.3</td>
-      <td>12.5</td>
-      <td>26</td>
+      <td>2.3枚<br><div class="small">11.6%/26件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=基本水エネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミストエネルギー.html">ミストエネルギー</a></td>
-      <td>1.0</td>
-      <td>2.9</td>
-      <td>6</td>
+      <td>1.0枚<br><div class="small">2.7%/6件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミストエネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本草エネルギー.html">基本草エネルギー</a></td>
-      <td>5.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>5.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=基本草エネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ジェットエネルギー.html">ジェットエネルギー</a></td>
-      <td>1.0</td>
-      <td>0.5</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">0.4%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ジェットエネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -887,1250 +700,1352 @@
   <tbody>
     <tr>
       <th>1</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6gLQgg-78TFBh-nHng9L.html">6gLQgg-78TFBh-nHng9L</a></td>
-      <td>0.742133</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481061/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/QNnnL6-9Gd4tV-ngLHH6.html">QNnnL6-9Gd4tV-ngLHH6</a></td>
+      <td>0.749049</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480994/result">2024/09/23 チャンピオンズリーグ2025 東京 ジュニアリーグ 2日目大会【2024年9月23日（月・祝）開催】 3位</a><br><a href="https://players.pokemon-card.com/event/detail/481068/result">2024/10/05 シティリーグ出張版in東京（ジュニアリーグ）/TOC有明 5位</a></td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dc8c8c-lPOlmd-ac4c8K.html">Dc8c8c-lPOlmd-ac4c8K</a></td>
-      <td>0.734359</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480885/result">2024/09/11 トーナメントセンターバトロコ　本厚木駅前 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6gLQgg-78TFBh-nHng9L.html">6gLQgg-78TFBh-nHng9L</a></td>
+      <td>0.743504</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481061/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FVFbF-TGvMPG-wV5Fkk.html">5FVFbF-TGvMPG-wV5Fkk</a></td>
-      <td>0.730072</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480826/result">2024/09/07 BOOKOFF SUPER BAZAAR 西友大森店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dc8c8c-lPOlmd-ac4c8K.html">Dc8c8c-lPOlmd-ac4c8K</a></td>
+      <td>0.739108</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480885/result">2024/09/11 トーナメントセンターバトロコ　本厚木駅前 5位</a></td>
     </tr>
     <tr>
       <th>4</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yppUS3-cm9ae2-SSypM2.html">yppUS3-cm9ae2-SSypM2</a></td>
-      <td>0.719275</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FVFbF-TGvMPG-wV5Fkk.html">5FVFbF-TGvMPG-wV5Fkk</a></td>
+      <td>0.731439</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480826/result">2024/09/07 BOOKOFF SUPER BAZAAR 西友大森店 9位</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FFwF5F-ycPnJv-kwF5kV.html">FFwF5F-ycPnJv-kwF5kV</a></td>
-      <td>0.719275</td>
+      <td>0.718851</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 5位</a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nggn6i-U0EygI-gHHig6.html">nggn6i-U0EygI-gHHig6</a></td>
-      <td>0.713313</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480779/result">2024/09/28 TSUTAYA　伊奈店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yppUS3-cm9ae2-SSypM2.html">yppUS3-cm9ae2-SSypM2</a></td>
+      <td>0.718851</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 9位</a></td>
     </tr>
     <tr>
       <th>7</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y2y3p3-CWmgIf-UMSSMy.html">y2y3p3-CWmgIf-UMSSMy</a></td>
-      <td>0.713313</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 1位</a></td>
-    </tr>
-    <tr>
-      <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yMXppy-nKCQkD-2Sp232.html">yMXppy-nKCQkD-2Sp232</a></td>
-      <td>0.713313</td>
+      <td>0.714615</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480920/result">2024/10/02 トーナメントセンターバトロコ　本厚木駅前 2位</a></td>
     </tr>
     <tr>
-      <th>9</th>
+      <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5kdfF-z0FWot-wkfkvk.html">F5kdfF-z0FWot-wkfkvk</a></td>
-      <td>0.713313</td>
+      <td>0.714615</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480911/result">2024/09/28 【CARDBOX】Super KaBoS 二の宮本店 5位</a></td>
     </tr>
     <tr>
+      <th>9</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y2y3p3-CWmgIf-UMSSMy.html">y2y3p3-CWmgIf-UMSSMy</a></td>
+      <td>0.714615</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 1位</a></td>
+    </tr>
+    <tr>
       <th>10</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng6Qng-JuyreA-PnnHgL.html">ng6Qng-JuyreA-PnnHgL</a></td>
-      <td>0.712318</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482120/result">2024/09/08 フルコンプPLAYERS CENTER札幌駅前店 3位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nggn6i-U0EygI-gHHig6.html">nggn6i-U0EygI-gHHig6</a></td>
+      <td>0.714615</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480779/result">2024/09/28 TSUTAYA　伊奈店 5位</a></td>
     </tr>
     <tr>
       <th>11</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y3M2Up-KvlBWV-SyypSM.html">y3M2Up-KvlBWV-SyypSM</a></td>
-      <td>0.710839</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng6Qng-JuyreA-PnnHgL.html">ng6Qng-JuyreA-PnnHgL</a></td>
+      <td>0.711780</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482120/result">2024/09/08 フルコンプPLAYERS CENTER札幌駅前店 3位</a></td>
     </tr>
     <tr>
       <th>12</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4ccK88-4HQA9A-xxcJc8.html">4ccK88-4HQA9A-xxcJc8</a></td>
-      <td>0.709529</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480997/result">2024/09/08 カードボックス　京都ファミリー 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y3M2Up-KvlBWV-SyypSM.html">y3M2Up-KvlBWV-SyypSM</a></td>
+      <td>0.710591</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 9位</a></td>
     </tr>
     <tr>
       <th>13</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3MRSMX-hvUVDR-Rp2ySR.html">3MRSMX-hvUVDR-Rp2ySR</a></td>
-      <td>0.707741</td>
+      <td>0.709216</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480774/result">2024/09/17 トーナメントセンターバトロコ　柏駅前 9位</a></td>
     </tr>
     <tr>
       <th>14</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/PgLHnH-CmCo3W-i6gLgn.html">PgLHnH-CmCo3W-i6gLgn</a></td>
-      <td>0.704657</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482179/result">2024/09/08 TSUTAYA　JR尼崎駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4ccK88-4HQA9A-xxcJc8.html">4ccK88-4HQA9A-xxcJc8</a></td>
+      <td>0.709154</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480997/result">2024/09/08 カードボックス　京都ファミリー 5位</a></td>
     </tr>
     <tr>
       <th>15</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8Jcc8-ap8INf-8Kc884.html">x8Jcc8-ap8INf-8Kc884</a></td>
-      <td>0.701390</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480700/result">2024/09/28 ポケモンカードステーション・ポケモンセンターオーサカ 2位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/PgLHnH-CmCo3W-i6gLgn.html">PgLHnH-CmCo3W-i6gLgn</a></td>
+      <td>0.705984</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482179/result">2024/09/08 TSUTAYA　JR尼崎駅前店 9位</a></td>
     </tr>
     <tr>
       <th>16</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiigNn-U8f36z-HQggnn.html">LiigNn-U8f36z-HQggnn</a></td>
-      <td>0.699653</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480783/result">2024/10/02 ドラゴンスター秋葉原駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8Jcc8-ap8INf-8Kc884.html">x8Jcc8-ap8INf-8Kc884</a></td>
+      <td>0.700932</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480700/result">2024/09/28 ポケモンカードステーション・ポケモンセンターオーサカ 2位</a></td>
     </tr>
     <tr>
       <th>17</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3yp2pU-WnlLXE-MypySy.html">3yp2pU-WnlLXE-MypySy</a></td>
-      <td>0.699653</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiigNn-U8f36z-HQggnn.html">LiigNn-U8f36z-HQggnn</a></td>
+      <td>0.699327</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480783/result">2024/10/02 ドラゴンスター秋葉原駅前店 9位</a></td>
     </tr>
     <tr>
       <th>18</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/66gggH-ZJMfbO-ngPnn6.html">66gggH-ZJMfbO-ngPnn6</a></td>
-      <td>0.699653</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 1位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3yp2pU-WnlLXE-MypySy.html">3yp2pU-WnlLXE-MypySy</a></td>
+      <td>0.699327</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 5位</a></td>
     </tr>
     <tr>
       <th>19</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/f5kkfv-rgjtQo-VVdFwF.html">f5kkfv-rgjtQo-VVdFwF</a></td>
-      <td>0.697811</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480830/result">2024/09/13 カードショップ竜星のPAO　立川店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/66gggH-ZJMfbO-ngPnn6.html">66gggH-ZJMfbO-ngPnn6</a></td>
+      <td>0.699327</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 1位</a></td>
     </tr>
     <tr>
       <th>20</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M3y2yp-zByFoF-3pyyp3.html">M3y2yp-zByFoF-3pyyp3</a></td>
-      <td>0.695071</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480918/result">2024/09/29 CARDBOXメディアポリス横浜日吉本町店 2位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/f5kkfv-rgjtQo-VVdFwF.html">f5kkfv-rgjtQo-VVdFwF</a></td>
+      <td>0.698958</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480830/result">2024/09/13 カードショップ竜星のPAO　立川店 9位</a></td>
     </tr>
     <tr>
       <th>21</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/fFFwdk-G8TJu5-kV5df5.html">fFFwdk-G8TJu5-kV5df5</a></td>
-      <td>0.695071</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480832/result">2024/09/14 BOOKOFFSUPERBAZAAR町田中央通り店 1位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2MppSp-MccaU1-yM2Rpy.html">2MppSp-MccaU1-yM2Rpy</a></td>
+      <td>0.698416</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480922/result">2024/10/05 三洋堂書店　新開橋店 3位</a></td>
     </tr>
     <tr>
       <th>22</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VF5wvf-iNOAdI-k5kkFV.html">VF5wvf-iNOAdI-k5kkFV</a></td>
-      <td>0.690066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480733/result">2024/09/22 チャンピオンズリーグ2025 東京 シニアリーグ 1日目大会【2024年9月22日（日）開催】 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/fFFwdk-G8TJu5-kV5df5.html">fFFwdk-G8TJu5-kV5df5</a></td>
+      <td>0.692975</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480832/result">2024/09/14 BOOKOFFSUPERBAZAAR町田中央通り店 1位</a></td>
     </tr>
     <tr>
       <th>23</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3EX32p-InGNXa-S2ypMy.html">3EX32p-InGNXa-S2ypMy</a></td>
-      <td>0.683190</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M3y2yp-zByFoF-3pyyp3.html">M3y2yp-zByFoF-3pyyp3</a></td>
+      <td>0.692975</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480918/result">2024/09/29 CARDBOXメディアポリス横浜日吉本町店 2位</a></td>
     </tr>
     <tr>
       <th>24</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NnL6n6-0SxmFB-NPQgHn.html">NnL6n6-0SxmFB-NPQgHn</a></td>
-      <td>0.683190</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VF5wvf-iNOAdI-k5kkFV.html">VF5wvf-iNOAdI-k5kkFV</a></td>
+      <td>0.687985</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480733/result">2024/09/22 チャンピオンズリーグ2025 東京 シニアリーグ 1日目大会【2024年9月22日（日）開催】 5位</a></td>
     </tr>
     <tr>
       <th>25</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VfwFVk-jCESYc-w5kFbk.html">VfwFVk-jCESYc-w5kFbk</a></td>
-      <td>0.683190</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 3位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NnHNgL-TtkFEm-nQngHn.html">NnHNgL-TtkFEm-nQngHn</a></td>
+      <td>0.682803</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480926/result">2024/10/05 トーナメントセンターバトロコ　本厚木駅前 5位</a></td>
     </tr>
     <tr>
       <th>26</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6NgiLg-fNaT1x-nPPHNn.html">6NgiLg-fNaT1x-nPPHNn</a></td>
-      <td>0.683190</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482125/result">2024/09/14 トーナメントセンターバトロコ　吉祥寺駅前 3位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3EX32p-InGNXa-S2ypMy.html">3EX32p-InGNXa-S2ypMy</a></td>
+      <td>0.682803</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 9位</a></td>
     </tr>
     <tr>
       <th>27</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vkdf5w-nFfti5-kk5F1F.html">vkdf5w-nFfti5-kk5F1F</a></td>
-      <td>0.683067</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480760/result">2024/09/07 トレカショップKCC 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gnLnQL-A8acKo-iNHggL.html">gnLnQL-A8acKo-iNHggL</a></td>
+      <td>0.682803</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480925/result">2024/10/05 竜星の嵐　名古屋店 9位</a></td>
     </tr>
     <tr>
       <th>28</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8J484x-mnguVt-c4Kcc8.html">8J484x-mnguVt-c4Kcc8</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482186/result">2024/09/15 BOOKOFF イオン本牧店 9位</a></td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiQLHL-rExqzK-gL6n6H.html">LiQLHL-rExqzK-gL6n6H</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 3位</a></td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vkfFVV-kC39R2-F5FV5w.html">vkfFVV-kC39R2-F5FV5w</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 9位</a></td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y3yXMS-0aDaS5-pMp2py.html">y3yXMS-0aDaS5-pMp2py</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481049/result">2024/09/15 トレカショップ　ファンクス 5位</a></td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/G4D8ca-12hB5K-4cDcK4.html">G4D8ca-12hB5K-4cDcK4</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480879/result">2024/09/08 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yM23SM-FDYMz9-p2pM2M.html">yM23SM-FDYMz9-p2pM2M</a></td>
-      <td>0.680590</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482128/result">2024/09/15 トレカショップ竜のしっぽ　布施店 9位</a></td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4cacGK-4lFVVU-8xcDc8.html">4cacGK-4lFVVU-8xcDc8</a></td>
-      <td>0.674727</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 9位</a></td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gHgng6-eZTZbi-iNNHLn.html">gHgng6-eZTZbi-iNNHLn</a></td>
-      <td>0.674141</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 2位</a></td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wVF1FF-U4DltE-Fk5Fb1.html">wVF1FF-U4DltE-Fk5Fb1</a></td>
-      <td>0.673216</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 5位</a></td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gQnn9H-PP6BUR-6Lng9g.html">gQnn9H-PP6BUR-6Lng9g</a></td>
-      <td>0.671772</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481012/result">2024/09/16 ドラゴンスター日本橋3号店 9位</a></td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/88Kca4-fOrGbY-c48cYx.html">88Kca4-fOrGbY-c48cYx</a></td>
-      <td>0.671772</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481058/result">2024/09/29 オレタン福岡天神店 3位</a></td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w1Vk5F-DMxtc6-5kVVFF.html">w1Vk5F-DMxtc6-5kVVFF</a></td>
-      <td>0.669730</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480993/result">2024/09/22 チャンピオンズリーグ2025 東京 ジュニアリーグ 1日目大会【2024年9月22日（日）開催】 5位</a></td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FF5VFk-Lra1fP-wvvf55.html">FF5VFk-Lra1fP-wvvf55</a></td>
-      <td>0.666812</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482180/result">2024/09/15 BOOKOFF SUPER BAZAAR 立川駅北口店 3位</a></td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VwFVkv-W5UOOg-k5k5k5.html">VwFVkv-W5UOOg-k5k5k5</a></td>
-      <td>0.664725</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482127/result">2024/09/15 宝島　高蔵寺店 5位</a></td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5VF5F-HLr6WT-F1kfkw.html">k5VF5F-HLr6WT-F1kfkw</a></td>
-      <td>0.664725</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480883/result">2024/09/09 GIRAFULL京都店 9位</a></td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5k1Fk-BQ6YIz-Vwk1F1.html">F5k1Fk-BQ6YIz-Vwk1F1</a></td>
-      <td>0.664725</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 9位</a></td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5b1ff-mkFUZT-kfdwkF.html">F5b1ff-mkFUZT-kfdwkF</a></td>
-      <td>0.664292</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4YxK4-gTQvt4-48Ycx8.html">c4YxK4-gTQvt4-48Ycx8</a></td>
-      <td>0.661422</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482132/result">2024/09/15 フルコンプPLAYERS CENTER札幌駅前店 5位</a></td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wvkfVf-vMuDUD-FkF5kF.html">wvkfVf-vMuDUD-FkF5kF</a></td>
-      <td>0.661422</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480898/result">2024/09/15 ブックオフプラス　田富昭和通り店 9位</a></td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/U2pSE2-cE7FDU-y2M2pp.html">U2pSE2-cE7FDU-y2M2pp</a></td>
-      <td>0.660484</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 9位</a></td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5dwkF-9BiuIm-kFkVFw.html">k5dwkF-9BiuIm-kFkVFw</a></td>
-      <td>0.660286</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482122/result">2024/09/12 トーナメントセンターバトロコ　高田馬場 2位</a></td>
-    </tr>
-    <tr>
-      <th>49</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/v5k5FV-wqyBWB-FVFbVw.html">v5k5FV-wqyBWB-FVFbVw</a></td>
-      <td>0.657599</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482133/result">2024/09/16 カードショップ　海賊船-starch- 5位</a></td>
-    </tr>
-    <tr>
-      <th>50</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MyypXy-JgEM66-Ry2yU3.html">MyypXy-JgEM66-Ry2yU3</a></td>
-      <td>0.654518</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 9位</a></td>
-    </tr>
-    <tr>
-      <th>51</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/15kvFk-udyM9f-kdFkwF.html">15kvFk-udyM9f-kdFkwF</a></td>
-      <td>0.648016</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480879/result">2024/09/08 BOOKOFFSUPERBAZAARノースポート・モール店 2位</a></td>
-    </tr>
-    <tr>
-      <th>52</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8484x-uk90Qq-c88K4D.html">x8484x-uk90Qq-c88K4D</a></td>
-      <td>0.646887</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 9位</a></td>
-    </tr>
-    <tr>
-      <th>53</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2SyyE-dnuL5Q-yy3y22.html">p2SyyE-dnuL5Q-yy3y22</a></td>
-      <td>0.646887</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 5位</a></td>
-    </tr>
-    <tr>
-      <th>54</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HgQQNL-hNmt1o-6iQnng.html">HgQQNL-hNmt1o-6iQnng</a></td>
-      <td>0.643235</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480766/result">2024/09/09 トーナメントセンターバトロコ　柏駅前 9位</a></td>
-    </tr>
-    <tr>
-      <th>55</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/dvFwfF-IMY29O-FFV5kF.html">dvFwfF-IMY29O-FFV5kF</a></td>
-      <td>0.640665</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482118/result">2024/09/07 トーナメントセンターバトロコ　高田馬場 9位</a></td>
-    </tr>
-    <tr>
-      <th>56</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cc8cc4-QyF0UD-xxGc8a.html">cc8cc4-QyF0UD-xxGc8a</a></td>
-      <td>0.636984</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480783/result">2024/10/02 ドラゴンスター秋葉原駅前店 2位</a></td>
-    </tr>
-    <tr>
-      <th>57</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LLggLQ-97b1hF-nHgN6g.html">LLggLQ-97b1hF-nHgN6g</a></td>
-      <td>0.635410</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481046/result">2024/09/15 ビデオ100　徳島藍住店 3位</a></td>
-    </tr>
-    <tr>
-      <th>58</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ddFwFv-GNDJGE-Fkfw5v.html">ddFwFv-GNDJGE-Fkfw5v</a></td>
-      <td>0.635283</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481017/result">2024/09/30 竜星の嵐 十三店 9位</a></td>
-    </tr>
-    <tr>
-      <th>59</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FkwfV-cij98p-kVFkvF.html">5FkwfV-cij98p-kVFkvF</a></td>
-      <td>0.630115</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482122/result">2024/09/12 トーナメントセンターバトロコ　高田馬場 9位</a></td>
-    </tr>
-    <tr>
-      <th>60</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/EypM2M-nSn3Bq-p3ypXp.html">EypM2M-nSn3Bq-p3ypXp</a></td>
-      <td>0.629475</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481056/result">2024/09/28 遊ING　熊本上通り店 5位</a></td>
-    </tr>
-    <tr>
-      <th>61</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/py23XX-lzOOBM-23Ep2y.html">py23XX-lzOOBM-23Ep2y</a></td>
-      <td>0.627438</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480764/result">2024/09/08 トーナメントセンターバトロコ　川越駅前 9位</a></td>
-    </tr>
-    <tr>
-      <th>62</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/QggNHP-DMGK0e-gPLQ6n.html">QggNHP-DMGK0e-gPLQ6n</a></td>
-      <td>0.627127</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482128/result">2024/09/15 トレカショップ竜のしっぽ　布施店 9位</a></td>
-    </tr>
-    <tr>
-      <th>63</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RyRpyp-D6PAVB-3MS2UU.html">RyRpyp-D6PAVB-3MS2UU</a></td>
-      <td>0.626287</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482135/result">2024/09/26 竜星のPAO　大宮店 9位</a></td>
-    </tr>
-    <tr>
-      <th>64</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3M2yMM-ZDyLDF-Syp2MS.html">3M2yMM-ZDyLDF-Syp2MS</a></td>
-      <td>0.626287</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480998/result">2024/09/15 カードボックス　京都ファミリー 1位</a></td>
-    </tr>
-    <tr>
-      <th>65</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/QNnnL6-9Gd4tV-ngLHH6.html">QNnnL6-9Gd4tV-ngLHH6</a></td>
-      <td>0.626287</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480994/result">2024/09/23 チャンピオンズリーグ2025 東京 ジュニアリーグ 2日目大会【2024年9月23日（月・祝）開催】 3位</a></td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NQHPng-w8M232-n6iggn.html">NQHPng-w8M232-n6iggn</a></td>
-      <td>0.620181</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480917/result">2024/09/29 TSUTAYA三島店 1位</a></td>
-    </tr>
-    <tr>
-      <th>67</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/E3Uy22-hSw724-Sypp33.html">E3Uy22-hSw724-Sypp33</a></td>
-      <td>0.616625</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 9位</a></td>
-    </tr>
-    <tr>
-      <th>68</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5kfVk-wKyDkD-bvkF5b.html">w5kfVk-wKyDkD-bvkF5b</a></td>
-      <td>0.616625</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480889/result">2024/09/14 トーナメントセンターバトロコ新潟万代 2位</a></td>
-    </tr>
-    <tr>
-      <th>69</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ac8Kc4-Bfjmtx-xxxY88.html">ac8Kc4-Bfjmtx-xxxY88</a></td>
-      <td>0.615427</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482123/result">2024/09/14 トレカショップ竜のしっぽ　姫路店 9位</a></td>
-    </tr>
-    <tr>
-      <th>70</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2p3p2-LHjGFZ-yyyyy2.html">p2p3p2-LHjGFZ-yyyyy2</a></td>
-      <td>0.615404</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 9位</a></td>
-    </tr>
-    <tr>
-      <th>71</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Pnnig6-g3GZVz-ggHHgg.html">Pnnig6-g3GZVz-ggHHgg</a></td>
-      <td>0.614230</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480739/result">2024/09/28 WonderGOO PLUS つくば店 3位</a></td>
-    </tr>
-    <tr>
-      <th>72</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xK848x-BvR5vg-88Gxca.html">xK848x-BvR5vg-88Gxca</a></td>
-      <td>0.611807</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480919/result">2024/09/29 トレカステーション佐鳴台店 2位</a></td>
-    </tr>
-    <tr>
-      <th>73</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5FkVk-FBVRfO-bVkkw5.html">k5FkVk-FBVRfO-bVkkw5</a></td>
-      <td>0.605974</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481048/result">2024/09/15 カードキングダム　イオンタウン周南店 5位</a></td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxcx8K-9e1I5P-K4cDD8.html">cxcx8K-9e1I5P-K4cDD8</a></td>
-      <td>0.605974</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480840/result">2024/09/29 カードショップリドル京急蒲田店 5位</a></td>
-    </tr>
-    <tr>
-      <th>75</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cK8J48-41pJvp-KcxcY8.html">cK8J48-41pJvp-KcxcY8</a></td>
-      <td>0.605974</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481059/result">2024/09/29 ブックオフプラス佐賀南部バイパス店 5位</a></td>
-    </tr>
-    <tr>
-      <th>76</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dccc84-OQUtNL-x8ccx8.html">Dccc84-OQUtNL-x8ccx8</a></td>
-      <td>0.605974</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482136/result">2024/10/03 トーナメントセンターバトロコ　高田馬場 5位</a></td>
-    </tr>
-    <tr>
-      <th>77</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/pRpyU2-cuJpFr-32RXyp.html">pRpyU2-cuJpFr-32RXyp</a></td>
-      <td>0.602747</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480700/result">2024/09/28 ポケモンカードステーション・ポケモンセンターオーサカ 5位</a></td>
-    </tr>
-    <tr>
-      <th>78</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ey3y2y-GVqdUg-yyUpyy.html">Ey3y2y-GVqdUg-yyUpyy</a></td>
-      <td>0.596801</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 9位</a></td>
-    </tr>
-    <tr>
-      <th>79</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8DccGJ-zx9OKM-88D8K4.html">8DccGJ-zx9OKM-88D8K4</a></td>
-      <td>0.589910</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482118/result">2024/09/07 トーナメントセンターバトロコ　高田馬場 2位</a></td>
-    </tr>
-    <tr>
-      <th>80</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yy3pXp-oLZz5h-2SXM2p.html">yy3pXp-oLZz5h-2SXM2p</a></td>
-      <td>0.586931</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480893/result">2024/09/14 BOOKOFF　イオン橋本 5位</a></td>
-    </tr>
-    <tr>
-      <th>81</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Lg6HgQ-5bdyv3-nggNLn.html">Lg6HgQ-5bdyv3-nggNLn</a></td>
-      <td>0.586692</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 2位</a></td>
-    </tr>
-    <tr>
-      <th>82</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4JcxDx-oexzPP-JD8K88.html">4JcxDx-oexzPP-JD8K88</a></td>
-      <td>0.586692</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480993/result">2024/09/22 チャンピオンズリーグ2025 東京 ジュニアリーグ 1日目大会【2024年9月22日（日）開催】 9位</a></td>
-    </tr>
-    <tr>
-      <th>83</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wFd5Fw-e1wHdf-kk55kf.html">wFd5Fw-e1wHdf-kk55kf</a></td>
-      <td>0.586692</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480777/result">2024/09/28 TSUTAYA　津田沼店トレカコーナー 9位</a></td>
-    </tr>
-    <tr>
-      <th>84</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/g6gHL6-xxZCRV-NnLPnn.html">g6gHL6-xxZCRV-NnLPnn</a></td>
-      <td>0.586692</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480782/result">2024/09/29 カードショップ竜星のPAO千葉中央店 9位</a></td>
-    </tr>
-    <tr>
-      <th>85</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ngHQLN-bSf3aG-g96LgL.html">ngHQLN-bSf3aG-g96LgL</a></td>
-      <td>0.584090</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 9位</a></td>
-    </tr>
-    <tr>
-      <th>86</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Yccc88-xfSvpt-c4aKJK.html">Yccc88-xfSvpt-c4aKJK</a></td>
-      <td>0.582484</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481038/result">2024/09/07 カードショップ＠ほ～む。鹿児島店 9位</a></td>
-    </tr>
-    <tr>
-      <th>87</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kk55F1-WkUp9T-fFkVkw.html">kk55F1-WkUp9T-fFkVkw</a></td>
-      <td>0.579008</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480780/result">2024/09/29 TSUTAYA西友町田店 9位</a></td>
-    </tr>
-    <tr>
-      <th>88</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ySp23M-mTdJMK-MpS3p2.html">ySp23M-mTdJMK-MpS3p2</a></td>
-      <td>0.571029</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 9位</a></td>
-    </tr>
-    <tr>
-      <th>89</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wVFF5b-B6TC7G-Vkkw5f.html">wVFF5b-B6TC7G-Vkkw5f</a></td>
-      <td>0.571029</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481046/result">2024/09/15 ビデオ100　徳島藍住店 9位</a></td>
-    </tr>
-    <tr>
-      <th>90</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ng6ggL-rW4H9h-nH6i9g.html">Ng6ggL-rW4H9h-nH6i9g</a></td>
-      <td>0.569578</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
-    </tr>
-    <tr>
-      <th>91</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/844x48-iXyw4Z-xaxxYc.html">844x48-iXyw4Z-xaxxYc</a></td>
-      <td>0.567983</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 5位</a></td>
-    </tr>
-    <tr>
-      <th>92</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/1V5bkF-nxLT6b-kVFbwv.html">1V5bkF-nxLT6b-kVFbwv</a></td>
-      <td>0.566672</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480774/result">2024/09/17 トーナメントセンターバトロコ　柏駅前 9位</a></td>
-    </tr>
-    <tr>
-      <th>93</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nnHQQ6-HjBCan-g6Lggn.html">nnHQQ6-HjBCan-g6Lggn</a></td>
-      <td>0.566394</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481054/result">2024/09/28 宝島　高蔵寺店 5位</a></td>
-    </tr>
-    <tr>
-      <th>94</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yMMp3U-1EqAnl-pRpM2X.html">yMMp3U-1EqAnl-pRpM2X</a></td>
-      <td>0.566394</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
-    </tr>
-    <tr>
-      <th>95</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4Kx88-SFbtYT-D8cccx.html">c4Kx88-SFbtYT-D8cccx</a></td>
-      <td>0.566394</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482123/result">2024/09/14 トレカショップ竜のしっぽ　姫路店 5位</a></td>
-    </tr>
-    <tr>
-      <th>96</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8cY4Kc-0oF4cS-8cDcGc.html">8cY4Kc-0oF4cS-8cDcGc</a></td>
-      <td>0.565879</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481005/result">2024/09/07 BOOKOFF奈良法華寺店 9位</a></td>
-    </tr>
-    <tr>
-      <th>97</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xxYDKK-cOie4R-G8cc4c.html">xxYDKK-cOie4R-G8cc4c</a></td>
-      <td>0.565116</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480826/result">2024/09/07 BOOKOFF SUPER BAZAAR 西友大森店 9位</a></td>
-    </tr>
-    <tr>
-      <th>98</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/JJ4Kc8-J4fTiH-a88Y48.html">JJ4Kc8-J4fTiH-a88Y48</a></td>
-      <td>0.564320</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481056/result">2024/09/28 遊ING　熊本上通り店 9位</a></td>
-    </tr>
-    <tr>
-      <th>99</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/i6gnnH-LrmcpU-ggg9Q9.html">i6gnnH-LrmcpU-ggg9Q9</a></td>
-      <td>0.564320</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480873/result">2024/09/07 宝島　可児店 5位</a></td>
-    </tr>
-    <tr>
-      <th>100</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VkF5k5-NNA40g-F5VF1k.html">VkF5k5-NNA40g-F5VF1k</a></td>
-      <td>0.561790</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480920/result">2024/10/02 トーナメントセンターバトロコ　本厚木駅前 5位</a></td>
-    </tr>
-    <tr>
-      <th>101</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiL6Hn-mKIWJF-PnggnQ.html">LiL6Hn-mKIWJF-PnggnQ</a></td>
-      <td>0.561679</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480911/result">2024/09/28 【CARDBOX】Super KaBoS 二の宮本店 9位</a></td>
-    </tr>
-    <tr>
-      <th>102</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M2y2MS-Nt7P9d-pXSX32.html">M2y2MS-Nt7P9d-pXSX32</a></td>
-      <td>0.559650</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480897/result">2024/09/15 【CARDBOX】津店 3位</a></td>
-    </tr>
-    <tr>
-      <th>103</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/848K4D-mdzuGk-ccx4YY.html">848K4D-mdzuGk-ccx4YY</a></td>
-      <td>0.559133</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 5位</a></td>
-    </tr>
-    <tr>
-      <th>104</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NgQnNn-duqzvt-nHLHN6.html">NgQnNn-duqzvt-nHLHN6</a></td>
-      <td>0.559133</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480834/result">2024/09/15 カードショップリドル京急蒲田店 1位</a></td>
-    </tr>
-    <tr>
-      <th>105</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/55Ffvk-VTp9f8-vFkkwb.html">55Ffvk-VTp9f8-vFkkwb</a></td>
-      <td>0.558727</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480877/result">2024/09/07 竜星の嵐　名古屋店 1位</a></td>
-    </tr>
-    <tr>
-      <th>106</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HggnNH-hSub61-LLLn6N.html">HggnNH-hSub61-LLLn6N</a></td>
-      <td>0.554391</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481018/result">2024/10/02 BOOKOFF奈良法華寺店 2位</a></td>
-    </tr>
-    <tr>
-      <th>107</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8KcD4c-od5olx-84Y48J.html">8KcD4c-od5olx-84Y48J</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482161/result">2024/09/08 ドラゴンスター泉佐野店 2位</a></td>
-    </tr>
-    <tr>
-      <th>108</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6NLHgn-SoGgUB-g6LQgn.html">6NLHgn-SoGgUB-g6LQgn</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 5位</a></td>
-    </tr>
-    <tr>
-      <th>109</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2pREUp-LLWHiR-yMp3yX.html">2pREUp-LLWHiR-yMp3yX</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481061/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
-    </tr>
-    <tr>
-      <th>110</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5v5fwF-QjmZd4-5FFFkF.html">5v5fwF-QjmZd4-5FFFkF</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482154/result">2024/09/07 チェルモサード 5位</a></td>
-    </tr>
-    <tr>
-      <th>111</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ey3X2p-Jfw4Na-My2Uyp.html">Ey3X2p-Jfw4Na-My2Uyp</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481057/result">2024/09/29 【CARDBOX】カードボックス　福山店 3位</a></td>
-    </tr>
-    <tr>
-      <th>112</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M2yy3p-77Kt0W-3pXS2X.html">M2yy3p-77Kt0W-3pXS2X</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480767/result">2024/09/10 トーナメントセンターバトロコ　柏駅前 9位</a></td>
-    </tr>
-    <tr>
-      <th>113</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gnQQ6n-QZGTqg-PngLHL.html">gnQQ6n-QZGTqg-PngLHL</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 5位</a></td>
-    </tr>
-    <tr>
-      <th>114</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dcxx4c-LTnXSl-4K84Gc.html">Dcxx4c-LTnXSl-4K84Gc</a></td>
-      <td>0.553938</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480892/result">2024/09/14 青馬堂本店 5位</a></td>
-    </tr>
-    <tr>
-      <th>115</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8x8x4Y-SQaogz-Kcccxx.html">8x8x4Y-SQaogz-Kcccxx</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481009/result">2024/09/11 ドラゴンスター日本橋2号店 1位</a></td>
-    </tr>
-    <tr>
-      <th>116</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/niHnnn-7htB86-HgQ6QL.html">niHnnn-7htB86-HgQ6QL</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 9位</a></td>
-    </tr>
-    <tr>
-      <th>117</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/XX3M3y-SSpZ9n-2pyXpS.html">XX3M3y-SSpZ9n-2pyXpS</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 1位</a></td>
-    </tr>
-    <tr>
-      <th>118</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RpypSy-547S8y-2EyR3y.html">RpypSy-547S8y-2EyR3y</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482171/result">2024/09/29 ポケモンカードステーション・ポケモンセンターメガトウキョー 3位</a></td>
-    </tr>
-    <tr>
-      <th>119</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ngHNHH-FPR7et-niL66g.html">ngHNHH-FPR7et-niL66g</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/504581/result">2024/09/19 秋葉原チェルモ 3位</a></td>
-    </tr>
-    <tr>
-      <th>120</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/inLLng-qilg6x-NnHHn6.html">inLLng-qilg6x-NnHHn6</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480830/result">2024/09/13 カードショップ竜星のPAO　立川店 5位</a></td>
-    </tr>
-    <tr>
-      <th>121</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M22y23-98cXhI-yXMpMy.html">M22y23-98cXhI-yXMpMy</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480834/result">2024/09/15 カードショップリドル京急蒲田店 5位</a></td>
-    </tr>
-    <tr>
-      <th>122</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nL6Hng-7RCpmG-gN9nNi.html">nL6Hng-7RCpmG-gN9nNi</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481011/result">2024/09/16 竜星の嵐 十三店 1位</a></td>
-    </tr>
-    <tr>
-      <th>123</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4x8GY-3QvDIN-4cKK88.html">c4x8GY-3QvDIN-4cKK88</a></td>
-      <td>0.551699</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480906/result">2024/09/18 【CARDBOX】青馬堂矢向店 9位</a></td>
-    </tr>
-    <tr>
-      <th>124</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FwVvk5-VkXVzM-kFvkvd.html">FwVvk5-VkXVzM-kFvkvd</a></td>
-      <td>0.549987</td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NnL6n6-0SxmFB-NPQgHn.html">NnL6n6-0SxmFB-NPQgHn</a></td>
+      <td>0.682803</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 9位</a></td>
     </tr>
     <tr>
-      <th>125</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5k5VVk-LwyItc-F5wkvw.html">5k5VVk-LwyItc-F5wkvw</a></td>
-      <td>0.549987</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480898/result">2024/09/15 ブックオフプラス　田富昭和通り店 5位</a></td>
+      <th>29</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VfwFVk-jCESYc-w5kFbk.html">VfwFVk-jCESYc-w5kFbk</a></td>
+      <td>0.682803</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 3位</a></td>
     </tr>
     <tr>
-      <th>126</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxxD84-71PNVR-88Y8DK.html">cxxD84-71PNVR-88Y8DK</a></td>
-      <td>0.549109</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481010/result">2024/09/14 トレカショップ竜のしっぽ　大阪梅田店 5位</a></td>
+      <th>30</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6NgiLg-fNaT1x-nPPHNn.html">6NgiLg-fNaT1x-nPPHNn</a></td>
+      <td>0.682803</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482125/result">2024/09/14 トーナメントセンターバトロコ　吉祥寺駅前 3位</a></td>
     </tr>
     <tr>
-      <th>127</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wk5fdk-3pcS1D-Vk5F55.html">wk5fdk-3pcS1D-Vk5F55</a></td>
-      <td>0.542294</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 3位</a></td>
+      <th>31</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/G4D8ca-12hB5K-4cDcK4.html">G4D8ca-12hB5K-4cDcK4</a></td>
+      <td>0.682147</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480879/result">2024/09/08 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
     </tr>
     <tr>
-      <th>128</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcKcx8-znXEVl-4x448c.html">KcKcx8-znXEVl-4x448c</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 5位</a></td>
+      <th>32</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vkdf5w-nFfti5-kk5F1F.html">vkdf5w-nFfti5-kk5F1F</a></td>
+      <td>0.681500</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480760/result">2024/09/07 トレカショップKCC 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
     </tr>
     <tr>
-      <th>129</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/E2ypXp-Q0beZI-U3pppM.html">E2ypXp-Q0beZI-U3pppM</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480827/result">2024/09/07 ブックオフ武蔵小金井 9位</a></td>
+      <th>33</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y3yXMS-0aDaS5-pMp2py.html">y3yXMS-0aDaS5-pMp2py</a></td>
+      <td>0.680343</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481049/result">2024/09/15 トレカショップ　ファンクス 5位</a></td>
     </tr>
     <tr>
-      <th>130</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/My32M2-MVOWP6-22pyyy.html">My32M2-MVOWP6-22pyyy</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480736/result">2024/09/15 Wonder GOO　足利店 9位</a></td>
+      <th>34</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yM23SM-FDYMz9-p2pM2M.html">yM23SM-FDYMz9-p2pM2M</a></td>
+      <td>0.680343</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482128/result">2024/09/15 トレカショップ竜のしっぽ　布施店 9位</a></td>
     </tr>
     <tr>
-      <th>131</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcYYYx-nZAPZ7-48Gcax.html">KcYYYx-nZAPZ7-48Gcax</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 9位</a></td>
+      <th>35</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8J484x-mnguVt-c4Kcc8.html">8J484x-mnguVt-c4Kcc8</a></td>
+      <td>0.680343</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482186/result">2024/09/15 BOOKOFF イオン本牧店 9位</a></td>
     </tr>
     <tr>
-      <th>132</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5V5wkV-XqbRFh-kFdFvw.html">5V5wkV-XqbRFh-kFdFvw</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 3位</a></td>
+      <th>36</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiQLHL-rExqzK-gL6n6H.html">LiQLHL-rExqzK-gL6n6H</a></td>
+      <td>0.680343</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 3位</a></td>
     </tr>
     <tr>
-      <th>133</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yp23pM-mDQtnO-MMyME2.html">yp23pM-mDQtnO-MMyME2</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 9位</a></td>
+      <th>37</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vkfFVV-kC39R2-F5FV5w.html">vkfFVV-kC39R2-F5FV5w</a></td>
+      <td>0.680343</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 9位</a></td>
     </tr>
     <tr>
-      <th>134</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Qg6NLn-d6KuXO-gngHnN.html">Qg6NLn-d6KuXO-gngHnN</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 9位</a></td>
+      <th>38</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gHgng6-eZTZbi-iNNHLn.html">gHgng6-eZTZbi-iNNHLn</a></td>
+      <td>0.677400</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482130/result">2024/09/15 カードショップ　海賊船-starch- 2位</a></td>
     </tr>
     <tr>
-      <th>135</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nLnN6P-1z5qUq-nH6gHi.html">nLnN6P-1z5qUq-nH6gHi</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 9位</a></td>
-    </tr>
-    <tr>
-      <th>136</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Kaxa48-5rX6Qe-Yc8ccD.html">Kaxa48-5rX6Qe-Yc8ccD</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 3位</a></td>
-    </tr>
-    <tr>
-      <th>137</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2pEMXp-PmqNcE-3yEyXE.html">2pEMXp-PmqNcE-3yEyXE</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480907/result">2024/09/18 GIRAFULL京都店 9位</a></td>
-    </tr>
-    <tr>
-      <th>138</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yU332E-bKkvem-pXESMp.html">yU332E-bKkvem-pXESMp</a></td>
-      <td>0.541209</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480874/result">2024/09/07 トレカショップVOW 9位</a></td>
-    </tr>
-    <tr>
-      <th>139</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MypMSy-nY26OI-M232XX.html">MypMSy-nY26OI-M232XX</a></td>
-      <td>0.540062</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 9位</a></td>
-    </tr>
-    <tr>
-      <th>140</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6Hn9HL-dQdhIK-gnnNng.html">6Hn9HL-dQdhIK-gnnNng</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 9位</a></td>
-    </tr>
-    <tr>
-      <th>141</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LnQH6H-LZln2C-gLniHn.html">LnQH6H-LZln2C-gLniHn</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 5位</a></td>
-    </tr>
-    <tr>
-      <th>142</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MpM32X-pF8LyK-UypyUM.html">MpM32X-pF8LyK-UypyUM</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480892/result">2024/09/14 青馬堂本店 5位</a></td>
-    </tr>
-    <tr>
-      <th>143</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/g9ig69-JTvMY3-nHngnn.html">g9ig69-JTvMY3-nHngnn</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482154/result">2024/09/07 チェルモサード 9位</a></td>
-    </tr>
-    <tr>
-      <th>144</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kVFvVF-lKzOz9-Fwwk5v.html">kVFvVF-lKzOz9-Fwwk5v</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 9位</a></td>
-    </tr>
-    <tr>
-      <th>145</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4KcaDc-GP37vn-8KDccc.html">4KcaDc-GP37vn-8KDccc</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 5位</a></td>
-    </tr>
-    <tr>
-      <th>146</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/YcxK4D-pY8CSS-Yc88cK.html">YcxK4D-pY8CSS-Yc88cK</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482167/result">2024/09/16 Duel Stade Ganryu　ひたち野うしく店 5位</a></td>
-    </tr>
-    <tr>
-      <th>147</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nnnnPN-Ro4u8c-Hg6gni.html">nnnnPN-Ro4u8c-Hg6gni</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482170/result">2024/09/28 BOOKOFF SUPER BAZAAR 307号枚方池之宮店 2位</a></td>
-    </tr>
-    <tr>
-      <th>148</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8c4xGc-dr3jDZ-84K8Y8.html">8c4xGc-dr3jDZ-84K8Y8</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480873/result">2024/09/07 宝島　可児店 9位</a></td>
-    </tr>
-    <tr>
-      <th>149</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FVkVVF-qwOhMT-FVw5wF.html">FVkVVF-qwOhMT-FVw5wF</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480908/result">2024/09/19 トレカショップVOW 9位</a></td>
-    </tr>
-    <tr>
-      <th>150</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LLQPgH-oHmvZv-6nnQ6g.html">LLQPgH-oHmvZv-6nnQ6g</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481016/result">2024/09/29 トイコンプ高槻店 9位</a></td>
-    </tr>
-    <tr>
-      <th>151</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FkbkvF-K4A6bi-FwFd5k.html">FkbkvF-K4A6bi-FwFd5k</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480877/result">2024/09/07 竜星の嵐　名古屋店 5位</a></td>
-    </tr>
-    <tr>
-      <th>152</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/DK8cxK-qKwVFf-44Yaac.html">DK8cxK-qKwVFf-44Yaac</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480765/result">2024/09/09 TSUTAYA西友町田店 5位</a></td>
-    </tr>
-    <tr>
-      <th>153</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p23M3p-Wr7O8D-yyMMpX.html">p23M3p-Wr7O8D-yyMMpX</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 9位</a></td>
-    </tr>
-    <tr>
-      <th>154</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yEpyM3-xUpTWu-MM2XXp.html">yEpyM3-xUpTWu-MM2XXp</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480737/result">2024/09/16 シーガル　仙台駅前店 3位</a></td>
-    </tr>
-    <tr>
-      <th>155</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/23ypMy-QcqpaI-pX2yyy.html">23ypMy-QcqpaI-pX2yyy</a></td>
-      <td>0.538782</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480840/result">2024/09/29 カードショップリドル京急蒲田店 9位</a></td>
-    </tr>
-    <tr>
-      <th>156</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HHgLHP-92pEAU-NLn6Qn.html">HHgLHP-92pEAU-NLn6Qn</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
-    </tr>
-    <tr>
-      <th>157</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ccKaY4-lWPIdW-8xYGcc.html">ccKaY4-lWPIdW-8xYGcc</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 2位</a></td>
-    </tr>
-    <tr>
-      <th>158</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/pppMEp-8BCpM2-yy2pp3.html">pppMEp-8BCpM2-yy2pp3</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480875/result">2024/09/07 三洋堂書店　乙川店 3位</a></td>
-    </tr>
-    <tr>
-      <th>159</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng9LHg-c186t7-N6gHn6.html">ng9LHg-c186t7-N6gHn6</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482135/result">2024/09/26 竜星のPAO　大宮店 1位</a></td>
-    </tr>
-    <tr>
-      <th>160</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cKc8x8-XY458i-4DaaDa.html">cKc8x8-XY458i-4DaaDa</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480779/result">2024/09/28 TSUTAYA　伊奈店 3位</a></td>
-    </tr>
-    <tr>
-      <th>161</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5FfFF-aTGYtT-wkdFkf.html">w5FfFF-aTGYtT-wkdFkf</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480782/result">2024/09/29 カードショップ竜星のPAO千葉中央店 5位</a></td>
-    </tr>
-    <tr>
-      <th>162</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8KDJcc-N83lP1-G4JD8Y.html">8KDJcc-N83lP1-G4JD8Y</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482187/result">2024/09/28 バトロコミニ苫小牧バイパス店 9位</a></td>
-    </tr>
-    <tr>
-      <th>163</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/1wFV5k-aNnBSa-fk5bFf.html">1wFV5k-aNnBSa-fk5bFf</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480841/result">2024/09/29 トーナメントセンターバトロコ　横浜伊勢佐木町 9位</a></td>
-    </tr>
-    <tr>
-      <th>164</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5fV1FF-avdO2M-wVwkkf.html">5fV1FF-avdO2M-wVwkkf</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480883/result">2024/09/09 GIRAFULL京都店 9位</a></td>
-    </tr>
-    <tr>
-      <th>165</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/9HHgQn-AOCbFK-LHL6Hg.html">9HHgQn-AOCbFK-LHL6Hg</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 3位</a></td>
-    </tr>
-    <tr>
-      <th>166</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxca4c-R3PCw6-4c8K84.html">cxca4c-R3PCw6-4c8K84</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480778/result">2024/09/28 蔦屋書店　茂原店 2位</a></td>
-    </tr>
-    <tr>
-      <th>167</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5Fkkwd-vLrJza-F5kdVV.html">5Fkkwd-vLrJza-F5kdVV</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480915/result">2024/09/29 宝島　長久手店 9位</a></td>
-    </tr>
-    <tr>
-      <th>168</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/SySMpp-69xt9h-2U2yy3.html">SySMpp-69xt9h-2U2yy3</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 5位</a></td>
-    </tr>
-    <tr>
-      <th>169</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NnnHQH-6QIXjv-nNn6gH.html">NnnHQH-6QIXjv-nNn6gH</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 5位</a></td>
-    </tr>
-    <tr>
-      <th>170</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MM3ySM-JYmXcY-3ppM22.html">MM3ySM-JYmXcY-3ppM22</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480897/result">2024/09/15 【CARDBOX】津店 9位</a></td>
-    </tr>
-    <tr>
-      <th>171</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FfbFV-nkBYUf-Fw1wFk.html">5FfbFV-nkBYUf-Fw1wFk</a></td>
-      <td>0.537066</td>
+      <th>39</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4cacGK-4lFVVU-8xcDc8.html">4cacGK-4lFVVU-8xcDc8</a></td>
+      <td>0.674587</td>
       <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 9位</a></td>
     </tr>
     <tr>
-      <th>172</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kwVfFw-wpZymw-F5fF5f.html">kwVfFw-wpZymw-F5fF5f</a></td>
-      <td>0.537066</td>
+      <th>40</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/88Kca4-fOrGbY-c48cYx.html">88Kca4-fOrGbY-c48cYx</a></td>
+      <td>0.671855</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481058/result">2024/09/29 オレタン福岡天神店 3位</a></td>
+    </tr>
+    <tr>
+      <th>41</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gQnn9H-PP6BUR-6Lng9g.html">gQnn9H-PP6BUR-6Lng9g</a></td>
+      <td>0.671855</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481012/result">2024/09/16 ドラゴンスター日本橋3号店 9位</a></td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wVF1FF-U4DltE-Fk5Fb1.html">wVF1FF-U4DltE-Fk5Fb1</a></td>
+      <td>0.671842</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 1位</a><br><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 5位</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w1Vk5F-DMxtc6-5kVVFF.html">w1Vk5F-DMxtc6-5kVVFF</a></td>
+      <td>0.669515</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480993/result">2024/09/22 チャンピオンズリーグ2025 東京 ジュニアリーグ 1日目大会【2024年9月22日（日）開催】 5位</a></td>
+    </tr>
+    <tr>
+      <th>44</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FF5VFk-Lra1fP-wvvf55.html">FF5VFk-Lra1fP-wvvf55</a></td>
+      <td>0.666759</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482180/result">2024/09/15 BOOKOFF SUPER BAZAAR 立川駅北口店 3位</a></td>
+    </tr>
+    <tr>
+      <th>45</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5b1ff-mkFUZT-kfdwkF.html">F5b1ff-mkFUZT-kfdwkF</a></td>
+      <td>0.664209</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
+    </tr>
+    <tr>
+      <th>46</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5dwkF-9BiuIm-kFkVFw.html">k5dwkF-9BiuIm-kFkVFw</a></td>
+      <td>0.663647</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482122/result">2024/09/12 トーナメントセンターバトロコ　高田馬場 2位</a></td>
+    </tr>
+    <tr>
+      <th>47</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4YxK4-gTQvt4-48Ycx8.html">c4YxK4-gTQvt4-48Ycx8</a></td>
+      <td>0.663218</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482132/result">2024/09/15 フルコンプPLAYERS CENTER札幌駅前店 5位</a></td>
+    </tr>
+    <tr>
+      <th>48</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wvkfVf-vMuDUD-FkF5kF.html">wvkfVf-vMuDUD-FkF5kF</a></td>
+      <td>0.663218</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480898/result">2024/09/15 ブックオフプラス　田富昭和通り店 9位</a></td>
+    </tr>
+    <tr>
+      <th>49</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VwFVkv-W5UOOg-k5k5k5.html">VwFVkv-W5UOOg-k5k5k5</a></td>
+      <td>0.662721</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482127/result">2024/09/15 宝島　高蔵寺店 5位</a></td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5VF5F-HLr6WT-F1kfkw.html">k5VF5F-HLr6WT-F1kfkw</a></td>
+      <td>0.662721</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480883/result">2024/09/09 GIRAFULL京都店 9位</a></td>
     </tr>
     <tr>
-      <th>173</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Vkk55F-Ffrd2G-F1Vkfb.html">Vkk55F-Ffrd2G-F1Vkfb</a></td>
-      <td>0.537066</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+      <th>51</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5k1Fk-BQ6YIz-Vwk1F1.html">F5k1Fk-BQ6YIz-Vwk1F1</a></td>
+      <td>0.662721</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 9位</a></td>
     </tr>
     <tr>
-      <th>174</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ppySMp-ovvWuG-M3yX2S.html">ppySMp-ovvWuG-M3yX2S</a></td>
-      <td>0.537066</td>
+      <th>52</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/U2pSE2-cE7FDU-y2M2pp.html">U2pSE2-cE7FDU-y2M2pp</a></td>
+      <td>0.658493</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 9位</a></td>
+    </tr>
+    <tr>
+      <th>53</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/v5k5FV-wqyBWB-FVFbVw.html">v5k5FV-wqyBWB-FVFbVw</a></td>
+      <td>0.657561</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482133/result">2024/09/16 カードショップ　海賊船-starch- 5位</a></td>
+    </tr>
+    <tr>
+      <th>54</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MyypXy-JgEM66-Ry2yU3.html">MyypXy-JgEM66-Ry2yU3</a></td>
+      <td>0.652544</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 9位</a></td>
+    </tr>
+    <tr>
+      <th>55</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2SyyE-dnuL5Q-yy3y22.html">p2SyyE-dnuL5Q-yy3y22</a></td>
+      <td>0.646909</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 5位</a></td>
+    </tr>
+    <tr>
+      <th>56</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8484x-uk90Qq-c88K4D.html">x8484x-uk90Qq-c88K4D</a></td>
+      <td>0.646909</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 9位</a></td>
+    </tr>
+    <tr>
+      <th>57</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/15kvFk-udyM9f-kdFkwF.html">15kvFk-udyM9f-kdFkwF</a></td>
+      <td>0.646573</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480879/result">2024/09/08 BOOKOFFSUPERBAZAARノースポート・モール店 2位</a></td>
+    </tr>
+    <tr>
+      <th>58</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HgQQNL-hNmt1o-6iQnng.html">HgQQNL-hNmt1o-6iQnng</a></td>
+      <td>0.643143</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480766/result">2024/09/09 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/iLLNgn-fUbYaP-nHgHHN.html">iLLNgn-fUbYaP-nHgHHN</a></td>
+      <td>0.643093</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480922/result">2024/10/05 三洋堂書店　新開橋店 9位</a></td>
+    </tr>
+    <tr>
+      <th>60</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cc8cc4-QyF0UD-xxGc8a.html">cc8cc4-QyF0UD-xxGc8a</a></td>
+      <td>0.640355</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480783/result">2024/10/02 ドラゴンスター秋葉原駅前店 2位</a></td>
+    </tr>
+    <tr>
+      <th>61</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/dvFwfF-IMY29O-FFV5kF.html">dvFwfF-IMY29O-FFV5kF</a></td>
+      <td>0.638734</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482118/result">2024/09/07 トーナメントセンターバトロコ　高田馬場 9位</a></td>
+    </tr>
+    <tr>
+      <th>62</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/EypM2M-nSn3Bq-p3ypXp.html">EypM2M-nSn3Bq-p3ypXp</a></td>
+      <td>0.634271</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481056/result">2024/09/28 遊ING　熊本上通り店 5位</a></td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LLggLQ-97b1hF-nHgN6g.html">LLggLQ-97b1hF-nHgN6g</a></td>
+      <td>0.633494</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481046/result">2024/09/15 ビデオ100　徳島藍住店 3位</a></td>
+    </tr>
+    <tr>
+      <th>64</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ddFwFv-GNDJGE-Fkfw5v.html">ddFwFv-GNDJGE-Fkfw5v</a></td>
+      <td>0.633368</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481017/result">2024/09/30 竜星の嵐 十三店 9位</a></td>
+    </tr>
+    <tr>
+      <th>65</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/QggNHP-DMGK0e-gPLQ6n.html">QggNHP-DMGK0e-gPLQ6n</a></td>
+      <td>0.631800</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482128/result">2024/09/15 トレカショップ竜のしっぽ　布施店 9位</a></td>
+    </tr>
+    <tr>
+      <th>66</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RyRpyp-D6PAVB-3MS2UU.html">RyRpyp-D6PAVB-3MS2UU</a></td>
+      <td>0.629751</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482135/result">2024/09/26 竜星のPAO　大宮店 9位</a></td>
+    </tr>
+    <tr>
+      <th>67</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/3M2yMM-ZDyLDF-Syp2MS.html">3M2yMM-ZDyLDF-Syp2MS</a></td>
+      <td>0.629751</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480998/result">2024/09/15 カードボックス　京都ファミリー 1位</a></td>
+    </tr>
+    <tr>
+      <th>68</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ngQLnP-1vWM2c-HHHNgL.html">ngQLnP-1vWM2c-HHHNgL</a></td>
+      <td>0.629751</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480705/result">2024/10/05 ポケモンカードステーション・ポケモンセンターメガトウキョー 5位</a></td>
+    </tr>
+    <tr>
+      <th>69</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FkwfV-cij98p-kVFkvF.html">5FkwfV-cij98p-kVFkvF</a></td>
+      <td>0.628215</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482122/result">2024/09/12 トーナメントセンターバトロコ　高田馬場 9位</a></td>
+    </tr>
+    <tr>
+      <th>70</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/py23XX-lzOOBM-23Ep2y.html">py23XX-lzOOBM-23Ep2y</a></td>
+      <td>0.625977</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480764/result">2024/09/08 トーナメントセンターバトロコ　川越駅前 9位</a></td>
+    </tr>
+    <tr>
+      <th>71</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5kfVk-wKyDkD-bvkF5b.html">w5kfVk-wKyDkD-bvkF5b</a></td>
+      <td>0.621393</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480889/result">2024/09/14 トーナメントセンターバトロコ新潟万代 2位</a></td>
+    </tr>
+    <tr>
+      <th>72</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/E3Uy22-hSw724-Sypp33.html">E3Uy22-hSw724-Sypp33</a></td>
+      <td>0.621393</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480781/result">2024/09/29 バトロコミニ前橋文京店 9位</a></td>
+    </tr>
+    <tr>
+      <th>73</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/pySSyy-cWiVbk-ppy22M.html">pySSyy-cWiVbk-ppy22M</a></td>
+      <td>0.620752</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480742/result">2024/10/05 カードゲームのシーガル郡山店 9位</a></td>
+    </tr>
+    <tr>
+      <th>74</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ac8Kc4-Bfjmtx-xxxY88.html">ac8Kc4-Bfjmtx-xxxY88</a></td>
+      <td>0.618985</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482123/result">2024/09/14 トレカショップ竜のしっぽ　姫路店 9位</a></td>
+    </tr>
+    <tr>
+      <th>75</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2EyppU-MN2LGd-2ppMSS.html">2EyppU-MN2LGd-2ppMSS</a></td>
+      <td>0.618985</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480846/result">2024/10/05 BOOKOFFSUPERBAZAAR町田中央通り店 9位</a></td>
+    </tr>
+    <tr>
+      <th>76</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NQHPng-w8M232-n6iggn.html">NQHPng-w8M232-n6iggn</a></td>
+      <td>0.618311</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480917/result">2024/09/29 TSUTAYA三島店 1位</a></td>
+    </tr>
+    <tr>
+      <th>77</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xK848x-BvR5vg-88Gxca.html">xK848x-BvR5vg-88Gxca</a></td>
+      <td>0.617181</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480919/result">2024/09/29 トレカステーション佐鳴台店 2位</a></td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Pnnig6-g3GZVz-ggHHgg.html">Pnnig6-g3GZVz-ggHHgg</a></td>
+      <td>0.616217</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480739/result">2024/09/28 WonderGOO PLUS つくば店 3位</a></td>
+    </tr>
+    <tr>
+      <th>79</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2p3p2-LHjGFZ-yyyyy2.html">p2p3p2-LHjGFZ-yyyyy2</a></td>
+      <td>0.613548</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 9位</a></td>
+    </tr>
+    <tr>
+      <th>80</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/k5FkVk-FBVRfO-bVkkw5.html">k5FkVk-FBVRfO-bVkkw5</a></td>
+      <td>0.610841</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481048/result">2024/09/15 カードキングダム　イオンタウン周南店 5位</a></td>
+    </tr>
+    <tr>
+      <th>81</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxcx8K-9e1I5P-K4cDD8.html">cxcx8K-9e1I5P-K4cDD8</a></td>
+      <td>0.610841</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480840/result">2024/09/29 カードショップリドル京急蒲田店 5位</a></td>
+    </tr>
+    <tr>
+      <th>82</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cK8J48-41pJvp-KcxcY8.html">cK8J48-41pJvp-KcxcY8</a></td>
+      <td>0.610841</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481059/result">2024/09/29 ブックオフプラス佐賀南部バイパス店 5位</a></td>
+    </tr>
+    <tr>
+      <th>83</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dccc84-OQUtNL-x8ccx8.html">Dccc84-OQUtNL-x8ccx8</a></td>
+      <td>0.610841</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482136/result">2024/10/03 トーナメントセンターバトロコ　高田馬場 5位</a></td>
+    </tr>
+    <tr>
+      <th>84</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yE2yyM-XYDOk2-3ypySp.html">yE2yyM-XYDOk2-3ypySp</a></td>
+      <td>0.605294</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480704/result">2024/10/05 ポケモンカードステーション・ポケモンセンタートウキョーベイ 2位</a></td>
+    </tr>
+    <tr>
+      <th>85</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/pRpyU2-cuJpFr-32RXyp.html">pRpyU2-cuJpFr-32RXyp</a></td>
+      <td>0.601121</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480700/result">2024/09/28 ポケモンカードステーション・ポケモンセンターオーサカ 5位</a></td>
+    </tr>
+    <tr>
+      <th>86</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/a8xcca-SfklMA-G4Y8Yc.html">a8xcca-SfklMA-G4Y8Yc</a></td>
+      <td>0.598880</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481066/result">2024/10/05 シティリーグ出張版in東京（ジュニアリーグ）/TOC有明 5位</a></td>
+    </tr>
+    <tr>
+      <th>87</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ey3y2y-GVqdUg-yyUpyy.html">Ey3y2y-GVqdUg-yyUpyy</a></td>
+      <td>0.598791</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 9位</a></td>
+    </tr>
+    <tr>
+      <th>88</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wFVwf5-fOl9IF-VfwkF5.html">wFVwf5-fOl9IF-VfwkF5</a></td>
+      <td>0.591685</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480845/result">2024/10/05 BOOKOFF SUPER BAZAAR 西友大森店 5位</a></td>
+    </tr>
+    <tr>
+      <th>89</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4JcxDx-oexzPP-JD8K88.html">4JcxDx-oexzPP-JD8K88</a></td>
+      <td>0.591685</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480993/result">2024/09/22 チャンピオンズリーグ2025 東京 ジュニアリーグ 1日目大会【2024年9月22日（日）開催】 9位</a></td>
+    </tr>
+    <tr>
+      <th>90</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wFd5Fw-e1wHdf-kk55kf.html">wFd5Fw-e1wHdf-kk55kf</a></td>
+      <td>0.591685</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480777/result">2024/09/28 TSUTAYA　津田沼店トレカコーナー 9位</a></td>
+    </tr>
+    <tr>
+      <th>91</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/g6gHL6-xxZCRV-NnLPnn.html">g6gHL6-xxZCRV-NnLPnn</a></td>
+      <td>0.591685</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480782/result">2024/09/29 カードショップ竜星のPAO千葉中央店 9位</a></td>
+    </tr>
+    <tr>
+      <th>92</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Lg6HgQ-5bdyv3-nggNLn.html">Lg6HgQ-5bdyv3-nggNLn</a></td>
+      <td>0.591685</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 2位</a></td>
+    </tr>
+    <tr>
+      <th>93</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8DccGJ-zx9OKM-88D8K4.html">8DccGJ-zx9OKM-88D8K4</a></td>
+      <td>0.588319</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482118/result">2024/09/07 トーナメントセンターバトロコ　高田馬場 2位</a></td>
+    </tr>
+    <tr>
+      <th>94</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yy3pXp-oLZz5h-2SXM2p.html">yy3pXp-oLZz5h-2SXM2p</a></td>
+      <td>0.585499</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480893/result">2024/09/14 BOOKOFF　イオン橋本 5位</a></td>
+    </tr>
+    <tr>
+      <th>95</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ngHQLN-bSf3aG-g96LgL.html">ngHQLN-bSf3aG-g96LgL</a></td>
+      <td>0.582329</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 9位</a></td>
+    </tr>
+    <tr>
+      <th>96</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Yccc88-xfSvpt-c4aKJK.html">Yccc88-xfSvpt-c4aKJK</a></td>
+      <td>0.580956</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481038/result">2024/09/07 カードショップ＠ほ～む。鹿児島店 9位</a></td>
+    </tr>
+    <tr>
+      <th>97</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kk55F1-WkUp9T-fFkVkw.html">kk55F1-WkUp9T-fFkVkw</a></td>
+      <td>0.577596</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480780/result">2024/09/29 TSUTAYA西友町田店 9位</a></td>
+    </tr>
+    <tr>
+      <th>98</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wVFF5b-B6TC7G-Vkkw5f.html">wVFF5b-B6TC7G-Vkkw5f</a></td>
+      <td>0.569360</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481046/result">2024/09/15 ビデオ100　徳島藍住店 9位</a></td>
+    </tr>
+    <tr>
+      <th>99</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ySp23M-mTdJMK-MpS3p2.html">ySp23M-mTdJMK-MpS3p2</a></td>
+      <td>0.569360</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 9位</a></td>
+    </tr>
+    <tr>
+      <th>100</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ng6ggL-rW4H9h-nH6i9g.html">Ng6ggL-rW4H9h-nH6i9g</a></td>
+      <td>0.568042</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480829/result">2024/09/09 秋葉原チェルモ 9位</a></td>
+    </tr>
+    <tr>
+      <th>101</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/844x48-iXyw4Z-xaxxYc.html">844x48-iXyw4Z-xaxxYc</a></td>
+      <td>0.566270</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 5位</a></td>
+    </tr>
+    <tr>
+      <th>102</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/1V5bkF-nxLT6b-kVFbwv.html">1V5bkF-nxLT6b-kVFbwv</a></td>
+      <td>0.565009</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480774/result">2024/09/17 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+    </tr>
+    <tr>
+      <th>103</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yMMp3U-1EqAnl-pRpM2X.html">yMMp3U-1EqAnl-pRpM2X</a></td>
+      <td>0.564686</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
+    </tr>
+    <tr>
+      <th>104</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nnHQQ6-HjBCan-g6Lggn.html">nnHQQ6-HjBCan-g6Lggn</a></td>
+      <td>0.564686</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481054/result">2024/09/28 宝島　高蔵寺店 5位</a></td>
+    </tr>
+    <tr>
+      <th>105</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4Kx88-SFbtYT-D8cccx.html">c4Kx88-SFbtYT-D8cccx</a></td>
+      <td>0.564686</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482123/result">2024/09/14 トレカショップ竜のしっぽ　姫路店 5位</a></td>
+    </tr>
+    <tr>
+      <th>106</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8cY4Kc-0oF4cS-8cDcGc.html">8cY4Kc-0oF4cS-8cDcGc</a></td>
+      <td>0.564263</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481005/result">2024/09/07 BOOKOFF奈良法華寺店 9位</a></td>
+    </tr>
+    <tr>
+      <th>107</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xxYDKK-cOie4R-G8cc4c.html">xxYDKK-cOie4R-G8cc4c</a></td>
+      <td>0.563591</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480826/result">2024/09/07 BOOKOFF SUPER BAZAAR 西友大森店 9位</a></td>
+    </tr>
+    <tr>
+      <th>108</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/JJ4Kc8-J4fTiH-a88Y48.html">JJ4Kc8-J4fTiH-a88Y48</a></td>
+      <td>0.562618</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481056/result">2024/09/28 遊ING　熊本上通り店 9位</a></td>
+    </tr>
+    <tr>
+      <th>109</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8YccYx-K96xES-c8xY4G.html">8YccYx-K96xES-c8xY4G</a></td>
+      <td>0.562618</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480847/result">2024/10/05 カードショップ竜星のPAO町田店 3位</a></td>
+    </tr>
+    <tr>
+      <th>110</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/i6gnnH-LrmcpU-ggg9Q9.html">i6gnnH-LrmcpU-ggg9Q9</a></td>
+      <td>0.562618</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480873/result">2024/09/07 宝島　可児店 5位</a></td>
+    </tr>
+    <tr>
+      <th>111</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LiL6Hn-mKIWJF-PnggnQ.html">LiL6Hn-mKIWJF-PnggnQ</a></td>
+      <td>0.560308</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480911/result">2024/09/28 【CARDBOX】Super KaBoS 二の宮本店 9位</a></td>
+    </tr>
+    <tr>
+      <th>112</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VkF5k5-NNA40g-F5VF1k.html">VkF5k5-NNA40g-F5VF1k</a></td>
+      <td>0.560096</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480920/result">2024/10/02 トーナメントセンターバトロコ　本厚木駅前 5位</a></td>
+    </tr>
+    <tr>
+      <th>113</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M2y2MS-Nt7P9d-pXSX32.html">M2y2MS-Nt7P9d-pXSX32</a></td>
+      <td>0.557962</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480897/result">2024/09/15 【CARDBOX】津店 3位</a></td>
+    </tr>
+    <tr>
+      <th>114</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NgQnNn-duqzvt-nHLHN6.html">NgQnNn-duqzvt-nHLHN6</a></td>
+      <td>0.557499</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480834/result">2024/09/15 カードショップリドル京急蒲田店 1位</a></td>
+    </tr>
+    <tr>
+      <th>115</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/848K4D-mdzuGk-ccx4YY.html">848K4D-mdzuGk-ccx4YY</a></td>
+      <td>0.557499</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 5位</a></td>
+    </tr>
+    <tr>
+      <th>116</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/55Ffvk-VTp9f8-vFkkwb.html">55Ffvk-VTp9f8-vFkkwb</a></td>
+      <td>0.557220</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480877/result">2024/09/07 竜星の嵐　名古屋店 1位</a></td>
+    </tr>
+    <tr>
+      <th>117</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HggnNH-hSub61-LLLn6N.html">HggnNH-hSub61-LLLn6N</a></td>
+      <td>0.552719</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481018/result">2024/10/02 BOOKOFF奈良法華寺店 2位</a></td>
+    </tr>
+    <tr>
+      <th>118</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2pREUp-LLWHiR-yMp3yX.html">2pREUp-LLWHiR-yMp3yX</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481061/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5v5fwF-QjmZd4-5FFFkF.html">5v5fwF-QjmZd4-5FFFkF</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482154/result">2024/09/07 チェルモサード 5位</a></td>
+    </tr>
+    <tr>
+      <th>120</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8KcD4c-od5olx-84Y48J.html">8KcD4c-od5olx-84Y48J</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482161/result">2024/09/08 ドラゴンスター泉佐野店 2位</a></td>
+    </tr>
+    <tr>
+      <th>121</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ey3X2p-Jfw4Na-My2Uyp.html">Ey3X2p-Jfw4Na-My2Uyp</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481057/result">2024/09/29 【CARDBOX】カードボックス　福山店 3位</a></td>
+    </tr>
+    <tr>
+      <th>122</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gnQQ6n-QZGTqg-PngLHL.html">gnQQ6n-QZGTqg-PngLHL</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 5位</a></td>
+    </tr>
+    <tr>
+      <th>123</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M2yy3p-77Kt0W-3pXS2X.html">M2yy3p-77Kt0W-3pXS2X</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480767/result">2024/09/10 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+    </tr>
+    <tr>
+      <th>124</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6NLHgn-SoGgUB-g6LQgn.html">6NLHgn-SoGgUB-g6LQgn</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 5位</a></td>
+    </tr>
+    <tr>
+      <th>125</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Dcxx4c-LTnXSl-4K84Gc.html">Dcxx4c-LTnXSl-4K84Gc</a></td>
+      <td>0.552267</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480892/result">2024/09/14 青馬堂本店 5位</a></td>
+    </tr>
+    <tr>
+      <th>126</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ngHNHH-FPR7et-niL66g.html">ngHNHH-FPR7et-niL66g</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/504581/result">2024/09/19 秋葉原チェルモ 3位</a></td>
+    </tr>
+    <tr>
+      <th>127</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nL6Hng-7RCpmG-gN9nNi.html">nL6Hng-7RCpmG-gN9nNi</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481011/result">2024/09/16 竜星の嵐 十三店 1位</a></td>
+    </tr>
+    <tr>
+      <th>128</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8x8x4Y-SQaogz-Kcccxx.html">8x8x4Y-SQaogz-Kcccxx</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481009/result">2024/09/11 ドラゴンスター日本橋2号店 1位</a></td>
+    </tr>
+    <tr>
+      <th>129</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/M22y23-98cXhI-yXMpMy.html">M22y23-98cXhI-yXMpMy</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480834/result">2024/09/15 カードショップリドル京急蒲田店 5位</a></td>
+    </tr>
+    <tr>
+      <th>130</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ypy2M2-HNXPnP-33SMpp.html">ypy2M2-HNXPnP-33SMpp</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480845/result">2024/10/05 BOOKOFF SUPER BAZAAR 西友大森店 5位</a></td>
+    </tr>
+    <tr>
+      <th>131</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RpypSy-547S8y-2EyR3y.html">RpypSy-547S8y-2EyR3y</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482171/result">2024/09/29 ポケモンカードステーション・ポケモンセンターメガトウキョー 3位</a></td>
+    </tr>
+    <tr>
+      <th>132</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/niHnnn-7htB86-HgQ6QL.html">niHnnn-7htB86-HgQ6QL</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 9位</a></td>
+    </tr>
+    <tr>
+      <th>133</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/c4x8GY-3QvDIN-4cKK88.html">c4x8GY-3QvDIN-4cKK88</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480906/result">2024/09/18 【CARDBOX】青馬堂矢向店 9位</a></td>
+    </tr>
+    <tr>
+      <th>134</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/inLLng-qilg6x-NnHHn6.html">inLLng-qilg6x-NnHHn6</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480830/result">2024/09/13 カードショップ竜星のPAO　立川店 5位</a></td>
+    </tr>
+    <tr>
+      <th>135</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/XX3M3y-SSpZ9n-2pyXpS.html">XX3M3y-SSpZ9n-2pyXpS</a></td>
+      <td>0.550035</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 1位</a></td>
+    </tr>
+    <tr>
+      <th>136</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FwVvk5-VkXVzM-kFvkvd.html">FwVvk5-VkXVzM-kFvkvd</a></td>
+      <td>0.548328</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480902/result">2024/09/16 ブックオフ港北綱島西店 9位</a></td>
+    </tr>
+    <tr>
+      <th>137</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5k5VVk-LwyItc-F5wkvw.html">5k5VVk-LwyItc-F5wkvw</a></td>
+      <td>0.548328</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480898/result">2024/09/15 ブックオフプラス　田富昭和通り店 5位</a></td>
+    </tr>
+    <tr>
+      <th>138</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxxD84-71PNVR-88Y8DK.html">cxxD84-71PNVR-88Y8DK</a></td>
+      <td>0.547453</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481010/result">2024/09/14 トレカショップ竜のしっぽ　大阪梅田店 5位</a></td>
+    </tr>
+    <tr>
+      <th>139</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/fFVdkv-VZeomb-wkV5Fk.html">fFVdkv-VZeomb-wkV5Fk</a></td>
+      <td>0.541983</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480846/result">2024/10/05 BOOKOFFSUPERBAZAAR町田中央通り店 3位</a></td>
+    </tr>
+    <tr>
+      <th>140</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wk5fdk-3pcS1D-Vk5F55.html">wk5fdk-3pcS1D-Vk5F55</a></td>
+      <td>0.540831</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480914/result">2024/09/28 青馬堂本店 3位</a></td>
+    </tr>
+    <tr>
+      <th>141</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/xYacKc-A9XVRC-8cx488.html">xYacKc-A9XVRC-8cx488</a></td>
+      <td>0.539617</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482181/result">2024/10/05 TSUTAYA　JR尼崎駅前店 9位</a></td>
+    </tr>
+    <tr>
+      <th>142</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Kaxa48-5rX6Qe-Yc8ccD.html">Kaxa48-5rX6Qe-Yc8ccD</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480882/result">2024/09/08 トレカステーション領家店 3位</a></td>
+    </tr>
+    <tr>
+      <th>143</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcKcx8-znXEVl-4x448c.html">KcKcx8-znXEVl-4x448c</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 5位</a></td>
+    </tr>
+    <tr>
+      <th>144</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/E2ypXp-Q0beZI-U3pppM.html">E2ypXp-Q0beZI-U3pppM</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480827/result">2024/09/07 ブックオフ武蔵小金井 9位</a></td>
+    </tr>
+    <tr>
+      <th>145</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcYYYx-nZAPZ7-48Gcax.html">KcYYYx-nZAPZ7-48Gcax</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 9位</a></td>
+    </tr>
+    <tr>
+      <th>146</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5V5wkV-XqbRFh-kFdFvw.html">5V5wkV-XqbRFh-kFdFvw</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482131/result">2024/09/15 Wonder GOO　入間店 3位</a></td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Qg6NLn-d6KuXO-gngHnN.html">Qg6NLn-d6KuXO-gngHnN</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 9位</a></td>
+    </tr>
+    <tr>
+      <th>148</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/My32M2-MVOWP6-22pyyy.html">My32M2-MVOWP6-22pyyy</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480736/result">2024/09/15 Wonder GOO　足利店 9位</a></td>
+    </tr>
+    <tr>
+      <th>149</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yU332E-bKkvem-pXESMp.html">yU332E-bKkvem-pXESMp</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480874/result">2024/09/07 トレカショップVOW 9位</a></td>
+    </tr>
+    <tr>
+      <th>150</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yp23pM-mDQtnO-MMyME2.html">yp23pM-mDQtnO-MMyME2</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 9位</a></td>
+    </tr>
+    <tr>
+      <th>151</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2pEMXp-PmqNcE-3yEyXE.html">2pEMXp-PmqNcE-3yEyXE</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480907/result">2024/09/18 GIRAFULL京都店 9位</a></td>
+    </tr>
+    <tr>
+      <th>152</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nLnN6P-1z5qUq-nH6gHi.html">nLnN6P-1z5qUq-nH6gHi</a></td>
+      <td>0.539578</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481015/result">2024/09/28 ドラゴンスター日本橋3号店 9位</a></td>
+    </tr>
+    <tr>
+      <th>153</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MypMSy-nY26OI-M232XX.html">MypMSy-nY26OI-M232XX</a></td>
+      <td>0.538433</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 9位</a></td>
+    </tr>
+    <tr>
+      <th>154</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6Hn9HL-dQdhIK-gnnNng.html">6Hn9HL-dQdhIK-gnnNng</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 9位</a></td>
+    </tr>
+    <tr>
+      <th>155</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LLQPgH-oHmvZv-6nnQ6g.html">LLQPgH-oHmvZv-6nnQ6g</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481016/result">2024/09/29 トイコンプ高槻店 9位</a></td>
+    </tr>
+    <tr>
+      <th>156</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LnQH6H-LZln2C-gLniHn.html">LnQH6H-LZln2C-gLniHn</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 5位</a></td>
+    </tr>
+    <tr>
+      <th>157</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8c4xGc-dr3jDZ-84K8Y8.html">8c4xGc-dr3jDZ-84K8Y8</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480873/result">2024/09/07 宝島　可児店 9位</a></td>
+    </tr>
+    <tr>
+      <th>158</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yEpyM3-xUpTWu-MM2XXp.html">yEpyM3-xUpTWu-MM2XXp</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480737/result">2024/09/16 シーガル　仙台駅前店 3位</a></td>
+    </tr>
+    <tr>
+      <th>159</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FkbkvF-K4A6bi-FwFd5k.html">FkbkvF-K4A6bi-FwFd5k</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480877/result">2024/09/07 竜星の嵐　名古屋店 5位</a></td>
+    </tr>
+    <tr>
+      <th>160</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/DK8cxK-qKwVFf-44Yaac.html">DK8cxK-qKwVFf-44Yaac</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480765/result">2024/09/09 TSUTAYA西友町田店 5位</a></td>
+    </tr>
+    <tr>
+      <th>161</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/YcxK4D-pY8CSS-Yc88cK.html">YcxK4D-pY8CSS-Yc88cK</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482167/result">2024/09/16 Duel Stade Ganryu　ひたち野うしく店 5位</a></td>
+    </tr>
+    <tr>
+      <th>162</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MpM32X-pF8LyK-UypyUM.html">MpM32X-pF8LyK-UypyUM</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480892/result">2024/09/14 青馬堂本店 5位</a></td>
+    </tr>
+    <tr>
+      <th>163</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kVFvVF-lKzOz9-Fwwk5v.html">kVFvVF-lKzOz9-Fwwk5v</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 9位</a></td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nnnnPN-Ro4u8c-Hg6gni.html">nnnnPN-Ro4u8c-Hg6gni</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482170/result">2024/09/28 BOOKOFF SUPER BAZAAR 307号枚方池之宮店 2位</a></td>
+    </tr>
+    <tr>
+      <th>165</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FVkVVF-qwOhMT-FVw5wF.html">FVkVVF-qwOhMT-FVw5wF</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480908/result">2024/09/19 トレカショップVOW 9位</a></td>
+    </tr>
+    <tr>
+      <th>166</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/23ypMy-QcqpaI-pX2yyy.html">23ypMy-QcqpaI-pX2yyy</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480840/result">2024/09/29 カードショップリドル京急蒲田店 9位</a></td>
+    </tr>
+    <tr>
+      <th>167</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/g9ig69-JTvMY3-nHngnn.html">g9ig69-JTvMY3-nHngnn</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482154/result">2024/09/07 チェルモサード 9位</a></td>
+    </tr>
+    <tr>
+      <th>168</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/4KcaDc-GP37vn-8KDccc.html">4KcaDc-GP37vn-8KDccc</a></td>
+      <td>0.537157</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 5位</a></td>
     </tr>
     <tr>
-      <th>175</th>
+      <th>169</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p23M3p-Wr7O8D-yyMMpX.html">p23M3p-Wr7O8D-yyMMpX</a></td>
+      <td>0.537157</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 9位</a></td>
+    </tr>
+    <tr>
+      <th>170</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/NnnHQH-6QIXjv-nNn6gH.html">NnnHQH-6QIXjv-nNn6gH</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481013/result">2024/09/25 ドラゴンスター日本橋2号店 5位</a></td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5fV1FF-avdO2M-wVwkkf.html">5fV1FF-avdO2M-wVwkkf</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480883/result">2024/09/09 GIRAFULL京都店 9位</a></td>
+    </tr>
+    <tr>
+      <th>172</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/y32Uyp-F2VAyd-MXyyy3.html">y32Uyp-F2VAyd-MXyyy3</a></td>
-      <td>0.537066</td>
+      <td>0.535447</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480908/result">2024/09/19 トレカショップVOW 2位</a></td>
+    </tr>
+    <tr>
+      <th>173</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cKc8x8-XY458i-4DaaDa.html">cKc8x8-XY458i-4DaaDa</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480779/result">2024/09/28 TSUTAYA　伊奈店 3位</a></td>
+    </tr>
+    <tr>
+      <th>174</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/1wFV5k-aNnBSa-fk5bFf.html">1wFV5k-aNnBSa-fk5bFf</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480841/result">2024/09/29 トーナメントセンターバトロコ　横浜伊勢佐木町 9位</a></td>
+    </tr>
+    <tr>
+      <th>175</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yR2pMy-oWVR0Q-SMppyM.html">yR2pMy-oWVR0Q-SMppyM</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480742/result">2024/10/05 カードゲームのシーガル郡山店 2位</a></td>
     </tr>
     <tr>
       <th>176</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wkb5dk-4yJZgJ-kvVVVF.html">wkb5dk-4yJZgJ-kvVVVF</a></td>
-      <td>0.537066</td>
+      <td>0.535447</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480738/result">2024/09/24 ポケ堂　仙台店 5位</a></td>
     </tr>
     <tr>
       <th>177</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yp2pM3-u1TbtK-p2Xy32.html">yp2pM3-u1TbtK-p2Xy32</a></td>
-      <td>0.536501</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481051/result">2024/09/16 TSUTAYA光吉店 3位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5FfFF-aTGYtT-wkdFkf.html">w5FfFF-aTGYtT-wkdFkf</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480782/result">2024/09/29 カードショップ竜星のPAO千葉中央店 5位</a></td>
     </tr>
     <tr>
       <th>178</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5kkFF-2jelPF-w1F5bf.html">w5kkFF-2jelPF-w1F5bf</a></td>
-      <td>0.536128</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480767/result">2024/09/10 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MySppX-BAEGyV-R2ESpp.html">MySppX-BAEGyV-R2ESpp</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480784/result">2024/10/05 Duel Stade Ganryu　高崎店 9位</a></td>
     </tr>
     <tr>
       <th>179</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/iQPLgn-CzIBm2-6gHLHQ.html">iQPLgn-CzIBm2-6gHLHQ</a></td>
-      <td>0.536128</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481041/result">2024/09/08 オレタン福岡天神店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/SySMpp-69xt9h-2U2yy3.html">SySMpp-69xt9h-2U2yy3</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 5位</a></td>
     </tr>
     <tr>
       <th>180</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2Ep3yp-ICS5my-MSyXXM.html">2Ep3yp-ICS5my-MSyXXM</a></td>
-      <td>0.536128</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481059/result">2024/09/29 ブックオフプラス佐賀南部バイパス店 3位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cxca4c-R3PCw6-4c8K84.html">cxca4c-R3PCw6-4c8K84</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480778/result">2024/09/28 蔦屋書店　茂原店 2位</a></td>
     </tr>
     <tr>
       <th>181</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/S22y3y-qICRhi-2SRpMM.html">S22y3y-qICRhi-2SRpMM</a></td>
-      <td>0.536128</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5FfbFV-nkBYUf-Fw1wFk.html">5FfbFV-nkBYUf-Fw1wFk</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482121/result">2024/09/08 フルコンプ　大阪日本橋店 9位</a></td>
     </tr>
     <tr>
       <th>182</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bFFF5F-kqWnwl-fVvwkk.html">bFFF5F-kqWnwl-fVvwkk</a></td>
-      <td>0.533097</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480737/result">2024/09/16 シーガル　仙台駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8KDJcc-N83lP1-G4JD8Y.html">8KDJcc-N83lP1-G4JD8Y</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482187/result">2024/09/28 バトロコミニ苫小牧バイパス店 9位</a></td>
     </tr>
     <tr>
       <th>183</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Xy3Xpp-LRy4yh-2ySMSp.html">Xy3Xpp-LRy4yh-2ySMSp</a></td>
-      <td>0.533097</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/pppMEp-8BCpM2-yy2pp3.html">pppMEp-8BCpM2-yy2pp3</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480875/result">2024/09/07 三洋堂書店　乙川店 3位</a></td>
     </tr>
     <tr>
       <th>184</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F55Fbk-TUh0AT-k5FwVf.html">F55Fbk-TUh0AT-k5FwVf</a></td>
-      <td>0.533097</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480875/result">2024/09/07 三洋堂書店　乙川店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kwVfFw-wpZymw-F5fF5f.html">kwVfFw-wpZymw-F5fF5f</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480883/result">2024/09/09 GIRAFULL京都店 9位</a></td>
     </tr>
     <tr>
       <th>185</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MRp3M3-JnmO4u-RyMp2M.html">MRp3M3-JnmO4u-RyMp2M</a></td>
-      <td>0.529954</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/9HHgQn-AOCbFK-LHL6Hg.html">9HHgQn-AOCbFK-LHL6Hg</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 3位</a></td>
     </tr>
     <tr>
       <th>186</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wFkkfw-P37MkX-5kFVvw.html">wFkkfw-P37MkX-5kFVvw</a></td>
-      <td>0.527126</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480917/result">2024/09/29 TSUTAYA三島店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HHgLHP-92pEAU-NLn6Qn.html">HHgLHP-92pEAU-NLn6Qn</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
     </tr>
     <tr>
       <th>187</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HQngn6-z7bExL-nHggnN.html">HQngn6-z7bExL-nHggnN</a></td>
-      <td>0.527126</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481041/result">2024/09/08 オレタン福岡天神店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LggLHN-hO9Lbx-H6nLLQ.html">LggLHN-hO9Lbx-H6nLLQ</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481063/result">2024/10/05 オレタン福岡天神店 9位</a></td>
     </tr>
     <tr>
       <th>188</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bF1VF5-l4GBFo-fVkwFw.html">bF1VF5-l4GBFo-fVkwFw</a></td>
-      <td>0.520617</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng9LHg-c186t7-N6gHn6.html">ng9LHg-c186t7-N6gHn6</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482135/result">2024/09/26 竜星のPAO　大宮店 1位</a></td>
     </tr>
     <tr>
       <th>189</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5VFVkw-IGFokT-F5F1kV.html">5VFVkw-IGFokT-F5F1kV</a></td>
-      <td>0.520617</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481018/result">2024/10/02 BOOKOFF奈良法華寺店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MM3ySM-JYmXcY-3ppM22.html">MM3ySM-JYmXcY-3ppM22</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480897/result">2024/09/15 【CARDBOX】津店 9位</a></td>
     </tr>
     <tr>
       <th>190</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FbVkdd-lXRQiL-wFVF5F.html">FbVkdd-lXRQiL-wFVF5F</a></td>
-      <td>0.512762</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482119/result">2024/09/07 竜星のPAO　大宮店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ppySMp-ovvWuG-M3yX2S.html">ppySMp-ovvWuG-M3yX2S</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480763/result">2024/09/08 TSUTAYA西友町田店 5位</a></td>
     </tr>
     <tr>
       <th>191</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HNi6nN-WNT56D-nnggLn.html">HNi6nN-WNT56D-nnggLn</a></td>
-      <td>0.510388</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480915/result">2024/09/29 宝島　長久手店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ccKaY4-lWPIdW-8xYGcc.html">ccKaY4-lWPIdW-8xYGcc</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480999/result">2024/09/15 BOOKOFF SUPER BAZAAR 1号京都伏見店 2位</a></td>
     </tr>
     <tr>
       <th>192</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cacx48-tczEkg-xDJKcc.html">cacx48-tczEkg-xDJKcc</a></td>
-      <td>0.509543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481005/result">2024/09/07 BOOKOFF奈良法華寺店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5Fkkwd-vLrJza-F5kdVV.html">5Fkkwd-vLrJza-F5kdVV</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480915/result">2024/09/29 宝島　長久手店 9位</a></td>
     </tr>
     <tr>
       <th>193</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nNHHgg-EJmTZD-nn6nLL.html">nNHHgg-EJmTZD-nn6nLL</a></td>
-      <td>0.508647</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480880/result">2024/09/08 BOOKOFF SUPER BAZAAR 248号西友岡崎店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Vkk55F-Ffrd2G-F1Vkfb.html">Vkk55F-Ffrd2G-F1Vkfb</a></td>
+      <td>0.535447</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 9位</a></td>
     </tr>
     <tr>
       <th>194</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bkv5dw-1LjxQP-VFkfkk.html">bkv5dw-1LjxQP-VFkfkk</a></td>
-      <td>0.506933</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480833/result">2024/09/14 Japan TCG Center吉祥寺駅北口店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yp2pM3-u1TbtK-p2Xy32.html">yp2pM3-u1TbtK-p2Xy32</a></td>
+      <td>0.534883</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481051/result">2024/09/16 TSUTAYA光吉店 3位</a></td>
     </tr>
     <tr>
       <th>195</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6HggLg-7NWVpl-6gPnni.html">6HggLg-7NWVpl-6gPnni</a></td>
-      <td>0.506933</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480836/result">2024/09/17 秋葉原チェルモ 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/iQPLgn-CzIBm2-6gHLHQ.html">iQPLgn-CzIBm2-6gHLHQ</a></td>
+      <td>0.534511</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481041/result">2024/09/08 オレタン福岡天神店 9位</a></td>
     </tr>
     <tr>
       <th>196</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8x4Kca-TVuQoC-D48xx8.html">8x4Kca-TVuQoC-D48xx8</a></td>
-      <td>0.506933</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482129/result">2024/09/15 トレカショップ竜のしっぽ　布施店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/w5kkFF-2jelPF-w1F5bf.html">w5kkFF-2jelPF-w1F5bf</a></td>
+      <td>0.534511</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480767/result">2024/09/10 トーナメントセンターバトロコ　柏駅前 9位</a></td>
     </tr>
     <tr>
       <th>197</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/84YKxK-WRfFyh-c4cDx4.html">84YKxK-WRfFyh-c4cDx4</a></td>
-      <td>0.506933</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/2Ep3yp-ICS5my-MSyXXM.html">2Ep3yp-ICS5my-MSyXXM</a></td>
+      <td>0.534511</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481059/result">2024/09/29 ブックオフプラス佐賀南部バイパス店 3位</a></td>
     </tr>
     <tr>
       <th>198</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/N6nggN-o20pex-g9gLH9.html">N6nggN-o20pex-g9gLH9</a></td>
-      <td>0.506933</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480887/result">2024/09/14 宝島　多治見店 1位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/S22y3y-qICRhi-2SRpMM.html">S22y3y-qICRhi-2SRpMM</a></td>
+      <td>0.534511</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
     </tr>
     <tr>
       <th>199</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ypyEUU-XAIWVw-p2S32M.html">ypyEUU-XAIWVw-p2S32M</a></td>
-      <td>0.502543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482179/result">2024/09/08 TSUTAYA　JR尼崎駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bFFF5F-kqWnwl-fVvwkk.html">bFFF5F-kqWnwl-fVvwkk</a></td>
+      <td>0.531490</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480737/result">2024/09/16 シーガル　仙台駅前店 9位</a></td>
     </tr>
     <tr>
       <th>200</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/UM2SyM-WYnYeK-y3XypX.html">UM2SyM-WYnYeK-y3XypX</a></td>
-      <td>0.502543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481012/result">2024/09/16 ドラゴンスター日本橋3号店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Xy3Xpp-LRy4yh-2ySMSp.html">Xy3Xpp-LRy4yh-2ySMSp</a></td>
+      <td>0.531490</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481045/result">2024/09/15 【CARDBOX】カードボックス　福山店 9位</a></td>
     </tr>
     <tr>
       <th>201</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ngg6HP-yUG8dB-ngNnQ6.html">Ngg6HP-yUG8dB-ngNnQ6</a></td>
-      <td>0.502543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480766/result">2024/09/09 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F55Fbk-TUh0AT-k5FwVf.html">F55Fbk-TUh0AT-k5FwVf</a></td>
+      <td>0.531490</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480875/result">2024/09/07 三洋堂書店　乙川店 9位</a></td>
     </tr>
     <tr>
       <th>202</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Kc4x8c-BfdE84-8a4Y88.html">Kc4x8c-BfdE84-8a4Y88</a></td>
-      <td>0.502543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480736/result">2024/09/15 Wonder GOO　足利店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/MRp3M3-JnmO4u-RyMp2M.html">MRp3M3-JnmO4u-RyMp2M</a></td>
+      <td>0.528356</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480771/result">2024/09/16 トレカショップKCC 5位</a></td>
     </tr>
     <tr>
       <th>203</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/SMpRUE-hMBJWi-y2yX3U.html">SMpRUE-hMBJWi-y2yX3U</a></td>
-      <td>0.502543</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481121/result">2024/09/28 宝島　高蔵寺店 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/wFkkfw-P37MkX-5kFVvw.html">wFkkfw-P37MkX-5kFVvw</a></td>
+      <td>0.525537</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480917/result">2024/09/29 TSUTAYA三島店 9位</a></td>
     </tr>
     <tr>
       <th>204</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RpMUpU-RQQX19-32yUyy.html">RpMUpU-RQQX19-32yUyy</a></td>
-      <td>0.499107</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480913/result">2024/09/28 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HQngn6-z7bExL-nHggnN.html">HQngn6-z7bExL-nHggnN</a></td>
+      <td>0.525537</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481041/result">2024/09/08 オレタン福岡天神店 9位</a></td>
     </tr>
     <tr>
       <th>205</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kFb5kw-kYtXw5-FvFkwf.html">kFb5kw-kYtXw5-FvFkwf</a></td>
-      <td>0.494716</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480841/result">2024/09/29 トーナメントセンターバトロコ　横浜伊勢佐木町 5位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/5VFVkw-IGFokT-F5F1kV.html">5VFVkw-IGFokT-F5F1kV</a></td>
+      <td>0.519047</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481018/result">2024/10/02 BOOKOFF奈良法華寺店 5位</a></td>
     </tr>
     <tr>
       <th>206</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gNgHH6-rhZwac-gnQnLn.html">gNgHH6-rhZwac-gnQnLn</a></td>
-      <td>0.482617</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480832/result">2024/09/14 BOOKOFFSUPERBAZAAR町田中央通り店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bF1VF5-l4GBFo-fVkwFw.html">bF1VF5-l4GBFo-fVkwFw</a></td>
+      <td>0.519047</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480837/result">2024/09/19 ドラゴンスター池袋店 9位</a></td>
     </tr>
     <tr>
       <th>207</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng6nHL-uggOxg-Lg6P6g.html">ng6nHL-uggOxg-Lg6P6g</a></td>
-      <td>0.464898</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481060/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FbVkdd-lXRQiL-wFVF5F.html">FbVkdd-lXRQiL-wFVF5F</a></td>
+      <td>0.511216</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482119/result">2024/09/07 竜星のPAO　大宮店 9位</a></td>
     </tr>
     <tr>
       <th>208</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HNi6nN-WNT56D-nnggLn.html">HNi6nN-WNT56D-nnggLn</a></td>
+      <td>0.508849</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480915/result">2024/09/29 宝島　長久手店 9位</a></td>
+    </tr>
+    <tr>
+      <th>209</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cacx48-tczEkg-xDJKcc.html">cacx48-tczEkg-xDJKcc</a></td>
+      <td>0.508007</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481005/result">2024/09/07 BOOKOFF奈良法華寺店 9位</a></td>
+    </tr>
+    <tr>
+      <th>210</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nNHHgg-EJmTZD-nn6nLL.html">nNHHgg-EJmTZD-nn6nLL</a></td>
+      <td>0.507114</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480880/result">2024/09/08 BOOKOFF SUPER BAZAAR 248号西友岡崎店 9位</a></td>
+    </tr>
+    <tr>
+      <th>211</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/8x4Kca-TVuQoC-D48xx8.html">8x4Kca-TVuQoC-D48xx8</a></td>
+      <td>0.505404</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482129/result">2024/09/15 トレカショップ竜のしっぽ　布施店 5位</a></td>
+    </tr>
+    <tr>
+      <th>212</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/N6nggN-o20pex-g9gLH9.html">N6nggN-o20pex-g9gLH9</a></td>
+      <td>0.505404</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480887/result">2024/09/14 宝島　多治見店 1位</a></td>
+    </tr>
+    <tr>
+      <th>213</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6HggLg-7NWVpl-6gPnni.html">6HggLg-7NWVpl-6gPnni</a></td>
+      <td>0.505404</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480836/result">2024/09/17 秋葉原チェルモ 9位</a></td>
+    </tr>
+    <tr>
+      <th>214</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bkv5dw-1LjxQP-VFkfkk.html">bkv5dw-1LjxQP-VFkfkk</a></td>
+      <td>0.505404</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480833/result">2024/09/14 Japan TCG Center吉祥寺駅北口店 9位</a></td>
+    </tr>
+    <tr>
+      <th>215</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/84YKxK-WRfFyh-c4cDx4.html">84YKxK-WRfFyh-c4cDx4</a></td>
+      <td>0.505404</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 5位</a></td>
+    </tr>
+    <tr>
+      <th>216</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/UM2SyM-WYnYeK-y3XypX.html">UM2SyM-WYnYeK-y3XypX</a></td>
+      <td>0.501027</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481012/result">2024/09/16 ドラゴンスター日本橋3号店 9位</a></td>
+    </tr>
+    <tr>
+      <th>217</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/SMpRUE-hMBJWi-y2yX3U.html">SMpRUE-hMBJWi-y2yX3U</a></td>
+      <td>0.501027</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481121/result">2024/09/28 宝島　高蔵寺店 5位</a></td>
+    </tr>
+    <tr>
+      <th>218</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ngg6HP-yUG8dB-ngNnQ6.html">Ngg6HP-yUG8dB-ngNnQ6</a></td>
+      <td>0.501027</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480766/result">2024/09/09 トーナメントセンターバトロコ　柏駅前 9位</a></td>
+    </tr>
+    <tr>
+      <th>219</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ypyEUU-XAIWVw-p2S32M.html">ypyEUU-XAIWVw-p2S32M</a></td>
+      <td>0.501027</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482179/result">2024/09/08 TSUTAYA　JR尼崎駅前店 9位</a></td>
+    </tr>
+    <tr>
+      <th>220</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Kc4x8c-BfdE84-8a4Y88.html">Kc4x8c-BfdE84-8a4Y88</a></td>
+      <td>0.501027</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480736/result">2024/09/15 Wonder GOO　足利店 9位</a></td>
+    </tr>
+    <tr>
+      <th>221</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/RpMUpU-RQQX19-32yUyy.html">RpMUpU-RQQX19-32yUyy</a></td>
+      <td>0.497602</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480913/result">2024/09/28 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
+    </tr>
+    <tr>
+      <th>222</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kFb5kw-kYtXw5-FvFkwf.html">kFb5kw-kYtXw5-FvFkwf</a></td>
+      <td>0.493224</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480841/result">2024/09/29 トーナメントセンターバトロコ　横浜伊勢佐木町 5位</a></td>
+    </tr>
+    <tr>
+      <th>223</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/gNgHH6-rhZwac-gnQnLn.html">gNgHH6-rhZwac-gnQnLn</a></td>
+      <td>0.481162</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480832/result">2024/09/14 BOOKOFFSUPERBAZAAR町田中央通り店 9位</a></td>
+    </tr>
+    <tr>
+      <th>224</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/ng6nHL-uggOxg-Lg6P6g.html">ng6nHL-uggOxg-Lg6P6g</a></td>
+      <td>0.471736</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481060/result">2024/09/29 竜星の嵐　小倉駅前店 9位</a></td>
+    </tr>
+    <tr>
+      <th>225</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/VbkbwV-JobdFQ-5FFvVk.html">VbkbwV-JobdFQ-5FFvVk</a></td>
-      <td>0.453414</td>
+      <td>0.452047</td>
       <td><a href="https://players.pokemon-card.com/event/detail/482162/result">2024/09/16 トイコンプ岸和田店 9位</a></td>
     </tr>
   </tbody>

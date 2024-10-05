@@ -27,8 +27,29 @@
         background-color:  #EEE;    /* 背景色指定 */
     }
 
-    th,td {
+    td {
         padding: 5px 10px;          /* 余白指定 */
+    }
+
+    th {
+      position: sticky;
+      padding: 5px 10px;          /* 余白指定 */
+      top: 0;
+      background-color: white; /* 背景色を指定して、スクロール時に見えるように */
+      z-index: 1; /* テーブルの他の要素の上に表示 */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -38,12 +59,15 @@
 <body>
 <a href="javascript:history.back();">戻る</a>
 <h1>ポケカデッキ分析 リククラゲex(SV4a 019/190)</h1>
-集計期間：2024/04/01 00:00～2024-05-07 20:16
+集計期間：2024/09/01 00:00～2024-10-05 23:12
 <h2>リククラゲex(SV4a 019/190)</h2>
 <ul>
 <li><a href="https://www.pokemon-card.com/card-search/index.php?keyword=リククラゲex"">トレーナーズウェブサイトで検索</a></ul>
-<h2>デッキリスト</h2>
-<ul>
-<li><a href="https://iwata-n.github.io/pokeca_deck/deck/Fk1kF5-xQLe7B-fFk5vv.html">Fk1kF5-xQLe7B-fFk5vv</a></ul>
+<h2>採用デッキ</h2>
+<h3><a href="https://iwata-n.github.io/pokeca_deck/deck/gLNgHg-StOArk-nHiQgg.html">gLNgHg-StOArk-nHiQgg</a></h3>
+<div class="image-container">
+<a href="https://iwata-n.github.io/pokeca_deck/deck_image/gLNgHg-StOArk-nHiQgg.png">
+<img src="https://iwata-n.github.io/pokeca_deck/deck_image/gLNgHg-StOArk-nHiQgg.png" alt="gLNgHg-StOArk-nHiQgg" loading="lazy"><br></a>
+</div>
 </body>
 </html>

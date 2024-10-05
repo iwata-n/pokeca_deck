@@ -39,8 +39,17 @@
       z-index: 1; /* テーブルの他の要素の上に表示 */
     }
 
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
     .image-container {
         text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -96,9 +105,7 @@
       <th></th>
       <th>カード名</th>
       <th>タイプ</th>
-      <th>採用枚数</th>
       <th>採用率</th>
-      <th>採用件数</th>
       <th>購入</th>
     </tr>
   </thead>
@@ -107,54 +114,42 @@
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
       <td>62.7</td>
-      <td>52</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒーローマント(ACE SPEC).html">ヒーローマント(ACE SPEC)</a></td>
       <td>ポケモンのどうぐ</td>
-      <td>1.0</td>
       <td>15.7</td>
-      <td>13</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒーローマント(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
       <td>8.4</td>
-      <td>7</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プライムキャッチャー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/マキシマムベルト(ACE SPEC).html">マキシマムベルト(ACE SPEC)</a></td>
       <td>ポケモンのどうぐ</td>
-      <td>1.0</td>
       <td>4.8</td>
-      <td>4</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マキシマムベルト(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/偉大な大樹(ACE SPEC).html">偉大な大樹(ACE SPEC)</a></td>
       <td>スタジアム</td>
-      <td>1.0</td>
       <td>4.8</td>
-      <td>4</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=偉大な大樹(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
       <td>グッズ</td>
-      <td>1.0</td>
       <td>3.6</td>
-      <td>3</td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -163,9 +158,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -173,298 +166,224 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(まるやけ).html">ヒトカゲ(まるやけ)</a></td>
-      <td>2.9</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>2.9枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(まるやけ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザードンex(れんごくしはい).html">リザードンex(れんごくしはい)</a></td>
-      <td>2.6</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>2.6枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザードンex(れんごくしはい)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョットex.html">ピジョットex</a></td>
-      <td>2.0</td>
-      <td>98.8</td>
-      <td>82</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョットex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザード(フレアベール).html">リザード(フレアベール)</a></td>
-      <td>1.0</td>
-      <td>98.8</td>
-      <td>82</td>
+      <td>1.0枚<br><div class="small">98.8%/82件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザード(フレアベール)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョットex.html">ピジョットex</a></td>
+      <td>2.0枚<br><div class="small">98.8%/82件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョットex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨノワール(カースドボム).html">ヨノワール(カースドボム)</a></td>
-      <td>1.1</td>
-      <td>97.6</td>
-      <td>81</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨノワール(カースドボム)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/サマヨール(カースドボム).html">サマヨール(カースドボム)</a></td>
+      <td>1.1枚<br><div class="small">97.6%/81件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=サマヨール(カースドボム)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/サマヨール(カースドボム).html">サマヨール(カースドボム)</a></td>
-      <td>1.1</td>
-      <td>97.6</td>
-      <td>81</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=サマヨール(カースドボム)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨノワール(カースドボム).html">ヨノワール(カースドボム)</a></td>
+      <td>1.1枚<br><div class="small">97.6%/81件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨノワール(カースドボム)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/キチキギスex.html">キチキギスex</a></td>
-      <td>1.0</td>
-      <td>97.6</td>
-      <td>81</td>
+      <td>1.0枚<br><div class="small">97.6%/81件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キチキギスex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/かがやくリザードン.html">かがやくリザードン</a></td>
-      <td>1.0</td>
-      <td>96.4</td>
-      <td>80</td>
+      <td>1.0枚<br><div class="small">96.4%/80件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=かがやくリザードン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロトムV.html">ロトムV</a></td>
-      <td>1.1</td>
-      <td>96.4</td>
-      <td>80</td>
+      <td>1.1枚<br><div class="small">96.4%/80件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ロトムV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネオラントV.html">ネオラントV</a></td>
-      <td>1.0</td>
-      <td>81.9</td>
-      <td>68</td>
+      <td>1.0枚<br><div class="small">81.9%/68件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネオラントV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨマワル(むかえにいく).html">ヨマワル(むかえにいく)</a></td>
-      <td>2.0</td>
-      <td>79.5</td>
-      <td>66</td>
+      <td>2.0枚<br><div class="small">79.5%/66件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨマワル(むかえにいく)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>12</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(なかまをよぶ).html">ポッポ(なかまをよぶ)</a></td>
-      <td>2.0</td>
-      <td>57.8</td>
-      <td>48</td>
+      <td>2.0枚<br><div class="small">57.8%/48件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポッポ(なかまをよぶ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>13</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(かぜおこし).html">ポッポ(かぜおこし)</a></td>
-      <td>1.9</td>
-      <td>43.4</td>
-      <td>36</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポッポ(かぜおこし)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/マナフィ(なみのヴェール).html">マナフィ(なみのヴェール)</a></td>
+      <td>1.0枚<br><div class="small">43.4%/36件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マナフィ(なみのヴェール)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/マナフィ(なみのヴェール).html">マナフィ(なみのヴェール)</a></td>
-      <td>1.0</td>
-      <td>43.4</td>
-      <td>36</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マナフィ(なみのヴェール)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポッポ(かぜおこし).html">ポッポ(かぜおこし)</a></td>
+      <td>1.9枚<br><div class="small">43.4%/36件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポッポ(かぜおこし)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>15</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(ひのこ).html">ヒトカゲ(ひのこ)</a></td>
-      <td>1.2</td>
-      <td>24.1</td>
-      <td>20</td>
+      <td>1.2枚<br><div class="small">24.1%/20件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(ひのこ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>16</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨマワル(まどわす).html">ヨマワル(まどわす)</a></td>
-      <td>2.0</td>
-      <td>18.1</td>
-      <td>15</td>
+      <td>2.0枚<br><div class="small">18.1%/15件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨマワル(まどわす)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>17</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピィ(にぎにぎドロー).html">ピィ(にぎにぎドロー)</a></td>
-      <td>1.0</td>
-      <td>12.0</td>
-      <td>10</td>
+      <td>1.0枚<br><div class="small">12.0%/10件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピィ(にぎにぎドロー)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>18</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョン(はばたく).html">ピジョン(はばたく)</a></td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>5</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョン(はばたく)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(ヒートタックル).html">ヒトカゲ(ヒートタックル)</a></td>
+      <td>1.0枚<br><div class="small">6.0%/5件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(ヒートタックル)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>19</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒトカゲ(ヒートタックル).html">ヒトカゲ(ヒートタックル)</a></td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>5</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒトカゲ(ヒートタックル)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョン(はばたく).html">ピジョン(はばたく)</a></td>
+      <td>1.0枚<br><div class="small">6.0%/5件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョン(はばたく)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>20</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビーダル(はたらくまえば).html">ビーダル(はたらくまえば)</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビーダル(はたらくまえば)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>21</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ピジョン(つばさでうつ).html">ピジョン(つばさでうつ)</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ピジョン(つばさでうつ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>22</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビッパ(ころがる).html">ビッパ(ころがる)</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">2.4%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビッパ(ころがる)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>23</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/モモワロウex.html">モモワロウex</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">2.4%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=モモワロウex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>24</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ガチグマ アカツキex.html">ガチグマ アカツキex</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ガチグマ アカツキex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ホーホー(さんどづき).html">ホーホー(さんどづき)</a></td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ホーホー(さんどづき)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>25</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シガロコ(ちょっとつっこむ).html">シガロコ(ちょっとつっこむ)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シガロコ(ちょっとつっこむ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/スピンロトム(SV7 080_102).html">スピンロトム(SV7 080/102)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=スピンロトム(SV7 080/102)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>26</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アルセウスVSTAR.html">アルセウスVSTAR</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アルセウスVSTAR&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨルノズク(ほうせきさがし).html">ヨルノズク(ほうせきさがし)</a></td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨルノズク(ほうせきさがし)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>27</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビッパ(へっちゃらがお).html">ビッパ(へっちゃらがお)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビッパ(へっちゃらがお)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミカルゲ(しっこくのわざわい).html">ミカルゲ(しっこくのわざわい)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミカルゲ(しっこくのわざわい)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>28</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヨルノズク(ほうせきさがし).html">ヨルノズク(ほうせきさがし)</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヨルノズク(ほうせきさがし)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オーガポン いどのめんex.html">オーガポン いどのめんex</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オーガポン いどのめんex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>29</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/エンテイV.html">エンテイV</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=エンテイV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>30</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミカルゲ(しっこくのわざわい).html">ミカルゲ(しっこくのわざわい)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミカルゲ(しっこくのわざわい)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ガチグマ アカツキex.html">ガチグマ アカツキex</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ガチグマ アカツキex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>31</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ベラカス(SV5M 015_071).html">ベラカス(SV5M 015/071)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ベラカス(SV5M 015/071)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シガロコ(ちょっとつっこむ).html">シガロコ(ちょっとつっこむ)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シガロコ(ちょっとつっこむ)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>32</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ルチャブル(フライングエントリー).html">ルチャブル(フライングエントリー)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ルチャブル(フライングエントリー)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アルセウスVSTAR.html">アルセウスVSTAR</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アルセウスVSTAR&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>33</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザード(かえん).html">リザード(かえん)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザード(かえん)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ベラカス(SV5M 015_071).html">ベラカス(SV5M 015/071)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ベラカス(SV5M 015/071)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>34</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ホーホー(さんどづき).html">ホーホー(さんどづき)</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ホーホー(さんどづき)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/リザード(かえん).html">リザード(かえん)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=リザード(かえん)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>35</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/オーガポン いどのめんex.html">オーガポン いどのめんex</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=オーガポン いどのめんex&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ビッパ(へっちゃらがお).html">ビッパ(へっちゃらがお)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ビッパ(へっちゃらがお)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>36</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アルセウスV.html">アルセウスV</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アルセウスV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ルチャブル(フライングエントリー).html">ルチャブル(フライングエントリー)</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ルチャブル(フライングエントリー)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>37</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/スピンロトム(SV7 080_102).html">スピンロトム(SV7 080/102)</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=スピンロトム(SV7 080/102)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/アルセウスV.html">アルセウスV</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アルセウスV&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=グッズ>グッズ</h2><table border="1" class="dataframe my-table">
@@ -472,9 +391,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -482,162 +399,122 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/すごいつりざお.html">すごいつりざお</a></td>
-      <td>2.0</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>2.0枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=すごいつりざお&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
-      <td>2.7</td>
-      <td>100.0</td>
-      <td>83</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネストボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/なかよしポフィン.html">なかよしポフィン</a></td>
-      <td>3.9</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>3.9枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=なかよしポフィン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ふしぎなアメ.html">ふしぎなアメ</a></td>
-      <td>4.0</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>4.0枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ふしぎなアメ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
+      <th>4</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
+      <td>1.9枚<br><div class="small">100.0%/83件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カウンターキャッチャー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハイパーボール.html">ハイパーボール</a></td>
-      <td>3.8</td>
-      <td>100.0</td>
-      <td>83</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ハイパーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネストボール.html">ネストボール</a></td>
+      <td>2.7枚<br><div class="small">100.0%/83件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネストボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カウンターキャッチャー.html">カウンターキャッチャー</a></td>
-      <td>1.9</td>
-      <td>100.0</td>
-      <td>83</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カウンターキャッチャー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ハイパーボール.html">ハイパーボール</a></td>
+      <td>3.8枚<br><div class="small">100.0%/83件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ハイパーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/アンフェアスタンプ(ACE SPEC).html">アンフェアスタンプ(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>62.7</td>
-      <td>52</td>
+      <td>1.0枚<br><div class="small">62.7%/52件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=アンフェアスタンプ(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ロストスイーパー.html">ロストスイーパー</a></td>
-      <td>1.0</td>
-      <td>45.8</td>
-      <td>38</td>
+      <td>1.0枚<br><div class="small">45.8%/38件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ロストスイーパー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/夜のタンカ.html">夜のタンカ</a></td>
-      <td>1.1</td>
-      <td>31.3</td>
-      <td>26</td>
+      <td>1.1枚<br><div class="small">31.3%/26件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=夜のタンカ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒスイのヘビーボール.html">ヒスイのヘビーボール</a></td>
-      <td>1.0</td>
-      <td>26.5</td>
-      <td>22</td>
+      <td>1.0枚<br><div class="small">26.5%/22件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒスイのヘビーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/キャンセルコロン.html">キャンセルコロン</a></td>
-      <td>1.0</td>
-      <td>21.7</td>
-      <td>18</td>
+      <td>1.0枚<br><div class="small">21.7%/18件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キャンセルコロン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>12</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/プライムキャッチャー(ACE SPEC).html">プライムキャッチャー(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>8.4</td>
-      <td>7</td>
+      <td>1.0枚<br><div class="small">8.4%/7件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プライムキャッチャー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>13</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ともだちてちょう.html">ともだちてちょう</a></td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>5</td>
+      <td>1.0枚<br><div class="small">6.0%/5件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ともだちてちょう&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>15</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/テラスタルオーブ.html">テラスタルオーブ</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=テラスタルオーブ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
+      <th>15</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/プレシャスキャリー(ACE SPEC).html">プレシャスキャリー(ACE SPEC)</a></td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=プレシャスキャリー(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
       <th>16</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンいれかえ.html">ポケモンいれかえ</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンいれかえ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケギア3.0.html">ポケギア3.0</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケギア3.0&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/キャプチャーアロマ.html">キャプチャーアロマ</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キャプチャーアロマ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
-    </tr>
-    <tr>
-      <th>19</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/フェザーボール.html">フェザーボール</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=フェザーボール&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
-      <th>20</th>
+      <th>17</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/キャプチャーアロマ.html">キャプチャーアロマ</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=キャプチャーアロマ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>18</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/トレッキングシューズ.html">トレッキングシューズ</a></td>
-      <td>3.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>3.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=トレッキングシューズ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケギア3.0.html">ポケギア3.0</a></td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケギア3.0&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+    </tr>
+    <tr>
+      <th>20</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンいれかえ.html">ポケモンいれかえ</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンいれかえ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=サポート>サポート</h2><table border="1" class="dataframe my-table">
@@ -645,9 +522,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -655,114 +530,86 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ナンジャモ.html">ナンジャモ</a></td>
-      <td>2.4</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>2.4枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ナンジャモ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボスの指令.html">ボスの指令</a></td>
-      <td>2.0</td>
-      <td>98.8</td>
-      <td>82</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボスの指令&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ペパー.html">ペパー</a></td>
+      <td>3.8枚<br><div class="small">98.8%/82件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ペパー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ペパー.html">ペパー</a></td>
-      <td>3.8</td>
-      <td>98.8</td>
-      <td>82</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ペパー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ボスの指令.html">ボスの指令</a></td>
+      <td>2.0枚<br><div class="small">98.8%/82件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ボスの指令&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ネジキ.html">ネジキ</a></td>
-      <td>1.0</td>
-      <td>84.3</td>
-      <td>70</td>
+      <td>1.0枚<br><div class="small">84.3%/70件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ネジキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/フトゥー博士のシナリオ.html">フトゥー博士のシナリオ</a></td>
-      <td>1.0</td>
-      <td>72.3</td>
-      <td>60</td>
+      <td>1.0枚<br><div class="small">72.3%/60件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=フトゥー博士のシナリオ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ブライア.html">ブライア</a></td>
-      <td>1.0</td>
-      <td>65.1</td>
-      <td>54</td>
+      <td>1.0枚<br><div class="small">65.1%/54件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ブライア&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ツツジ.html">ツツジ</a></td>
-      <td>1.1</td>
-      <td>13.3</td>
-      <td>11</td>
+      <td>1.1枚<br><div class="small">13.3%/11件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ツツジ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/スグリ.html">スグリ</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=スグリ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ジャッジマン.html">ジャッジマン</a></td>
-      <td>1.5</td>
-      <td>2.4</td>
-      <td>2</td>
+      <td>1.5枚<br><div class="small">2.4%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ジャッジマン&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/クセロシキのたくらみ.html">クセロシキのたくらみ</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">2.4%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=クセロシキのたくらみ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>11</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/セレナ.html">セレナ</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=セレナ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カイ.html">カイ</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カイ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>12</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/博士の研究.html">博士の研究</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=博士の研究&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/セレナ.html">セレナ</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=セレナ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>13</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カキツバタ.html">カキツバタ</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カキツバタ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/博士の研究.html">博士の研究</a></td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=博士の研究&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>14</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カイ.html">カイ</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カイ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/カキツバタ.html">カキツバタ</a></td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=カキツバタ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=ポケモンのどうぐ>ポケモンのどうぐ</h2><table border="1" class="dataframe my-table">
@@ -770,9 +617,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -780,82 +625,62 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/森の封印石.html">森の封印石</a></td>
-      <td>1.0</td>
-      <td>96.4</td>
-      <td>80</td>
+      <td>1.0枚<br><div class="small">96.4%/80件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=森の封印石&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/まけんきハチマキ.html">まけんきハチマキ</a></td>
-      <td>1.0</td>
-      <td>91.6</td>
-      <td>76</td>
+      <td>1.0枚<br><div class="small">91.6%/76件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=まけんきハチマキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ヒーローマント(ACE SPEC).html">ヒーローマント(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>15.7</td>
-      <td>13</td>
+      <td>1.0枚<br><div class="small">15.7%/13件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ヒーローマント(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/マキシマムベルト(ACE SPEC).html">マキシマムベルト(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>4.8</td>
-      <td>4</td>
+      <td>1.0枚<br><div class="small">4.8%/4件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マキシマムベルト(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/勇気のおまもり.html">勇気のおまもり</a></td>
-      <td>1.0</td>
-      <td>3.6</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=勇気のおまもり&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン エヴォリューション.html">ワザマシン エヴォリューション</a></td>
+      <td>1.3枚<br><div class="small">3.6%/3件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン エヴォリューション&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン エヴォリューション.html">ワザマシン エヴォリューション</a></td>
-      <td>1.3</td>
-      <td>3.6</td>
-      <td>3</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン エヴォリューション&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/勇気のおまもり.html">勇気のおまもり</a></td>
+      <td>1.0枚<br><div class="small">3.6%/3件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=勇気のおまもり&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゴージャスマント.html">ゴージャスマント</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>2</td>
+      <td>1.0枚<br><div class="small">2.4%/2件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゴージャスマント&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ワザマシン デヴォリューション.html">ワザマシン デヴォリューション</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ワザマシン デヴォリューション&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>9</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/くさりもち.html">くさりもち</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=くさりもち&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/げんきのハチマキ.html">げんきのハチマキ</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=げんきのハチマキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>10</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/げんきのハチマキ.html">げんきのハチマキ</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=げんきのハチマキ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/くさりもち.html">くさりもち</a></td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=くさりもち&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
 </table><h2 id=スタジアム>スタジアム</h2><table border="1" class="dataframe my-table">
@@ -863,9 +688,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -873,65 +696,49 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/崩れたスタジアム.html">崩れたスタジアム</a></td>
-      <td>1.0</td>
-      <td>61.4</td>
-      <td>51</td>
+      <td>1.0枚<br><div class="small">61.4%/51件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=崩れたスタジアム&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ジャミングタワー.html">ジャミングタワー</a></td>
-      <td>1.0</td>
-      <td>12.0</td>
-      <td>10</td>
+      <td>1.0枚<br><div class="small">12.0%/10件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ジャミングタワー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケモンリーグ本部.html">ポケモンリーグ本部</a></td>
-      <td>1.0</td>
-      <td>6.0</td>
-      <td>5</td>
+      <td>1.0枚<br><div class="small">6.0%/5件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケモンリーグ本部&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>4</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/偉大な大樹(ACE SPEC).html">偉大な大樹(ACE SPEC)</a></td>
-      <td>1.0</td>
-      <td>4.8</td>
-      <td>4</td>
+      <td>1.0枚<br><div class="small">4.8%/4件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=偉大な大樹(ACE SPEC)&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>5</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゼロの大空洞.html">ゼロの大空洞</a></td>
-      <td>1.5</td>
-      <td>2.4</td>
-      <td>2</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゼロの大空洞&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シンオウ神殿.html">シンオウ神殿</a></td>
+      <td>1.0枚<br><div class="small">2.4%/2件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シンオウ神殿&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>6</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/card/シンオウ神殿.html">シンオウ神殿</a></td>
-      <td>1.0</td>
-      <td>2.4</td>
-      <td>2</td>
-      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=シンオウ神殿&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/card/ゼロの大空洞.html">ゼロの大空洞</a></td>
+      <td>1.5枚<br><div class="small">2.4%/2件</div></td>
+      <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ゼロの大空洞&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>7</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/マグマの滝壺.html">マグマの滝壺</a></td>
-      <td>1.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>1.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=マグマの滝壺&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>8</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ポケストップ.html">ポケストップ</a></td>
-      <td>2.0</td>
-      <td>1.2</td>
-      <td>1</td>
+      <td>2.0枚<br><div class="small">1.2%/1件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ポケストップ&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -940,9 +747,7 @@
     <tr style="text-align: right;">
       <th></th>
       <th>カード名</th>
-      <th>採用枚数</th>
-      <th>採用率</th>
-      <th>採用件数</th>
+      <th>採用枚数<br><div class="small">採用率/採用デッキ数</div></th>
       <th>購入</th>
     </tr>
   </thead>
@@ -950,25 +755,19 @@
     <tr>
       <th>1</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/基本炎エネルギー.html">基本炎エネルギー</a></td>
-      <td>5.2</td>
-      <td>100.0</td>
-      <td>83</td>
+      <td>5.2枚<br><div class="small">100.0%/83件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=基本炎エネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>2</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ミストエネルギー.html">ミストエネルギー</a></td>
-      <td>1.0</td>
-      <td>66.3</td>
-      <td>55</td>
+      <td>1.0枚<br><div class="small">66.3%/55件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ミストエネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
     <tr>
       <th>3</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/card/ダブルターボエネルギー.html">ダブルターボエネルギー</a></td>
-      <td>1.0</td>
-      <td>31.3</td>
-      <td>26</td>
+      <td>1.0枚<br><div class="small">31.3%/26件</div></td>
       <td><a href="https://jp.mercari.com/search?afid=2676797812&keyword=ダブルターボエネルギー&exclude_keyword=サーチ%20パック%201p%20高確&category_id=1289" target="_blank">メルカリ</a></td>
     </tr>
   </tbody>
@@ -1051,45 +850,45 @@
     </tr>
     <tr>
       <th>10</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FvFvwk-46LkR0-5k5V5V.html">FvFvwk-46LkR0-5k5V5V</a></td>
-      <td>0.826789</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 3位</a></td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcKc88-hPp2YQ-caxYJ4.html">KcKc88-hPp2YQ-caxYJ4</a></td>
-      <td>0.826789</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/504580/result">2024/09/19 青馬堂本店 3位</a></td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8c44K-iBRx6t-xJYcJx.html">x8c44K-iBRx6t-xJYcJx</a></td>
-      <td>0.826789</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482133/result">2024/09/16 カードショップ　海賊船-starch- 2位</a></td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6H6nHg-S2Ne5T-LHPQgg.html">6H6nHg-S2Ne5T-LHPQgg</a></td>
-      <td>0.826789</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 1位</a></td>
-    </tr>
-    <tr>
-      <th>14</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/S33yXy-2n5CVW-32XMyp.html">S33yXy-2n5CVW-32XMyp</a></td>
       <td>0.826789</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480838/result">2024/09/20 カードショップ竜星のPAO　立川店 9位</a></td>
     </tr>
     <tr>
-      <th>15</th>
+      <th>11</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yMSM2p-9e8fCz-2y23yS.html">yMSM2p-9e8fCz-2y23yS</a></td>
+      <td>0.826789</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480773/result">2024/09/16 トーナメントセンターバトロコ　新津田沼駅前 5位</a></td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/6H6nHg-S2Ne5T-LHPQgg.html">6H6nHg-S2Ne5T-LHPQgg</a></td>
+      <td>0.826789</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480905/result">2024/09/17 【CARDBOX】青馬堂矢向店 1位</a></td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/x8c44K-iBRx6t-xJYcJx.html">x8c44K-iBRx6t-xJYcJx</a></td>
+      <td>0.826789</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482133/result">2024/09/16 カードショップ　海賊船-starch- 2位</a></td>
+    </tr>
+    <tr>
+      <th>14</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HggLn6-p8mbHe-66gPgn.html">HggLn6-p8mbHe-66gPgn</a></td>
       <td>0.826789</td>
       <td><a href="https://players.pokemon-card.com/event/detail/504580/result">2024/09/19 青馬堂本店 9位</a></td>
     </tr>
     <tr>
-      <th>16</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/yMSM2p-9e8fCz-2y23yS.html">yMSM2p-9e8fCz-2y23yS</a></td>
+      <th>15</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/FvFvwk-46LkR0-5k5V5V.html">FvFvwk-46LkR0-5k5V5V</a></td>
       <td>0.826789</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480773/result">2024/09/16 トーナメントセンターバトロコ　新津田沼駅前 5位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480901/result">2024/09/16 三洋堂書店　みのかも店 3位</a></td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/KcKc88-hPp2YQ-caxYJ4.html">KcKc88-hPp2YQ-caxYJ4</a></td>
+      <td>0.826789</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/504580/result">2024/09/19 青馬堂本店 3位</a></td>
     </tr>
     <tr>
       <th>17</th>
@@ -1099,15 +898,15 @@
     </tr>
     <tr>
       <th>18</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Y4xc8Y-iGE6uF-D8x84K.html">Y4xc8Y-iGE6uF-D8x84K</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cD484x-LhqRYo-cGKDD8.html">cD484x-LhqRYo-cGKDD8</a></td>
       <td>0.824546</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 3位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 3位</a></td>
     </tr>
     <tr>
       <th>19</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5Vkfw-DO3RpG-VvFbkk.html">F5Vkfw-DO3RpG-VvFbkk</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Y4xc8Y-iGE6uF-D8x84K.html">Y4xc8Y-iGE6uF-D8x84K</a></td>
       <td>0.824546</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 5位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480835/result">2024/09/16 福福トレカ　秋葉原店 3位</a></td>
     </tr>
     <tr>
       <th>20</th>
@@ -1117,33 +916,33 @@
     </tr>
     <tr>
       <th>21</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2pURX-XQ6KE8-3yMpy2.html">p2pURX-XQ6KE8-3yMpy2</a></td>
-      <td>0.824546</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481052/result">2024/09/16 遊ING　熊本上通り店 9位</a></td>
-    </tr>
-    <tr>
-      <th>22</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Hgn6nn-LAU3Xz-i9NHLg.html">Hgn6nn-LAU3Xz-i9NHLg</a></td>
       <td>0.824546</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480903/result">2024/09/16 CARDBOXメディアポリス横浜日吉本町店 9位</a></td>
     </tr>
     <tr>
+      <th>22</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LNQHn6-hhjJj0-6HnHg9.html">LNQHn6-hhjJj0-6HnHg9</a></td>
+      <td>0.824546</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482162/result">2024/09/16 トイコンプ岸和田店 1位</a></td>
+    </tr>
+    <tr>
       <th>23</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/F5Vkfw-DO3RpG-VvFbkk.html">F5Vkfw-DO3RpG-VvFbkk</a></td>
+      <td>0.824546</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 5位</a></td>
+    </tr>
+    <tr>
+      <th>24</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kkdVVd-L64iLY-5VFFkw.html">kkdVVd-L64iLY-5VFFkw</a></td>
       <td>0.824546</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480993/result">2024/09/22 チャンピオンズリーグ2025 東京 ジュニアリーグ 1日目大会【2024年9月22日（日）開催】 9位</a></td>
     </tr>
     <tr>
-      <th>24</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/cD484x-LhqRYo-cGKDD8.html">cD484x-LhqRYo-cGKDD8</a></td>
-      <td>0.824546</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480770/result">2024/09/16 トーナメントセンターバトロコ　柏駅前 3位</a></td>
-    </tr>
-    <tr>
       <th>25</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LNQHn6-hhjJj0-6HnHg9.html">LNQHn6-hhjJj0-6HnHg9</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/p2pURX-XQ6KE8-3yMpy2.html">p2pURX-XQ6KE8-3yMpy2</a></td>
       <td>0.824546</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482162/result">2024/09/16 トイコンプ岸和田店 1位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481052/result">2024/09/16 遊ING　熊本上通り店 9位</a></td>
     </tr>
     <tr>
       <th>26</th>
@@ -1177,15 +976,15 @@
     </tr>
     <tr>
       <th>31</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HnggNQ-zYVd1C-nQL6QL.html">HnggNQ-zYVd1C-nQL6QL</a></td>
-      <td>0.821883</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/482162/result">2024/09/16 トイコンプ岸和田店 5位</a></td>
-    </tr>
-    <tr>
-      <th>32</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/nn9LnH-WXp5iI-PgH6HQ.html">nn9LnH-WXp5iI-PgH6HQ</a></td>
       <td>0.821883</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/HnggNQ-zYVd1C-nQL6QL.html">HnggNQ-zYVd1C-nQL6QL</a></td>
+      <td>0.821883</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/482162/result">2024/09/16 トイコンプ岸和田店 5位</a></td>
     </tr>
     <tr>
       <th>33</th>
@@ -1225,9 +1024,9 @@
     </tr>
     <tr>
       <th>39</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ry2MSX-zIRKIF-pM2y3y.html">Ry2MSX-zIRKIF-pM2y3y</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vVkV1F-PqPAAH-V5VVw1.html">vVkV1F-PqPAAH-V5VVw1</a></td>
       <td>0.817349</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481052/result">2024/09/16 遊ING　熊本上通り店 3位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
     </tr>
     <tr>
       <th>40</th>
@@ -1237,21 +1036,21 @@
     </tr>
     <tr>
       <th>41</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vVkV1F-PqPAAH-V5VVw1.html">vVkV1F-PqPAAH-V5VVw1</a></td>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Ry2MSX-zIRKIF-pM2y3y.html">Ry2MSX-zIRKIF-pM2y3y</a></td>
       <td>0.817349</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480904/result">2024/09/16 BOOKOFFSUPERBAZAARノースポート・モール店 9位</a></td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481052/result">2024/09/16 遊ING　熊本上通り店 3位</a></td>
     </tr>
     <tr>
       <th>42</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bwFfFv-rdCkB5-5bVFkV.html">bwFfFv-rdCkB5-5bVFkV</a></td>
-      <td>0.817349</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480773/result">2024/09/16 トーナメントセンターバトロコ　新津田沼駅前 3位</a></td>
-    </tr>
-    <tr>
-      <th>43</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/Lngg6g-9fJZBk-HH9HNH.html">Lngg6g-9fJZBk-HH9HNH</a></td>
       <td>0.817349</td>
       <td><a href="https://players.pokemon-card.com/event/detail/481052/result">2024/09/16 遊ING　熊本上通り店 9位</a></td>
+    </tr>
+    <tr>
+      <th>43</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/bwFfFv-rdCkB5-5bVFkV.html">bwFfFv-rdCkB5-5bVFkV</a></td>
+      <td>0.817349</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480773/result">2024/09/16 トーナメントセンターバトロコ　新津田沼駅前 3位</a></td>
     </tr>
     <tr>
       <th>44</th>
@@ -1297,15 +1096,15 @@
     </tr>
     <tr>
       <th>51</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LgQg6N-Ea1DZ4-ig6gnH.html">LgQg6N-Ea1DZ4-ig6gnH</a></td>
-      <td>0.812783</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/480908/result">2024/09/19 トレカショップVOW 1位</a></td>
-    </tr>
-    <tr>
-      <th>52</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/vFFfvk-hJW6ul-Vdkkw5.html">vFFfvk-hJW6ul-Vdkkw5</a></td>
       <td>0.812783</td>
       <td><a href="https://players.pokemon-card.com/event/detail/481051/result">2024/09/16 TSUTAYA光吉店 9位</a></td>
+    </tr>
+    <tr>
+      <th>52</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/LgQg6N-Ea1DZ4-ig6gnH.html">LgQg6N-Ea1DZ4-ig6gnH</a></td>
+      <td>0.812783</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/480908/result">2024/09/19 トレカショップVOW 1位</a></td>
     </tr>
     <tr>
       <th>53</th>
@@ -1339,15 +1138,15 @@
     </tr>
     <tr>
       <th>58</th>
-      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/JK4x4D-d2udCg-848DGc.html">JK4x4D-d2udCg-848DGc</a></td>
-      <td>0.810148</td>
-      <td><a href="https://players.pokemon-card.com/event/detail/481053/result">2024/09/18 BOOKOFFSUPERBAZAAR54号広島八木店 5位</a></td>
-    </tr>
-    <tr>
-      <th>59</th>
       <td><a href="https://iwata-n.github.io/pokeca_deck/deck/kvv1F5-wa3WiA-kVwFfk.html">kvv1F5-wa3WiA-kVwFfk</a></td>
       <td>0.810148</td>
       <td><a href="https://players.pokemon-card.com/event/detail/480733/result">2024/09/22 チャンピオンズリーグ2025 東京 シニアリーグ 1日目大会【2024年9月22日（日）開催】 9位</a></td>
+    </tr>
+    <tr>
+      <th>59</th>
+      <td><a href="https://iwata-n.github.io/pokeca_deck/deck/JK4x4D-d2udCg-848DGc.html">JK4x4D-d2udCg-848DGc</a></td>
+      <td>0.810148</td>
+      <td><a href="https://players.pokemon-card.com/event/detail/481053/result">2024/09/18 BOOKOFFSUPERBAZAAR54号広島八木店 5位</a></td>
     </tr>
     <tr>
       <th>60</th>
