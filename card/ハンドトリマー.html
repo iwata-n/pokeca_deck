@@ -27,8 +27,29 @@
         background-color:  #EEE;    /* 背景色指定 */
     }
 
-    th,td {
+    td {
         padding: 5px 10px;          /* 余白指定 */
+    }
+
+    th {
+      position: sticky;
+      padding: 5px 10px;          /* 余白指定 */
+      top: 0;
+      background-color: white; /* 背景色を指定して、スクロール時に見えるように */
+      z-index: 1; /* テーブルの他の要素の上に表示 */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -38,12 +59,15 @@
 <body>
 <a href="javascript:history.back();">戻る</a>
 <h1>ポケカデッキ分析 ハンドトリマー</h1>
-集計期間：2024/04/01 00:00～2024-05-07 20:16
+集計期間：2024/09/01 00:00～2024-10-06 18:35
 <h2>ハンドトリマー</h2>
 <ul>
 <li><a href="https://www.pokemon-card.com/card-search/index.php?keyword=ハンドトリマー"">トレーナーズウェブサイトで検索</a></ul>
-<h2>デッキリスト</h2>
-<ul>
-<li><a href="https://iwata-n.github.io/pokeca_deck/deck/LH6iHg-eD1NmM-LnHnn9.html">LH6iHg-eD1NmM-LnHnn9</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/LHHHHn-gORvun-HngggQ.html">LHHHHn-gORvun-HngggQ</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/55Vwkk-33vpSK-5kFVFk.html">55Vwkk-33vpSK-5kFVFk</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/x48aKc-pJr5Fg-xKG484.html">x48aKc-pJr5Fg-xKG484</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/8cc8JG-oYfqRV-c448a4.html">8cc8JG-oYfqRV-c448a4</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/i6ngng-0wkaHm-QHHLL6.html">i6ngng-0wkaHm-QHHLL6</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/gH9iHg-NvlZFc-Hgggnn.html">gH9iHg-NvlZFc-Hgggnn</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/HgnnHg-u1Mk8z-iLLLig.html">HgnnHg-u1Mk8z-iLLLig</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/k115FV-l7ABHh-dvFFkf.html">k115FV-l7ABHh-dvFFkf</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/y2Ryyy-8f4vwe-MpyU2p.html">y2Ryyy-8f4vwe-MpyU2p</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/gggHHg-Rn8J3r-nHnNgN.html">gggHHg-Rn8J3r-nHnNgN</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/Sp2yUp-o7y5TV-2yRyy2.html">Sp2yUp-o7y5TV-2yRyy2</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/p2y23M-89LM4t-pyp2Rp.html">p2y23M-89LM4t-pyp2Rp</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/Fkkb5v-W9fcPc-fFvb5k.html">Fkkb5v-W9fcPc-fFvb5k</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/8xx4K8-IvSCRn-xcc4cc.html">8xx4K8-IvSCRn-xcc4cc</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/gNHnnn-GV8LwE-LHgngi.html">gNHnnn-GV8LwE-LHgngi</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/nHPgQP-oggwwM-Hnn6gN.html">nHPgQP-oggwwM-Hnn6gN</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/Y8JcD8-RybTeH-Jc44YK.html">Y8JcD8-RybTeH-Jc44YK</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/2SppyX-FwmNVK-pXp2pS.html">2SppyX-FwmNVK-pXp2pS</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/VkkF5V-ezRVcc-515F5F.html">VkkF5V-ezRVcc-515F5F</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/2pRyUR-Q1WaVI-ppX2pS.html">2pRyUR-Q1WaVI-ppX2pS</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/ppMRpX-X4oYkS-2y2UXp.html">ppMRpX-X4oYkS-2y2UXp</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/Ey3yyM-MI5QIX-2yM2pp.html">Ey3yyM-MI5QIX-2yM2pp</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/LgHgLH-VtKBgE-nnnPgN.html">LgHgLH-VtKBgE-nnnPgN</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/F5Fwk5-MTEGvC-bF5k5F.html">F5Fwk5-MTEGvC-bF5k5F</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/VkF5Fk-UjYvcL-5Vvkkv.html">VkF5Fk-UjYvcL-5Vvkkv</a></ul>
+<h2>採用デッキ</h2>
+<h3><a href="https://iwata-n.github.io/pokeca_deck/deck/XU2M2p-pL4LXS-XMMpyy.html">XU2M2p-pL4LXS-XMMpyy</a></h3>
+<div class="image-container">
+<a href="https://iwata-n.github.io/pokeca_deck/deck_image/XU2M2p-pL4LXS-XMMpyy.png">
+<img src="https://iwata-n.github.io/pokeca_deck/deck_image/XU2M2p-pL4LXS-XMMpyy.png" alt="XU2M2p-pL4LXS-XMMpyy" loading="lazy"><br></a>
+</div>
 </body>
 </html>

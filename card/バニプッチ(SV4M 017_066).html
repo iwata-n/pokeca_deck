@@ -27,8 +27,29 @@
         background-color:  #EEE;    /* 背景色指定 */
     }
 
-    th,td {
+    td {
         padding: 5px 10px;          /* 余白指定 */
+    }
+
+    th {
+      position: sticky;
+      padding: 5px 10px;          /* 余白指定 */
+      top: 0;
+      background-color: white; /* 背景色を指定して、スクロール時に見えるように */
+      z-index: 1; /* テーブルの他の要素の上に表示 */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -38,12 +59,15 @@
 <body>
 <a href="javascript:history.back();">戻る</a>
 <h1>ポケカデッキ分析 バニプッチ(SV4M 017/066)</h1>
-集計期間：2024/04/01 00:00～2024-05-07 20:16
+集計期間：2024/09/01 00:00～2024-10-06 18:35
 <h2>バニプッチ(SV4M 017/066)</h2>
 <ul>
 <li><a href="https://www.pokemon-card.com/card-search/index.php?keyword=バニプッチ"">トレーナーズウェブサイトで検索</a></ul>
-<h2>デッキリスト</h2>
-<ul>
-<li><a href="https://iwata-n.github.io/pokeca_deck/deck/g6HnnH-htzhgg-LnngnH.html">g6HnnH-htzhgg-LnngnH</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/4x4cax-z6iYCT-88Y884.html">4x4cax-z6iYCT-88Y884</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/5dkd51-hSQqnF-kkkFF1.html">5dkd51-hSQqnF-kkkFF1</a></ul>
+<h2>採用デッキ</h2>
+<h3><a href="https://iwata-n.github.io/pokeca_deck/deck/N6Qigg-3SWkx1-LgLnHH.html">N6Qigg-3SWkx1-LgLnHH</a></h3>
+<div class="image-container">
+<a href="https://iwata-n.github.io/pokeca_deck/deck_image/N6Qigg-3SWkx1-LgLnHH.png">
+<img src="https://iwata-n.github.io/pokeca_deck/deck_image/N6Qigg-3SWkx1-LgLnHH.png" alt="N6Qigg-3SWkx1-LgLnHH" loading="lazy"><br></a>
+</div>
 </body>
 </html>
