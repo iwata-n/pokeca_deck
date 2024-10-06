@@ -27,8 +27,29 @@
         background-color:  #EEE;    /* 背景色指定 */
     }
 
-    th,td {
+    td {
         padding: 5px 10px;          /* 余白指定 */
+    }
+
+    th {
+      position: sticky;
+      padding: 5px 10px;          /* 余白指定 */
+      top: 0;
+      background-color: white; /* 背景色を指定して、スクロール時に見えるように */
+      z-index: 1; /* テーブルの他の要素の上に表示 */
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; /* アスペクト比を保持 */
+    }
+
+    .image-container {
+        text-align: center;
+    }
+
+    .small {
+        font-size: 0.8em;
     }
     </style>
     <meta charset="UTF-8">
@@ -38,12 +59,15 @@
 <body>
 <a href="javascript:history.back();">戻る</a>
 <h1>ポケカデッキ分析 大口の沼</h1>
-集計期間：2024/04/01 00:00～2024-05-07 20:16
+集計期間：2024/09/01 00:00～2024-10-06 23:13
 <h2>大口の沼</h2>
 <ul>
 <li><a href="https://www.pokemon-card.com/card-search/index.php?keyword=大口の沼"">トレーナーズウェブサイトで検索</a></ul>
-<h2>デッキリスト</h2>
-<ul>
-<li><a href="https://iwata-n.github.io/pokeca_deck/deck/9inHQn-cljor7-gH9ggg.html">9inHQn-cljor7-gH9ggg</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/8K8c48-VzJwMg-8xDcc4.html">8K8c48-VzJwMg-8xDcc4</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/ypy2MS-PE0NfZ-22pU2X.html">ypy2MS-PE0NfZ-22pU2X</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/5fkkk5-2FMvQv-FkwfFF.html">5fkkk5-2FMvQv-FkwfFF</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/kfkfv5-hZI6kj-fFwwk5.html">kfkfv5-hZI6kj-fFwwk5</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/dVdk5F-ASpZYv-fFF5kf.html">dVdk5F-ASpZYv-fFF5kf</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/8cY88c-U86zgP-ccY4YY.html">8cY88c-U86zgP-ccY4YY</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/F5vvVF-M6FtNi-V5bkFv.html">F5vvVF-M6FtNi-V5bkFv</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/py22Mp-cy5NNW-SMpUpX.html">py22Mp-cy5NNW-SMpUpX</a><li><a href="https://iwata-n.github.io/pokeca_deck/deck/4J8Ycc-BtEXd2-48cc8K.html">4J8Ycc-BtEXd2-48cc8K</a></ul>
+<h2>採用デッキ</h2>
+<h3><a href="https://iwata-n.github.io/pokeca_deck/deck/5bkFkF-bchZEJ-5FfFvV.html">5bkFkF-bchZEJ-5FfFvV</a></h3>
+<div class="image-container">
+<a href="https://iwata-n.github.io/pokeca_deck/deck_image/5bkFkF-bchZEJ-5FfFvV.png">
+<img src="https://iwata-n.github.io/pokeca_deck/deck_image/5bkFkF-bchZEJ-5FfFvV.png" alt="5bkFkF-bchZEJ-5FfFvV" loading="lazy"><br></a>
+</div>
 </body>
 </html>
